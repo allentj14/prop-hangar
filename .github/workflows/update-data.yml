@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v6
@@ -28,38 +28,63 @@ jobs:
       - name: Install Excel library
         run: pip install openpyxl
 
-      - name: Download the latest game data (only the files we need)
-        run: |
-          git clone --depth 1 --filter=blob:none --sparse https://github.com/gszabi99/War-Thunder-Datamine wtdm
-          cd wtdm
-          git sparse-checkout set --no-cone \
-            '/char.vromfs.bin_u/config/shop.blkx' \
-            '/char.vromfs.bin_u/config/wpcost.blkx' \
-            '/char.vromfs.bin_u/config/unittags.blkx' \
-            '/lang.vromfs.bin_u/lang/units.csv' \
-            '/lang.vromfs.bin_u/lang/units_weaponry.csv' \
-            '/aces.vromfs.bin_u/gamedata/flightmodels/' \
-            '/aces.vromfs.bin_u/gamedata/weapons/*.blkx'
-          echo "GAME_VERSION=$(git log -1 --format=%s | grep -oE '[0-9]+(\.[0-9]+){2,3}' | head -1)" >> "$GITHUB_ENV"
-
+      # Step 1: tiny download (commit info only, no files) to read the game version.
       - name: Check whether the game version changed
         id: check
+        timeout-minutes: 5
         run: |
+          for i in 1 2 3; do
+            rm -rf wtdm
+            if git clone --depth 1 --filter=tree:0 --no-checkout https://github.com/gszabi99/War-Thunder-Datamine wtdm; then break; fi
+            echo "Attempt $i failed, retrying in 30s"; sleep 30
+          done
+          if [ ! -d wtdm/.git ]; then
+            echo "::warning::Couldn't reach the game data source. Will try again next run."
+            echo "changed=no" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          GAME_VERSION=$(git -C wtdm log -1 --format=%s | grep -oE '[0-9]+(\.[0-9]+){2,3}' | head -1)
+          echo "GAME_VERSION=$GAME_VERSION" >> "$GITHUB_ENV"
           OLD=$(python3 -c "import json;print(json.load(open('data/meta.json'))['game_version'])" 2>/dev/null || echo none)
           echo "Saved version: $OLD   Game data version: $GAME_VERSION"
-          if [ -z "$GAME_VERSION" ]; then echo "Could not read game version"; exit 1; fi
-          if [ "$OLD" = "$GAME_VERSION" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+          if [ -z "$GAME_VERSION" ]; then
+            echo "::warning::Couldn't read the game version. Will try again next run."
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          elif [ "$OLD" = "$GAME_VERSION" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
             echo "changed=no" >> "$GITHUB_OUTPUT"
           else
             echo "changed=yes" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Rebuild app data
+      # Step 2: only when the version changed, download the files we need (with retries).
+      - name: Download the game data files
+        id: download
         if: steps.check.outputs.changed == 'yes'
+        timeout-minutes: 25
+        run: |
+          cd wtdm
+          for i in 1 2 3; do
+            if timeout 600 git sparse-checkout set --no-cone \
+                '/char.vromfs.bin_u/config/shop.blkx' \
+                '/char.vromfs.bin_u/config/wpcost.blkx' \
+                '/char.vromfs.bin_u/config/unittags.blkx' \
+                '/lang.vromfs.bin_u/lang/units.csv' \
+                '/lang.vromfs.bin_u/lang/units_weaponry.csv' \
+                '/aces.vromfs.bin_u/gamedata/flightmodels/' \
+                '/aces.vromfs.bin_u/gamedata/weapons/*.blkx' \
+               && timeout 600 git checkout -q HEAD; then
+              echo "ok=yes" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            echo "Download attempt $i failed, retrying in 60s"; sleep 60
+          done
+          echo "::warning::Game data download failed 3 times. Will try again next run."
+          echo "ok=no" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild app data
+        if: steps.download.outputs.ok == 'yes'
         run: scripts/rebuild.sh wtdm "$GAME_VERSION"
 
       - name: Save the new data
-        if: steps.check.outputs.changed == 'yes'
+        if: steps.download.outputs.ok == 'yes'
         run: |
           git config user.name "plane-data-bot"
           git config user.email "plane-data-bot@users.noreply.github.com"

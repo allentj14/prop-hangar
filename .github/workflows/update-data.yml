@@ -1,0 +1,72 @@
+name: Update plane data
+
+# Checks the War Thunder game data every 6 hours and rebuilds the app data
+# when a new game version appears. Run it by hand from the Actions tab anytime.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Excel library
+        run: pip install openpyxl
+
+      - name: Download the latest game data (only the files we need)
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/gszabi99/War-Thunder-Datamine wtdm
+          cd wtdm
+          git sparse-checkout set --no-cone \
+            '/char.vromfs.bin_u/config/shop.blkx' \
+            '/char.vromfs.bin_u/config/wpcost.blkx' \
+            '/char.vromfs.bin_u/config/unittags.blkx' \
+            '/lang.vromfs.bin_u/lang/units.csv' \
+            '/lang.vromfs.bin_u/lang/units_weaponry.csv' \
+            '/aces.vromfs.bin_u/gamedata/flightmodels/' \
+            '/aces.vromfs.bin_u/gamedata/weapons/*.blkx'
+          echo "GAME_VERSION=$(git log -1 --format=%s | grep -oE '[0-9]+(\.[0-9]+){2,3}' | head -1)" >> "$GITHUB_ENV"
+
+      - name: Check whether the game version changed
+        id: check
+        run: |
+          OLD=$(python3 -c "import json;print(json.load(open('data/meta.json'))['game_version'])" 2>/dev/null || echo none)
+          echo "Saved version: $OLD   Game data version: $GAME_VERSION"
+          if [ -z "$GAME_VERSION" ]; then echo "Could not read game version"; exit 1; fi
+          if [ "$OLD" = "$GAME_VERSION" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rebuild app data
+        if: steps.check.outputs.changed == 'yes'
+        run: scripts/rebuild.sh wtdm "$GAME_VERSION"
+
+      - name: Save the new data
+        if: steps.check.outputs.changed == 'yes'
+        run: |
+          git config user.name "plane-data-bot"
+          git config user.email "plane-data-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "Plane data for game version $GAME_VERSION"
+            git push
+          fi

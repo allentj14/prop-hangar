@@ -1,0 +1,2626 @@
+{
+"P-26A": {
+"style": "Energy fighter",
+"pros": "Decent speed for rank I; stable turn",
+"cons": "No armour; poor dive; poor energy retention",
+"tip": "Avoid turn fights with Ki-10s; hunt slow biplanes and bombers.",
+"verdict": "Considered weak for its BR",
+"src": "https://old-wiki.warthunder.com/P-26A-33"
+},
+"P-26B": {
+"style": "Energy fighter",
+"pros": "Decent speed for rank I; stable turn",
+"cons": "No armour; poor dive; poor energy retention",
+"tip": "Avoid turn fights with Ki-10s; hunt slow biplanes and bombers.",
+"verdict": "Considered weak for its BR",
+"src": "https://old-wiki.warthunder.com/P-26A-33"
+},
+"P-36A": {
+"style": "Turn fighter / Boom & Zoom",
+"pros": "Excellent climb; good dive speed; good energy retention",
+"cons": "Low gun damage; very little armour; bad in head-ons",
+"tip": "Shoot from 50-200 m; penetration drops off past ~150 m.",
+"verdict": "Strong turner and climber for its rank",
+"src": "https://old-wiki.warthunder.com/P-36C"
+},
+"P-36C": {
+"style": "Turn fighter / Boom & Zoom",
+"pros": "Excellent climb; good dive speed; good energy retention",
+"cons": "Low gun damage; very little armour; bad in head-ons",
+"tip": "Shoot from 50-200 m; penetration drops off past ~150 m.",
+"verdict": "Strong turner and climber for its rank",
+"src": "https://old-wiki.warthunder.com/P-36C"
+},
+"P-36G": {
+"style": "Turn fighter / Boom & Zoom",
+"pros": "Excellent climb; good dive speed; good energy retention",
+"cons": "Low gun damage; very little armour; bad in head-ons",
+"tip": "Shoot from 50-200 m; penetration drops off past ~150 m.",
+"verdict": "Strong turner and climber for its rank",
+"src": "https://old-wiki.warthunder.com/P-36C"
+},
+"P-400": {
+"style": "Energy fighter",
+"pros": "Fast at low-medium altitude; accurate nose cannon; good armour and visibility",
+"cons": "Limited cannon ammo; unstable at low speed; poor high-speed turn",
+"tip": "Fight low with energy tactics; don't turn with Hellcats or Zeros.",
+"verdict": "Among the best at its BR below 4,000 m; weak at high altitude",
+"src": "https://old-wiki.warthunder.com/P-400 ; https://old-wiki.warthunder.com/P-39N-0"
+},
+"P-39N": {
+"style": "Energy fighter",
+"pros": "Fast at low-medium altitude; accurate nose cannon; good armour and visibility",
+"cons": "Limited cannon ammo; unstable at low speed; poor high-speed turn",
+"tip": "Fight low with energy tactics; don't turn with Hellcats or Zeros.",
+"verdict": "Among the best at its BR below 4,000 m; weak at high altitude",
+"src": "https://old-wiki.warthunder.com/P-400 ; https://old-wiki.warthunder.com/P-39N-0"
+},
+"P-39Q": {
+"style": "Energy fighter",
+"pros": "Fast at low-medium altitude; accurate nose cannon; good armour and visibility",
+"cons": "Limited cannon ammo; unstable at low speed; poor high-speed turn",
+"tip": "Fight low with energy tactics; don't turn with Hellcats or Zeros.",
+"verdict": "Among the best at its BR below 4,000 m; weak at high altitude",
+"src": "https://old-wiki.warthunder.com/P-400 ; https://old-wiki.warthunder.com/P-39N-0"
+},
+"P-39K": {
+"style": "Energy fighter",
+"pros": "Fast at low-medium altitude; accurate nose cannon; good armour and visibility",
+"cons": "Limited cannon ammo; unstable at low speed; poor high-speed turn",
+"tip": "Fight low with energy tactics; don't turn with Hellcats or Zeros.",
+"verdict": "Among the best at its BR below 4,000 m; weak at high altitude",
+"src": "https://old-wiki.warthunder.com/P-400 ; https://old-wiki.warthunder.com/P-39N-0"
+},
+"P-38E": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"P-38G": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"P-38J": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"P-38L": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"P-38K": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"XP-38G": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"YP-38": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Good top speed and dive acceleration; concentrated nose guns; good climb",
+"cons": "Big target; low dive limit and compression; slow roll",
+"tip": "Dive away from attackers toward teammates instead of turning with single-engine fighters.",
+"verdict": "Fairly strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-38G-1"
+},
+"P-63A": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Excellent dive speed and energy retention; good climb; hard-hitting cannon",
+"cons": "Average turn; low-velocity 37 mm; engine easily damaged",
+"tip": "Space cannon shots 1-1.5 s apart to avoid jams; manage engine temps on WEP.",
+"verdict": "Solid at its BR",
+"src": "https://old-wiki.warthunder.com/P-63A-10 ; https://old-wiki.warthunder.com/P-63C-5"
+},
+"P-63C": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Excellent dive speed and energy retention; good climb; hard-hitting cannon",
+"cons": "Average turn; low-velocity 37 mm; engine easily damaged",
+"tip": "Space cannon shots 1-1.5 s apart to avoid jams; manage engine temps on WEP.",
+"verdict": "Solid at its BR",
+"src": "https://old-wiki.warthunder.com/P-63A-10 ; https://old-wiki.warthunder.com/P-63C-5"
+},
+"Kingcobra": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Excellent dive speed and energy retention; good climb; hard-hitting cannon",
+"cons": "Average turn; low-velocity 37 mm; engine easily damaged",
+"tip": "Space cannon shots 1-1.5 s apart to avoid jams; manage engine temps on WEP.",
+"verdict": "Solid at its BR",
+"src": "https://old-wiki.warthunder.com/P-63A-10 ; https://old-wiki.warthunder.com/P-63C-5"
+},
+"P-47D": {
+"style": "Boom & Zoom",
+"pros": "Superb dive; 8× .50 cal with huge ammo; tough, can carry bombs",
+"cons": "Poor low-speed turn; mediocre climb; heavy when loaded",
+"tip": "Never trade away speed or altitude; dive, shoot, extend.",
+"verdict": "Classic BnZ plane, good for its BR in experienced hands",
+"src": "https://old-wiki.warthunder.com/P-47D-25"
+},
+"P-47M": {
+"style": "Boom & Zoom",
+"pros": "Superb dive; 8× .50 cal with huge ammo; tough, can carry bombs",
+"cons": "Poor low-speed turn; mediocre climb; heavy when loaded",
+"tip": "Never trade away speed or altitude; dive, shoot, extend.",
+"verdict": "Classic BnZ plane, good for its BR in experienced hands",
+"src": "https://old-wiki.warthunder.com/P-47D-25"
+},
+"Thunderbolt": {
+"style": "Boom & Zoom",
+"pros": "Superb dive; 8× .50 cal with huge ammo; tough, can carry bombs",
+"cons": "Poor low-speed turn; mediocre climb; heavy when loaded",
+"tip": "Never trade away speed or altitude; dive, shoot, extend.",
+"verdict": "Classic BnZ plane, good for its BR in experienced hands",
+"src": "https://old-wiki.warthunder.com/P-47D-25"
+},
+"P-47N": {
+"style": "Boom & Zoom",
+"pros": "8× .50 cal, big ammo; very high dive limit; good high-speed roll",
+"cons": "Limited WEP and overheating; weak low and slow; poor climb",
+"tip": "Side-climb early, then boom and zoom. Avoid turn fights.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-47N-15"
+},
+"P-51D": {
+"style": "Boom & Zoom",
+"pros": "Very high top speed at all altitudes; agile at high speed; good dive",
+"cons": "Fragile, catches fire; high stall speed; bleeds speed in turns",
+"tip": "Set radiators to 100% with manual engine control; stay fast and high.",
+"verdict": "Strong; outspeeds nearly everything at its BR",
+"src": "https://old-wiki.warthunder.com/P-51D-30"
+},
+"P-51K": {
+"style": "Boom & Zoom",
+"pros": "Very high top speed at all altitudes; agile at high speed; good dive",
+"cons": "Fragile, catches fire; high stall speed; bleeds speed in turns",
+"tip": "Set radiators to 100% with manual engine control; stay fast and high.",
+"verdict": "Strong; outspeeds nearly everything at its BR",
+"src": "https://old-wiki.warthunder.com/P-51D-30"
+},
+"Mustang": {
+"style": "Boom & Zoom",
+"pros": "Very high top speed at all altitudes; agile at high speed; good dive",
+"cons": "Fragile, catches fire; high stall speed; bleeds speed in turns",
+"tip": "Set radiators to 100% with manual engine control; stay fast and high.",
+"verdict": "Strong; outspeeds nearly everything at its BR",
+"src": "https://old-wiki.warthunder.com/P-51D-30"
+},
+"P-51H": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Very fast for a prop; strong climb; accurate guns with lots of ammo",
+"cons": "MGs lack punch; can meet early jets; limited WEP",
+"tip": "Stay high and fast; pick enemies off with diving passes.",
+"verdict": "Strong for its rank",
+"src": "https://old-wiki.warthunder.com/P-51H-5-NA"
+},
+"F2A": {
+"style": "Boom & Zoom",
+"pros": "Good dive and energy retention; quite maneuverable; stealth belts work well",
+"cons": "Poor acceleration; fuel tanks explode; overheats",
+"tip": "Climb high first; after each pass, disengage and regain height.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/F2A-3"
+},
+"F3F": {
+"style": "Turn fighter",
+"pros": "Excellent turn and roll; good climb",
+"cons": "Only two guns; slow; exposed engine",
+"tip": "Force turning fights; avoid diving monoplanes.",
+"verdict": "Good biplane, struggles vs faster monoplanes",
+"src": "https://old-wiki.warthunder.com/F3F-2"
+},
+"BF2C": {
+"style": "Turn fighter",
+"pros": "Excellent turn and roll; good climb",
+"cons": "Only two guns; slow; exposed engine",
+"tip": "Force turning fights; avoid diving monoplanes.",
+"verdict": "Good biplane, struggles vs faster monoplanes",
+"src": "https://old-wiki.warthunder.com/F3F-2"
+},
+"F4F": {
+"style": "Boom & Zoom",
+"pros": "Decent turn with flaps; 4-6× .50 cal; very tough",
+"cons": "Slow climb; bad at head-ons; flammable",
+"tip": "Dive on slower, lighter targets; don't turn with Japanese fighters or Spitfires.",
+"verdict": "Durable mid-pack fighter",
+"src": "https://old-wiki.warthunder.com/F4F-3"
+},
+"Martlet Mk IV": {
+"style": "Boom & Zoom",
+"pros": "Decent turn with flaps; 4-6× .50 cal; very tough",
+"cons": "Slow climb; bad at head-ons; flammable",
+"tip": "Dive on slower, lighter targets; don't turn with Japanese fighters or Spitfires.",
+"verdict": "Durable mid-pack fighter",
+"src": "https://old-wiki.warthunder.com/F4F-3"
+},
+"F4U": {
+"style": "Boom & Zoom",
+"pros": "Great top speed; good high-speed handling; heavy armament with lots of ammo",
+"cons": "Poor turn time; big, fragile airframe; vulnerable to incendiaries",
+"tip": "Keep above 350 km/h; dive and use high-speed rolling scissors, never flat turns.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/F4U-1A"
+},
+"F4U VMF-214": {
+"style": "Boom & Zoom",
+"pros": "Great top speed; good high-speed handling; heavy armament with lots of ammo",
+"cons": "Poor turn time; big, fragile airframe; vulnerable to incendiaries",
+"tip": "Keep above 350 km/h; dive and use high-speed rolling scissors, never flat turns.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/F4U-1A"
+},
+"Corsair F Mk": {
+"style": "Boom & Zoom",
+"pros": "Great top speed; good high-speed handling; heavy armament with lots of ammo",
+"cons": "Poor turn time; big, fragile airframe; vulnerable to incendiaries",
+"tip": "Keep above 350 km/h; dive and use high-speed rolling scissors, never flat turns.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/F4U-1A"
+},
+"AU-1": {
+"style": "Boom & Zoom",
+"pros": "Great top speed; good high-speed handling; heavy armament with lots of ammo",
+"cons": "Poor turn time; big, fragile airframe; vulnerable to incendiaries",
+"tip": "Keep above 350 km/h; dive and use high-speed rolling scissors, never flat turns.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/F4U-1A"
+},
+"F2G": {
+"style": "Boom & Zoom",
+"pros": "Great top speed; good high-speed handling; heavy armament with lots of ammo",
+"cons": "Poor turn time; big, fragile airframe; vulnerable to incendiaries",
+"tip": "Keep above 350 km/h; dive and use high-speed rolling scissors, never flat turns.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/F4U-1A"
+},
+"F8F": {
+"style": "Energy fighter",
+"pros": "Great climb and acceleration; fast at low altitude; tough",
+"cons": "Only four .50s with limited ammo; sluggish when slow; weak above 5 km",
+"tip": "Dive in from above and keep speed; avoid slow dogfights.",
+"verdict": "Very strong climber at its BR",
+"src": "https://old-wiki.warthunder.com/F8F-1"
+},
+"P-40E": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"P-40C": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"P-40F": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"Kittyhawk": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"Tomahawk": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"P-43A": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"A-36": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Good dive and energy retention; 6-10 guns; fast bomb reload",
+"cons": "Synchronized guns fire slower; out-turned by most fighters; weak at altitude",
+"tip": "Use dive brakes from high up, release bombs low, then zoom climb away.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A-36"
+},
+"P-51": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Fast at low-medium altitude; good airframe; cannon Mk IA hits hard",
+"cons": "Allison engine weak at altitude; light or mixed guns on early versions",
+"tip": "Fight low where the Allison engine works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-51_(Family)"
+},
+"P-51A": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Fast at low-medium altitude; good airframe; cannon Mk IA hits hard",
+"cons": "Allison engine weak at altitude; light or mixed guns on early versions",
+"tip": "Fight low where the Allison engine works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-51_(Family)"
+},
+"Mustang Mk IA": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Fast at low-medium altitude; good airframe; cannon Mk IA hits hard",
+"cons": "Allison engine weak at altitude; light or mixed guns on early versions",
+"tip": "Fight low where the Allison engine works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-51_(Family)"
+},
+"P-51C": {
+"style": "Boom & Zoom",
+"pros": "Merlin engine with two-stage supercharger; strong high-altitude speed; four .50s",
+"cons": "Poor rear visibility; light armament",
+"tip": "Fight high and check your six often.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-51_(Family)"
+},
+"F6F": {
+"style": "Boom & Zoom",
+"pros": "Good dive; six .50 cal; versatile, can carry bombs/torpedo",
+"cons": "Poor climb and roll; big target",
+"tip": "Use high yo-yos rather than flat turns; pick the supercharger gear for your altitude.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/F6F-5"
+},
+"Hellcat Mk II": {
+"style": "Boom & Zoom",
+"pros": "Good dive; six .50 cal; versatile, can carry bombs/torpedo",
+"cons": "Poor climb and roll; big target",
+"tip": "Use high yo-yos rather than flat turns; pick the supercharger gear for your altitude.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/F6F-5"
+},
+"XP-50": {
+"style": "Energy fighter",
+"pros": "Excellent climb; air spawn; strong nose cannons",
+"cons": "Only 120 cannon shells; no WEP in RB; fragile",
+"tip": "Climb first; if slow, use flaps for surprisingly good low-speed turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/XP-50"
+},
+"XP-55": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Excellent climb; very high dive speed; centerline guns",
+"cons": "Weak pilot armour; exposed rear engine; stalls if snap-rolled",
+"tip": "Dive from altitude, then climb back. Avoid head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/XP-55"
+},
+"AM-1": {
+"style": "Attacker",
+"pros": "Huge bomb/rocket load; four 20 mm; carries three torpedoes",
+"cons": "Slow to accelerate; bleeds energy in turns; no rear gunner",
+"tip": "If a fighter jumps you, run to a teammate; keep speed up.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/AM-1"
+},
+"F-82E": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Outruns most fighters in level flight; centerline guns with lots of ammo; sturdy",
+"cons": "Poor turn; hard to aim; elevator failures when hit",
+"tip": "Climb above 5,000 m and stay over 300 km/h before engaging.",
+"verdict": "Outruns most of its BR",
+"src": "https://old-wiki.warthunder.com/F-82E"
+},
+"F7F": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Four 20 mm plus MGs; very fast low-medium altitude; decent survivability",
+"cons": "Poor maneuver vs single-engine fighters; overheats; loses power above 5 km",
+"tip": "Let teammates engage first, then pick off distracted enemies at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/F7F-1"
+},
+"XF5F": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Very agile for a twin; superb turn; nose guns",
+"cons": "Weak armament; poor energy retention; overheats",
+"tip": "Fight high at medium speed and avoid fighting several enemies at once.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/XF5F"
+},
+"P-61C": {
+"style": "Boom & Zoom",
+"pros": "Four belly 20 mm, no convergence needed; remote .50 cal turret; good climb",
+"cons": "Heavy, slow to accelerate; turret blocked upward; bombs hurt performance",
+"tip": "Climb high, overshoot, then reverse onto the enemy's tail. Avoid steep dives.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-61C-1"
+},
+"P-61A": {
+"style": "Boom & Zoom",
+"pros": "Four belly 20 mm, no convergence needed; remote .50 cal turret; good climb",
+"cons": "Heavy, slow to accelerate; turret blocked upward; bombs hurt performance",
+"tip": "Climb high, overshoot, then reverse onto the enemy's tail. Avoid steep dives.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-61C-1"
+},
+"XA-38": {
+"style": "Attacker",
+"pros": "75 mm cannon kills tanks and planes; twin .50 turrets; fast for an attacker",
+"cons": "One gunner for both turrets; slow-firing 75 mm, 20 shells; weak climb and turn",
+"tip": "Dive in fast, leave fast; avoid head-ons with fighters.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/XA-38"
+},
+"PBJ-1J": {
+"style": "Attacker",
+"pros": "Twelve forward MGs; very durable; AP belts hurt light tanks",
+"cons": "Smaller bomb load; poor turn, climb and energy retention; slow",
+"tip": "Fly at treetop height near fighter cover; save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/PBJ-1J"
+},
+"PBJ-1H": {
+"style": "Attacker",
+"pros": "Twelve forward MGs; very durable; AP belts hurt light tanks",
+"cons": "Smaller bomb load; poor turn, climb and energy retention; slow",
+"tip": "Fly at treetop height near fighter cover; save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/PBJ-1J"
+},
+"A-20G": {
+"style": "Attacker",
+"pros": "Six nose .50s; dorsal and ventral guns; decent speed and armour",
+"cons": "Poor turn and climb; bleeds energy; big target",
+"tip": "Never turn with fighters; fly low so the dorsal turret covers you, and run to friends.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A-20G-25"
+},
+"A-26B": {
+"style": "Attacker",
+"pros": "Up to 14 forward .50s; varied bombs and rockets; durable and fast down low",
+"cons": "Not maneuverable; no cannons on most; big target, gunner easily knocked out",
+"tip": "Use full throttle to escape fighters; punish greedy head-ons with the nose guns.",
+"verdict": "Excellent ground attacker",
+"src": "https://old-wiki.warthunder.com/A-26B-50"
+},
+"A-26C": {
+"style": "Attacker",
+"pros": "Up to 14 forward .50s; varied bombs and rockets; durable and fast down low",
+"cons": "Not maneuverable; no cannons on most; big target, gunner easily knocked out",
+"tip": "Use full throttle to escape fighters; punish greedy head-ons with the nose guns.",
+"verdict": "Excellent ground attacker",
+"src": "https://old-wiki.warthunder.com/A-26B-50"
+},
+"AD-2": {
+"style": "Attacker",
+"pros": "Huge bomb and rocket loads; four 20 mm; powerful engine",
+"cons": "Bleeds energy in turns; heavy; vulnerable once slow",
+"tip": "Only make brief tight turns, then disengage; use it on ground targets.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/douglas_ad_4"
+},
+"AD-4": {
+"style": "Attacker",
+"pros": "Huge bomb and rocket loads; four 20 mm; powerful engine",
+"cons": "Bleeds energy in turns; heavy; vulnerable once slow",
+"tip": "Only make brief tight turns, then disengage; use it on ground targets.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/douglas_ad_4"
+},
+"A-1H": {
+"style": "Attacker",
+"pros": "Huge bomb and rocket loads; four 20 mm; powerful engine",
+"cons": "Bleeds energy in turns; heavy; vulnerable once slow",
+"tip": "Only make brief tight turns, then disengage; use it on ground targets.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/douglas_ad_4"
+},
+"Bf 109 E": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Good acceleration and climb; good sustained turn with combat flaps; negative-G capable",
+"cons": "Only 60 rounds per cannon; weak low-velocity cannons; controls stiffen above 400 km/h",
+"tip": "Fire short bursts; hit and run, then use flaps if dragged into a turn.",
+"verdict": "Strong energy fighter vs its peers, struggles vs P-47s",
+"src": "https://old-wiki.warthunder.com/Bf_109_E-3"
+},
+"Bf 109 G": {
+"style": "Energy fighter",
+"pros": "Strong climb, even high up; very good energy retention; forgiving at the stall",
+"cons": "Out-turned by most foreign single-engine fighters; overheats; light armament on some variants",
+"tip": "Keep energy high at all times and climb hard early; avoid long flat turn fights and head-ons.",
+"verdict": "The classic energy fighter line",
+"src": "https://old-wiki.warthunder.com/Bf_109_G-6 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"Bf 109 F": {
+"style": "Energy fighter",
+"pros": "Strong climb, even high up; very good energy retention; forgiving at the stall",
+"cons": "Out-turned by most foreign single-engine fighters; overheats; light armament on some variants",
+"tip": "Keep energy high at all times and climb hard early; avoid long flat turn fights and head-ons.",
+"verdict": "The classic energy fighter line",
+"src": "https://old-wiki.warthunder.com/Bf_109_G-6 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"Bf 109 K": {
+"style": "Energy fighter",
+"pros": "Strong climb, even high up; very good energy retention; forgiving at the stall",
+"cons": "Out-turned by most foreign single-engine fighters; overheats; light armament on some variants",
+"tip": "Keep energy high at all times and climb hard early; avoid long flat turn fights and head-ons.",
+"verdict": "The classic energy fighter line",
+"src": "https://old-wiki.warthunder.com/Bf_109_G-6 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"Bf 109 T": {
+"style": "Energy fighter",
+"pros": "Strong climb, even high up; very good energy retention; forgiving at the stall",
+"cons": "Out-turned by most foreign single-engine fighters; overheats; light armament on some variants",
+"tip": "Keep energy high at all times and climb hard early; avoid long flat turn fights and head-ons.",
+"verdict": "The classic energy fighter line",
+"src": "https://old-wiki.warthunder.com/Bf_109_G-6 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"Fw 190 D": {
+"style": "Boom & Zoom",
+"pros": "Good climb; excellent roll; good guns with lots of ammo",
+"cons": "Stiff handling; weak above 5,000 m; bad stall behaviour",
+"tip": "Keep speed high, avoid sustained turns, disengage early when energy drops.",
+"verdict": "Average for its BR",
+"src": "https://old-wiki.warthunder.com/Fw_190_D-9"
+},
+"Ta 152 H": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "30 mm often one-shots; excellent energy retention and dive; very strong above 7 km",
+"cons": "Slow 30 mm is hard to aim; only 90 cannon rounds; snaps in a stall",
+"tip": "Boom & zoom from altitude, then use landing flaps (carefully) to out-turn most fighters.",
+"verdict": "Exceptional for its BR",
+"src": "https://old-wiki.warthunder.com/Ta_152_H-1"
+},
+"Ta 152 C": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "30 mm often one-shots; excellent energy retention and dive; very strong above 7 km",
+"cons": "Slow 30 mm is hard to aim; only 90 cannon rounds; snaps in a stall",
+"tip": "Boom & zoom from altitude, then use landing flaps (carefully) to out-turn most fighters.",
+"verdict": "Exceptional for its BR",
+"src": "https://old-wiki.warthunder.com/Ta_152_H-1"
+},
+"Fw 190 F": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Great roll and high-speed handling; air spawn; up to 1,200 kg of bombs or 30 mm pods",
+"cons": "Heavy and sluggish vs real fighters; poor turn and climb; rudder locks near 650 km/h",
+"tip": "Research turn upgrades first; dive-bomb, then BnZ fighters on the way out.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Fw_190_F-8"
+},
+"Bf 110 G": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Heavy nose guns (G-2: twin 30 mm); sturdy; good in head-ons",
+"cons": "Slow and bulky vs single-engine fighters; big target; 30 mm needs heavy lead",
+"tip": "Dive-bomb below 45°, release bombs one at a time; take head-ons, avoid turning.",
+"verdict": "Strong head-on and as a ground attacker",
+"src": "https://old-wiki.warthunder.com/Bf_110_G-2"
+},
+"Bf 110 F": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Heavy nose guns (G-2: twin 30 mm); sturdy; good in head-ons",
+"cons": "Slow and bulky vs single-engine fighters; big target; 30 mm needs heavy lead",
+"tip": "Dive-bomb below 45°, release bombs one at a time; take head-ons, avoid turning.",
+"verdict": "Strong head-on and as a ground attacker",
+"src": "https://old-wiki.warthunder.com/Bf_110_G-2"
+},
+"Bf 110 C": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Heavy nose guns (G-2: twin 30 mm); sturdy; good in head-ons",
+"cons": "Slow and bulky vs single-engine fighters; big target; 30 mm needs heavy lead",
+"tip": "Dive-bomb below 45°, release bombs one at a time; take head-ons, avoid turning.",
+"verdict": "Strong head-on and as a ground attacker",
+"src": "https://old-wiki.warthunder.com/Bf_110_G-2"
+},
+"Me 410 A": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Agile for a twin; good dive; 50 mm one-shots bombers",
+"cons": "50 mm is inaccurate vs fighters; slow reload; limited belt choice",
+"tip": "Use the big cannon on bombers and ground targets, the MG 151s on fighters.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Me_410_A-1/U4"
+},
+"Me 410 B": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Agile for a twin; good dive; 50 mm one-shots bombers",
+"cons": "50 mm is inaccurate vs fighters; slow reload; limited belt choice",
+"tip": "Use the big cannon on bombers and ground targets, the MG 151s on fighters.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Me_410_A-1/U4"
+},
+"Me 210 A": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Agile for a twin; good dive; 50 mm one-shots bombers",
+"cons": "50 mm is inaccurate vs fighters; slow reload; limited belt choice",
+"tip": "Use the big cannon on bombers and ground targets, the MG 151s on fighters.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Me_410_A-1/U4"
+},
+"Bf 109 B": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Very agile; good energy retention; good slow-speed control",
+"cons": "Only 2-4 rifle-calibre MGs; slow roll; engine easily knocked out",
+"tip": "Out-turn opponents when needed, but aim for the pilot; the guns are weak.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Bf_109_B-1"
+},
+"Bf 109 C": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Very agile; good energy retention; good slow-speed control",
+"cons": "Only 2-4 rifle-calibre MGs; slow roll; engine easily knocked out",
+"tip": "Out-turn opponents when needed, but aim for the pilot; the guns are weak.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Bf_109_B-1"
+},
+"Bf 109 A": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Very agile; good energy retention; good slow-speed control",
+"cons": "Only 2-4 rifle-calibre MGs; slow roll; engine easily knocked out",
+"tip": "Out-turn opponents when needed, but aim for the pilot; the guns are weak.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Bf_109_B-1"
+},
+"He 100 D": {
+"style": "Boom & Zoom",
+"pros": "Fastest plane at its rank; excellent climb and energy retention; strong high up",
+"cons": "Very fragile; only three 7.92 mm MGs; overheats",
+"tip": "Climb early, dive on isolated targets, watch coolant temps.",
+"verdict": "Far faster than anything near its BR",
+"src": "https://old-wiki.warthunder.com/He_100_D-1"
+},
+"He 51 A": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; good speed for a biplane; often underestimated",
+"cons": "Slow vs other reserve planes; no armour; flammable fabric and tanks",
+"tip": "Pick one target and commit; use slow tight turns to escape.",
+"verdict": "Competitive among reserve fighters",
+"src": "https://old-wiki.warthunder.com/He_51_B-1"
+},
+"He 51 B": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; good speed for a biplane; often underestimated",
+"cons": "Slow vs other reserve planes; no armour; flammable fabric and tanks",
+"tip": "Pick one target and commit; use slow tight turns to escape.",
+"verdict": "Competitive among reserve fighters",
+"src": "https://old-wiki.warthunder.com/He_51_B-1"
+},
+"He 51 C": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; good speed for a biplane; often underestimated",
+"cons": "Slow vs other reserve planes; no armour; flammable fabric and tanks",
+"tip": "Pick one target and commit; use slow tight turns to escape.",
+"verdict": "Competitive among reserve fighters",
+"src": "https://old-wiki.warthunder.com/He_51_B-1"
+},
+"Ta 154 A": {
+"style": "Boom & Zoom",
+"pros": "Strong nose cannons; durable; very fast in a straight line",
+"cons": "Flaps rip above 450 km/h; poor low-speed turn; fragile gear",
+"tip": "Keep speed up and only turn as a last resort.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ta_154_A-1"
+},
+"He 219 A": {
+"style": "Attacker / Energy fighter",
+"pros": "Very high burst mass; tough airframe; radar",
+"cons": "Low-velocity 30 mm; below-average maneuverability; overheats",
+"tip": "Attack from above and stay on bombers' tails; use WEP in short bursts.",
+"verdict": "Excellent bomber hunter",
+"src": "https://old-wiki.warthunder.com/He_219_A-7"
+},
+"Do 335 A": {
+"style": "Boom & Zoom",
+"pros": "Tough; heavy 30 mm + 20 mm armament; excellent in dives",
+"cons": "Can't dogfight fighters; long takeoff; rear engine vulnerable",
+"tip": "Dive on bombers, fire at range, and don't linger in fights.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Do_335_B-2"
+},
+"Do 335 B": {
+"style": "Boom & Zoom",
+"pros": "Tough; heavy 30 mm + 20 mm armament; excellent in dives",
+"cons": "Can't dogfight fighters; long takeoff; rear engine vulnerable",
+"tip": "Dive on bombers, fire at range, and don't linger in fights.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Do_335_B-2"
+},
+"Fw 190 A": {
+"style": "Boom & Zoom",
+"pros": "Strong at high speed; good dive and zoom; very fast roll",
+"cons": "Loses turn fights vs Spitfires and other turners",
+"tip": "Side-climb first, then join the highest fight with an altitude edge; fight in the vertical.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/fw-190a-1"
+},
+"Fw 190 C": {
+"style": "Boom & Zoom",
+"pros": "Strong at high speed; good dive and zoom; very fast roll",
+"cons": "Loses turn fights vs Spitfires and other turners",
+"tip": "Side-climb first, then join the highest fight with an altitude edge; fight in the vertical.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/fw-190a-1"
+},
+"Ju 88 C": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Strong centre-mounted 20 mm armament; good climb; durable",
+"cons": "Guns aim below the nose; slow, big target; engines catch fire",
+"tip": "Attack bombers from below or head-on, where their turrets have blind spots.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_88_C-6"
+},
+"Do 217 J": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Strong centre-mounted 20 mm armament; good climb; durable",
+"cons": "Guns aim below the nose; slow, big target; engines catch fire",
+"tip": "Attack bombers from below or head-on, where their turrets have blind spots.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_88_C-6"
+},
+"Do 217 N": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Strong centre-mounted 20 mm armament; good climb; durable",
+"cons": "Guns aim below the nose; slow, big target; engines catch fire",
+"tip": "Attack bombers from below or head-on, where their turrets have blind spots.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_88_C-6"
+},
+"BV 155 B": {
+"style": "Boom & Zoom",
+"pros": "Strong at any altitude with energy; combat flaps; powerful cannons for bombers",
+"cons": "Huge wingspan, easy to hit; slow and weak down low; out-climbed by most fighters",
+"tip": "Avoid head-ons; the windscreen won't stop cannon fire.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/BV_155_B-1"
+},
+"Ju 87 G": {
+"style": "Attacker",
+"pros": "37 mm cannons kill light tanks and pillboxes; armour; good rear turret",
+"cons": "Very slow, poor roll; 12 rounds per cannon; useless vs fighters",
+"tip": "One shot per pass; if you miss, climb out and set up again.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_87_G-1"
+},
+"Bf 109 Z": {
+"style": "Boom & Zoom",
+"pros": "Fast in a straight line; climbs well; heavy 30 mm punch",
+"cons": "Shells drop heavily; sluggish; vulnerable to single-engine fighters",
+"tip": "Climb to bomber altitude at the start and hunt bombers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Bf_109_Z-1"
+},
+"Ju 388 J": {
+"style": "Attacker",
+"pros": "30 mm and 20 mm cannons with Minengeschoß; air spawn in RB",
+"cons": "Weak roll, speed and climb; hard to get guns on target",
+"tip": "Use the air spawn to intercept bombers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_388_J"
+},
+"Ju 87 B": {
+"style": "Dive bomber",
+"pros": "Precise dive bombing with air brakes; big bomb load; good low-speed handling",
+"cons": "Very slow; poor climb; helpless vs fighters",
+"tip": "Dive at ~450 km/h with brakes out, release near 1,000 m, then pull up; use 250 kg+ bombs on tanks.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_87_D-3"
+},
+"Ju 87 R": {
+"style": "Dive bomber",
+"pros": "Precise dive bombing with air brakes; big bomb load; good low-speed handling",
+"cons": "Very slow; poor climb; helpless vs fighters",
+"tip": "Dive at ~450 km/h with brakes out, release near 1,000 m, then pull up; use 250 kg+ bombs on tanks.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_87_D-3"
+},
+"Ju 87 D": {
+"style": "Dive bomber",
+"pros": "Precise dive bombing with air brakes; big bomb load; good low-speed handling",
+"cons": "Very slow; poor climb; helpless vs fighters",
+"tip": "Dive at ~450 km/h with brakes out, release near 1,000 m, then pull up; use 250 kg+ bombs on tanks.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ju_87_D-3"
+},
+"Yak-1B": {
+"style": "Turn fighter",
+"pros": "Fast at low altitude; very agile; sturdy",
+"cons": "No WEP in RB/SB; overheats; low ammo",
+"tip": "Fly at 95-97% throttle and stay below 3,000 m in RB.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-1B"
+},
+"Yak-1": {
+"style": "Turn fighter",
+"pros": "Fast at low altitude; very agile; sturdy",
+"cons": "No WEP in RB/SB; overheats; low ammo",
+"tip": "Fly at 95-97% throttle and stay below 3,000 m in RB.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-1B"
+},
+"Yak-7B": {
+"style": "Turn fighter",
+"pros": "Fast at low altitude; very agile; sturdy",
+"cons": "No WEP in RB/SB; overheats; low ammo",
+"tip": "Fly at 95-97% throttle and stay below 3,000 m in RB.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-1B"
+},
+"Yak-3": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Very maneuverable, excellent roll; fast and quick to accelerate down low; great energy retention",
+"cons": "Low burst mass; weak high up; flammable, low wing rip speed",
+"tip": "Climb to 3-4 km, then drag enemies down low where you're faster. Avoid head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-3"
+},
+"Yak-3P": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Very maneuverable, excellent roll; fast and quick to accelerate down low; great energy retention",
+"cons": "Low burst mass; weak high up; flammable, low wing rip speed",
+"tip": "Climb to 3-4 km, then drag enemies down low where you're faster. Avoid head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-3"
+},
+"Yak-3T": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Very maneuverable, excellent roll; fast and quick to accelerate down low; great energy retention",
+"cons": "Low burst mass; weak high up; flammable, low wing rip speed",
+"tip": "Climb to 3-4 km, then drag enemies down low where you're faster. Avoid head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-3"
+},
+"Yak-9U": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Fast and accelerates well; good handling and turn; good climb and energy retention",
+"cons": "Only 120 cannon rounds; overheats; low wing rip speed",
+"tip": "Climb to ~5 km at 250 km/h IAS and get aggressive once the fight drops lower.",
+"verdict": "Strong; one of the fastest at sea level at its BR",
+"src": "https://old-wiki.warthunder.com/Yak-9U"
+},
+"Yak-9P": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Fast and accelerates well; good handling and turn; good climb and energy retention",
+"cons": "Only 120 cannon rounds; overheats; low wing rip speed",
+"tip": "Climb to ~5 km at 250 km/h IAS and get aggressive once the fight drops lower.",
+"verdict": "Strong; one of the fastest at sea level at its BR",
+"src": "https://old-wiki.warthunder.com/Yak-9U"
+},
+"Yak-9UT": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Fast and accelerates well; good handling and turn; good climb and energy retention",
+"cons": "Only 120 cannon rounds; overheats; low wing rip speed",
+"tip": "Climb to ~5 km at 250 km/h IAS and get aggressive once the fight drops lower.",
+"verdict": "Strong; one of the fastest at sea level at its BR",
+"src": "https://old-wiki.warthunder.com/Yak-9U"
+},
+"Yak-9M": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Fast and accelerates well; good handling and turn; good climb and energy retention",
+"cons": "Only 120 cannon rounds; overheats; low wing rip speed",
+"tip": "Climb to ~5 km at 250 km/h IAS and get aggressive once the fight drops lower.",
+"verdict": "Strong; one of the fastest at sea level at its BR",
+"src": "https://old-wiki.warthunder.com/Yak-9U"
+},
+"Yak-9": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Fast and accelerates well; good handling and turn; good climb and energy retention",
+"cons": "Only 120 cannon rounds; overheats; low wing rip speed",
+"tip": "Climb to ~5 km at 250 km/h IAS and get aggressive once the fight drops lower.",
+"verdict": "Strong; one of the fastest at sea level at its BR",
+"src": "https://old-wiki.warthunder.com/Yak-9U"
+},
+"Yak-9T": {
+"style": "Energy fighter / Turn fighter",
+"pros": "37 mm cannon wrecks bombers; good energy retention; beats most rivals below 4 km",
+"cons": "Weak high up; 37 mm recoil and inaccuracy; only one MG backup",
+"tip": "Set no convergence for the 37 mm and watch engine temps.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-9T"
+},
+"Yak-9K": {
+"style": "Energy fighter / Turn fighter",
+"pros": "37 mm cannon wrecks bombers; good energy retention; beats most rivals below 4 km",
+"cons": "Weak high up; 37 mm recoil and inaccuracy; only one MG backup",
+"tip": "Set no convergence for the 37 mm and watch engine temps.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-9T"
+},
+"Yak-9B": {
+"style": "Energy fighter / Turn fighter",
+"pros": "37 mm cannon wrecks bombers; good energy retention; beats most rivals below 4 km",
+"cons": "Weak high up; 37 mm recoil and inaccuracy; only one MG backup",
+"tip": "Set no convergence for the 37 mm and watch engine temps.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-9T"
+},
+"Yak-3U": {
+"style": "Energy fighter",
+"pros": "Very fast for a prop; excellent agility and energy retention; accurate nose cannons",
+"cons": "Very little ammo; fragile and flammable; weaker above 3.5 km, no WEP",
+"tip": "Short disciplined bursts at engines and fuel tanks.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-3U"
+},
+"La-7": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Very strong below 3 km; quick acceleration and climb; good roll",
+"cons": "Weak above 4 km; cannons chew through ammo; bleeds energy in long turns",
+"tip": "Bait boom-and-zoomers from ~4.5 km, then fight below 3 km where WEP works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-7 ; https://old-wiki.warthunder.com/La-5F"
+},
+"La-7B": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Very strong below 3 km; quick acceleration and climb; good roll",
+"cons": "Weak above 4 km; cannons chew through ammo; bleeds energy in long turns",
+"tip": "Bait boom-and-zoomers from ~4.5 km, then fight below 3 km where WEP works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-7 ; https://old-wiki.warthunder.com/La-5F"
+},
+"La-5FN": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Very strong below 3 km; quick acceleration and climb; good roll",
+"cons": "Weak above 4 km; cannons chew through ammo; bleeds energy in long turns",
+"tip": "Bait boom-and-zoomers from ~4.5 km, then fight below 3 km where WEP works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-7 ; https://old-wiki.warthunder.com/La-5F"
+},
+"La-5F": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Very strong below 3 km; quick acceleration and climb; good roll",
+"cons": "Weak above 4 km; cannons chew through ammo; bleeds energy in long turns",
+"tip": "Bait boom-and-zoomers from ~4.5 km, then fight below 3 km where WEP works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-7 ; https://old-wiki.warthunder.com/La-5F"
+},
+"La-5": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Very strong below 3 km; quick acceleration and climb; good roll",
+"cons": "Weak above 4 km; cannons chew through ammo; bleeds energy in long turns",
+"tip": "Bait boom-and-zoomers from ~4.5 km, then fight below 3 km where WEP works best.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-7 ; https://old-wiki.warthunder.com/La-5F"
+},
+"La-9": {
+"style": "Boom & Zoom",
+"pros": "Excellent below 3.4 km; very high low-altitude speed; great energy retention",
+"cons": "Poor dogfight maneuverability; weak above 4 km; low ammo",
+"tip": "Fire only one cannon pair at a time to stretch ammo.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-9"
+},
+"La-11": {
+"style": "Boom & Zoom",
+"pros": "Excellent below 3.4 km; very high low-altitude speed; great energy retention",
+"cons": "Poor dogfight maneuverability; weak above 4 km; low ammo",
+"tip": "Fire only one cannon pair at a time to stretch ammo.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/La-9"
+},
+"LaGG-3": {
+"style": "Boom & Zoom",
+"pros": "Big cannon options on some versions; fine maneuverability at normal speeds; sturdy",
+"cons": "Cannon inaccurate in long bursts; low MG ammo; poor rear view",
+"tip": "Range with short MG bursts, then fire one or two cannon shells.",
+"verdict": "Strong vs bombers and attackers",
+"src": "https://old-wiki.warthunder.com/LaGG-3-34"
+},
+"I-185": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Strong climb; three nose cannons; great roll",
+"cons": "Poor turn; weak above 4 km; flaps break above 380 km/h",
+"tip": "When chased, dive fast and use roll rate to reverse on pursuers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/I-185_(M-71)"
+},
+"I-180S": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Strong climb; three nose cannons; great roll",
+"cons": "Poor turn; weak above 4 km; flaps break above 380 km/h",
+"tip": "When chased, dive fast and use roll rate to reverse on pursuers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/I-185_(M-71)"
+},
+"I-16 type": {
+"style": "Turn fighter",
+"pros": "Excellent turn; extreme roll rate; four fast ShKAS with lots of ammo",
+"cons": "Very poor speed, climb and energy retention; fragile",
+"tip": "Lure enemies into turn fights; roll to dodge attacks; never dive-race.",
+"verdict": "Very strong turner for its BR, slow",
+"src": "https://old-wiki.warthunder.com/I-16_type_24"
+},
+"I-16": {
+"style": "Turn fighter",
+"pros": "Excellent turn; extreme roll rate; four fast ShKAS with lots of ammo",
+"cons": "Very poor speed, climb and energy retention; fragile",
+"tip": "Lure enemies into turn fights; roll to dodge attacks; never dive-race.",
+"verdict": "Very strong turner for its BR, slow",
+"src": "https://old-wiki.warthunder.com/I-16_type_24"
+},
+"I-153 M-62": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"I-153": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"I-153P": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"I-15": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"I-15 M-22": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"I-15 M-25": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"I-15bis": {
+"style": "Turn fighter",
+"pros": "Outturns almost everything; fast-firing MGs (I-153P: 20 mm); rockets for ground or air",
+"cons": "Slow; fragile and flammable; poor energy retention",
+"tip": "Gain height first, then lure enemies into turns; avoid second passes and head-ons.",
+"verdict": "Very strong turners, speed is their weakness",
+"src": "https://old-wiki.warthunder.com/I-153_M-62 ; https://old-wiki.warthunder.com/I-15bis ; https://old-wiki.warthunder.com/I-153P"
+},
+"MiG-3": {
+"style": "Boom & Zoom",
+"pros": "High speed for its BR; good acceleration and energy retention; good belts",
+"cons": "Poor turn; wings rip at high speed; no cannons on most",
+"tip": "Climb to 3-4 km before engaging; aim for wings and engines.",
+"verdict": "Fast and well-armed for its BR",
+"src": "https://old-wiki.warthunder.com/MiG-3-15_(BK)"
+},
+"IL-2": {
+"style": "Attacker",
+"pros": "Many payload options; strong 20-23 mm cannons; armoured pilot and engine",
+"cons": "Slow acceleration; poor energy retention; weak vs fighters",
+"tip": "Build speed before each run; strafe light targets, save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-2_(1942)"
+},
+"IL-2M": {
+"style": "Attacker",
+"pros": "Many payload options; strong 20-23 mm cannons; armoured pilot and engine",
+"cons": "Slow acceleration; poor energy retention; weak vs fighters",
+"tip": "Build speed before each run; strafe light targets, save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-2_(1942)"
+},
+"IL-2M type": {
+"style": "Attacker",
+"pros": "Many payload options; strong 20-23 mm cannons; armoured pilot and engine",
+"cons": "Slow acceleration; poor energy retention; weak vs fighters",
+"tip": "Build speed before each run; strafe light targets, save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-2_(1942)"
+},
+"IL-2 M-82": {
+"style": "Attacker",
+"pros": "Many payload options; strong 20-23 mm cannons; armoured pilot and engine",
+"cons": "Slow acceleration; poor energy retention; weak vs fighters",
+"tip": "Build speed before each run; strafe light targets, save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-2_(1942)"
+},
+"IL-10": {
+"style": "Attacker",
+"pros": "Many payload options; strong 20-23 mm cannons; armoured pilot and engine",
+"cons": "Slow acceleration; poor energy retention; weak vs fighters",
+"tip": "Build speed before each run; strafe light targets, save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-2_(1942)"
+},
+"IL-8": {
+"style": "Attacker",
+"pros": "Many payload options; strong 20-23 mm cannons; armoured pilot and engine",
+"cons": "Slow acceleration; poor energy retention; weak vs fighters",
+"tip": "Build speed before each run; strafe light targets, save bombs for heavy tanks and pillboxes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-2_(1942)"
+},
+"Tu-1": {
+"style": "Attacker",
+"pros": "Two 45 mm cannons; up to 3 t of bombs; two torpedoes",
+"cons": "Radar mostly useless outside SB; weak vs attacks from above; heavy",
+"tip": "Use API-T in the 45 mm against tank sides and tops.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Tu-1"
+},
+"Pe-3": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Decent forward guns with lots of ammo; sturdy, sealed tanks; air spawn in RB",
+"cons": "Weaker guns than Mosquito/Ki-108; limited bombs; slow and unmaneuverable",
+"tip": "Go after bombers first and avoid turn fights.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Pe-3bis"
+},
+"Pe-3bis": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Decent forward guns with lots of ammo; sturdy, sealed tanks; air spawn in RB",
+"cons": "Weaker guns than Mosquito/Ki-108; limited bombs; slow and unmaneuverable",
+"tip": "Go after bombers first and avoid turn fights.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Pe-3bis"
+},
+"Su-6": {
+"style": "Attacker",
+"pros": "Sturdy armour; strong cannons for ground and air; agile in short bursts",
+"cons": "Poor sustained turn; limited rear gunner arcs; overheats",
+"tip": "Fire the 37 mm in controlled bursts; the 23 mm can stay on full-auto.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Su-6_(AM-42)"
+},
+"Yak-2": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Agile down low; centerline guns; fast enough to intercept",
+"cons": "Light bomb load; no defensive guns; no armoured glass",
+"tip": "Avoid steep dives (controls lock); save cannon ammo, 150 rounds each.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-2_KABB"
+},
+"Su-2": {
+"style": "Attacker",
+"pros": "Strong engine with good maneuverability; armour; ventral gunner",
+"cons": "Stock guns jam quickly; faces tougher opponents at its BR",
+"tip": "Take your time on ground targets; it doesn't need air superiority to work.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Su-2_(M-82)"
+},
+"I-225": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Strong energy retention; excellent high-altitude performance; great climb",
+"cons": "Elevators stiffen above ~650 km/h; no combat flaps; fragile, flammable",
+"tip": "Climb to about 6 km where the engine peaks, and stay above your enemies.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/I-225"
+},
+"Su-8": {
+"style": "Attacker",
+"pros": "Eight fast MGs plus four 45 mm cannons; strong armour; rear gunner",
+"cons": "Sluggish, bleeds energy; compresses in dives; cannon recoil slows it",
+"tip": "",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Su-8"
+},
+"re:^Spitfire Mk ?\\.?I[ab]?\\b": {
+"style": "Turn fighter",
+"pros": "Outstanding turn; excellent climb; good below 4.5 km",
+"cons": "Weak 7.7 mm guns (most variants); poor high-altitude performance; fragile",
+"tip": "Bait enemies into turn fights; boom & zoom only against Japanese planes and biplanes.",
+"verdict": "Above-average speed for its BR",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:^Spitfire Mk\\.?IIa": {
+"style": "Turn fighter",
+"pros": "Outstanding turn; excellent climb; good below 4.5 km",
+"cons": "Weak 7.7 mm guns (most variants); poor high-altitude performance; fragile",
+"tip": "Bait enemies into turn fights; boom & zoom only against Japanese planes and biplanes.",
+"verdict": "Above-average speed for its BR",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:^Spitfire Mk IIb": {
+"style": "Turn fighter",
+"pros": "Outstanding turn; excellent climb; good below 4.5 km",
+"cons": "Weak 7.7 mm guns (most variants); poor high-altitude performance; fragile",
+"tip": "Bait enemies into turn fights; boom & zoom only against Japanese planes and biplanes.",
+"verdict": "Above-average speed for its BR",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:Spitfire Mk Ia": {
+"style": "Turn fighter",
+"pros": "Outstanding turn; excellent climb; good below 4.5 km",
+"cons": "Weak 7.7 mm guns (most variants); poor high-altitude performance; fragile",
+"tip": "Bait enemies into turn fights; boom & zoom only against Japanese planes and biplanes.",
+"verdict": "Above-average speed for its BR",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:^Spitfire Mk V": {
+"style": "Turn fighter",
+"pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
+"cons": "Only 60 rounds per cannon (Vb); wing guns need convergence; overheats on WEP",
+"tip": "Set ~300 m convergence; bait head-ons, then turn onto the enemy's tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
+},
+"re:^Spitfire LF Mk V": {
+"style": "Turn fighter",
+"pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
+"cons": "Only 60 rounds per cannon (Vb); wing guns need convergence; overheats on WEP",
+"tip": "Set ~300 m convergence; bait head-ons, then turn onto the enemy's tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
+},
+"re:^Sea Hurricane": {
+"style": "Turn fighter",
+"pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
+"cons": "Only 60 rounds per cannon (Vb); wing guns need convergence; overheats on WEP",
+"tip": "Set ~300 m convergence; bait head-ons, then turn onto the enemy's tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
+},
+"re:^Seafire LF Mk.III": {
+"style": "Turn fighter",
+"pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
+"cons": "Only 60 rounds per cannon (Vb); wing guns need convergence; overheats on WEP",
+"tip": "Set ~300 m convergence; bait head-ons, then turn onto the enemy's tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
+},
+"re:^Seafire F Mk III": {
+"style": "Turn fighter",
+"pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
+"cons": "Only 60 rounds per cannon (Vb); wing guns need convergence; overheats on WEP",
+"tip": "Set ~300 m convergence; bait head-ons, then turn onto the enemy's tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
+},
+"re:^Spitfire (F|LF|HF|FR)? ?Mk ?IX": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire F Mk IX": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire LF Mk IX": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire Mk IXc": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire LF Mk IXc": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire Mk XVI": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire LF Mk XVI": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire F Mk ?(XIV|XVIII|22|24)": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Griffon engine: excellent climb, acceleration and top speed; strong at medium-high altitude; (Mk 22/24) four 20 mm",
+"cons": "Wings can shear at high speed; WEP burns fuel; weak low and slow",
+"tip": "Fight at medium-high altitude; around 400-500 km/h it still turns well.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_24"
+},
+"re:^Spitfire FR Mk ?(XIV|XVIII)": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Griffon engine: excellent climb, acceleration and top speed; strong at medium-high altitude; (Mk 22/24) four 20 mm",
+"cons": "Wings can shear at high speed; WEP burns fuel; weak low and slow",
+"tip": "Fight at medium-high altitude; around 400-500 km/h it still turns well.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_24"
+},
+"re:^Seafire FR 47": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Griffon engine: excellent climb, acceleration and top speed; strong at medium-high altitude; (Mk 22/24) four 20 mm",
+"cons": "Wings can shear at high speed; WEP burns fuel; weak low and slow",
+"tip": "Fight at medium-high altitude; around 400-500 km/h it still turns well.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_24"
+},
+"re:^Spitfire F Mk XIVe": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Griffon engine: excellent climb, acceleration and top speed; strong at medium-high altitude; (Mk 22/24) four 20 mm",
+"cons": "Wings can shear at high speed; WEP burns fuel; weak low and slow",
+"tip": "Fight at medium-high altitude; around 400-500 km/h it still turns well.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_24"
+},
+"re:^Spitfire F Mk XIVc": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Griffon engine: excellent climb, acceleration and top speed; strong at medium-high altitude; (Mk 22/24) four 20 mm",
+"cons": "Wings can shear at high speed; WEP burns fuel; weak low and slow",
+"tip": "Fight at medium-high altitude; around 400-500 km/h it still turns well.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_24"
+},
+"Tempest Mk V": {
+"style": "Boom & Zoom",
+"pros": "Good climb; excellent dive acceleration; four 20 mm with lots of ammo",
+"cons": "Weak engine high up; poor low-speed handling",
+"tip": "Stay above ~480 km/h vs Bf 109s and below 6,000 m.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Tempest_Mk_V"
+},
+"Typhoon Mk Ia": {
+"style": "Boom & Zoom",
+"pros": "Hard-hitting guns; fast in dives; sturdy",
+"cons": "Overheats on WEP; slow roll; big target",
+"tip": "Climb early (it carries 1,000 lb bombs well); attack in shallow dives and leave at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Typhoon_Mk_Ib"
+},
+"Typhoon Mk Ib": {
+"style": "Boom & Zoom",
+"pros": "Hard-hitting guns; fast in dives; sturdy",
+"cons": "Overheats on WEP; slow roll; big target",
+"tip": "Climb early (it carries 1,000 lb bombs well); attack in shallow dives and leave at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Typhoon_Mk_Ib"
+},
+"Typhoon Mk Ib-L": {
+"style": "Boom & Zoom",
+"pros": "Hard-hitting guns; fast in dives; sturdy",
+"cons": "Overheats on WEP; slow roll; big target",
+"tip": "Climb early (it carries 1,000 lb bombs well); attack in shallow dives and leave at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Typhoon_Mk_Ib"
+},
+"Tempest Mk II": {
+"style": "Boom & Zoom",
+"pros": "Strong engine below 3 km; fast acceleration and dive; very fast in level flight",
+"cons": "Loses power above ~3 km; poor turn; hard to aim at speed",
+"tip": "Stay around 2.5-3.5 km, dive on targets and use speed to escape.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Tempest_Mk_II"
+},
+"Hurricane Mk I-L": {
+"style": "Turn fighter",
+"pros": "Excellent turning; 8-12 guns with lots of ammo; steady, easy to aim",
+"cons": "Slower than peers, especially high up; .303s weak vs bombers",
+"tip": "Use short bursts; boom & zoom when you have height, turn when you don't.",
+"verdict": "Comfortable against most planes at its rank",
+"src": "https://old-wiki.warthunder.com/Hurricane_Mk_I/L"
+},
+"Hurricane Mk.I-L": {
+"style": "Turn fighter",
+"pros": "Excellent turning; 8-12 guns with lots of ammo; steady, easy to aim",
+"cons": "Slower than peers, especially high up; .303s weak vs bombers",
+"tip": "Use short bursts; boom & zoom when you have height, turn when you don't.",
+"verdict": "Comfortable against most planes at its rank",
+"src": "https://old-wiki.warthunder.com/Hurricane_Mk_I/L"
+},
+"Hurricane Mk IIB": {
+"style": "Turn fighter",
+"pros": "Excellent turning; 8-12 guns with lots of ammo; steady, easy to aim",
+"cons": "Slower than peers, especially high up; .303s weak vs bombers",
+"tip": "Use short bursts; boom & zoom when you have height, turn when you don't.",
+"verdict": "Comfortable against most planes at its rank",
+"src": "https://old-wiki.warthunder.com/Hurricane_Mk_I/L"
+},
+"Hurricane Mk IIB-Trop": {
+"style": "Turn fighter",
+"pros": "Excellent turning; 8-12 guns with lots of ammo; steady, easy to aim",
+"cons": "Slower than peers, especially high up; .303s weak vs bombers",
+"tip": "Use short bursts; boom & zoom when you have height, turn when you don't.",
+"verdict": "Comfortable against most planes at its rank",
+"src": "https://old-wiki.warthunder.com/Hurricane_Mk_I/L"
+},
+"Sea Hurricane Mk": {
+"style": "Turn fighter",
+"pros": "Excellent turning; 8-12 guns with lots of ammo; steady, easy to aim",
+"cons": "Slower than peers, especially high up; .303s weak vs bombers",
+"tip": "Use short bursts; boom & zoom when you have height, turn when you don't.",
+"verdict": "Comfortable against most planes at its rank",
+"src": "https://old-wiki.warthunder.com/Hurricane_Mk_I/L"
+},
+"Sea Fury FB": {
+"style": "Boom & Zoom",
+"pros": "Four 20 mm with large ammo; excellent dive; fast for a prop",
+"cons": "Poor turn at most speeds; out-maneuvered by some rivals; wing cannons",
+"tip": "Climb, dive, and make repeated passes; avoid turning fights.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Sea_Fury_FB_11"
+},
+"re:^Seafire F Mk XVII": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; good low-altitude climb; decent bomb load",
+"cons": "Weak high up; 7.7 mm MGs do little; few cannon rounds",
+"tip": "Stay below ~2,500 m; close in and fire short bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Seafire_F_Mk_XVII"
+},
+"Gladiator Mk II": {
+"style": "Turn fighter",
+"pros": "Armament matches or beats rivals; strong turn; tracer belts work well",
+"cons": "Slow acceleration and top speed; bleeds speed in turns; weak climb",
+"tip": "Set ~300 m convergence; drag monoplanes into tight turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Gladiator_Mk_II"
+},
+"Gladiator Mk IIF": {
+"style": "Turn fighter",
+"pros": "Armament matches or beats rivals; strong turn; tracer belts work well",
+"cons": "Slow acceleration and top speed; bleeds speed in turns; weak climb",
+"tip": "Set ~300 m convergence; drag monoplanes into tight turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Gladiator_Mk_II"
+},
+"Gladiator Mk IIS": {
+"style": "Turn fighter",
+"pros": "Armament matches or beats rivals; strong turn; tracer belts work well",
+"cons": "Slow acceleration and top speed; bleeds speed in turns; weak climb",
+"tip": "Set ~300 m convergence; drag monoplanes into tight turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Gladiator_Mk_II"
+},
+"Gladiator Mk I": {
+"style": "Turn fighter",
+"pros": "Armament matches or beats rivals; strong turn; tracer belts work well",
+"cons": "Slow acceleration and top speed; bleeds speed in turns; weak climb",
+"tip": "Set ~300 m convergence; drag monoplanes into tight turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Gladiator_Mk_II"
+},
+"Sea Gladiator": {
+"style": "Turn fighter",
+"pros": "Armament matches or beats rivals; strong turn; tracer belts work well",
+"cons": "Slow acceleration and top speed; bleeds speed in turns; weak climb",
+"tip": "Set ~300 m convergence; drag monoplanes into tight turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Gladiator_Mk_II"
+},
+"Fury Mk I": {
+"style": "Turn fighter",
+"pros": "Fantastic turn and roll; very low stall speed; good climb",
+"cons": "Slow; only two rifle-calibre guns; no armour",
+"tip": "Go for tail shots; dive on enemies that out-turn you rather than going head-on.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Fury_Mk_II ; https://old-wiki.warthunder.com/Nimrod_Mk_II"
+},
+"Fury Mk II": {
+"style": "Turn fighter",
+"pros": "Fantastic turn and roll; very low stall speed; good climb",
+"cons": "Slow; only two rifle-calibre guns; no armour",
+"tip": "Go for tail shots; dive on enemies that out-turn you rather than going head-on.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Fury_Mk_II ; https://old-wiki.warthunder.com/Nimrod_Mk_II"
+},
+"Nimrod Mk I": {
+"style": "Turn fighter",
+"pros": "Fantastic turn and roll; very low stall speed; good climb",
+"cons": "Slow; only two rifle-calibre guns; no armour",
+"tip": "Go for tail shots; dive on enemies that out-turn you rather than going head-on.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Fury_Mk_II ; https://old-wiki.warthunder.com/Nimrod_Mk_II"
+},
+"Nimrod Mk II": {
+"style": "Turn fighter",
+"pros": "Fantastic turn and roll; very low stall speed; good climb",
+"cons": "Slow; only two rifle-calibre guns; no armour",
+"tip": "Go for tail shots; dive on enemies that out-turn you rather than going head-on.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Fury_Mk_II ; https://old-wiki.warthunder.com/Nimrod_Mk_II"
+},
+"Mosquito FB Mk": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Agile and responsive; four nose cannons; stable gun platform",
+"cons": "Big engines easily damaged; wooden airframe is fragile; heavy fuel load",
+"tip": "Single diving attacks, keep speed up; open fire around 400-500 m with Air Targets belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Mosquito_FB_Mk_VI"
+},
+"Mosquito NF.Mk.II": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Agile and responsive; four nose cannons; stable gun platform",
+"cons": "Big engines easily damaged; wooden airframe is fragile; heavy fuel load",
+"tip": "Single diving attacks, keep speed up; open fire around 400-500 m with Air Targets belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Mosquito_FB_Mk_VI"
+},
+"Mosquito TR.Mk.33": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Agile and responsive; four nose cannons; stable gun platform",
+"cons": "Big engines easily damaged; wooden airframe is fragile; heavy fuel load",
+"tip": "Single diving attacks, keep speed up; open fire around 400-500 m with Air Targets belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Mosquito_FB_Mk_VI"
+},
+"Beaufighter Mk VIc": {
+"style": "Attacker",
+"pros": "Four 20 mm often kill in one burst; good turn for a heavy fighter; sturdy",
+"cons": "Slow; stock cannons jam; weak single rear gun",
+"tip": "Hunt bombers; take 500 lb bombs over 250 lb for ground targets.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Beaufighter_Mk_VIc"
+},
+"Beaufighter Mk X": {
+"style": "Attacker",
+"pros": "Four 20 mm often kill in one burst; good turn for a heavy fighter; sturdy",
+"cons": "Slow; stock cannons jam; weak single rear gun",
+"tip": "Hunt bombers; take 500 lb bombs over 250 lb for ground targets.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Beaufighter_Mk_VIc"
+},
+"Beaufighter Mk 21": {
+"style": "Attacker",
+"pros": "Four 20 mm often kill in one burst; good turn for a heavy fighter; sturdy",
+"cons": "Slow; stock cannons jam; weak single rear gun",
+"tip": "Hunt bombers; take 500 lb bombs over 250 lb for ground targets.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Beaufighter_Mk_VIc"
+},
+"Beaufighter Mk I": {
+"style": "Attacker",
+"pros": "Four 20 mm often kill in one burst; good turn for a heavy fighter; sturdy",
+"cons": "Slow; stock cannons jam; weak single rear gun",
+"tip": "Hunt bombers; take 500 lb bombs over 250 lb for ground targets.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Beaufighter_Mk_VIc"
+},
+"Firecrest": {
+"style": "Attacker",
+"pros": "Fast-firing guns; good top speed; durable",
+"cons": "Bleeds speed, poor low-speed handling; 300 rounds per gun; no armour",
+"tip": "Best in naval battles: torpedo cargo ships from low level, side-on.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Firecrest"
+},
+"MB.5": {
+"style": "Boom & Zoom",
+"pros": "Excellent top and dive speed; great climb; fast high-speed turn",
+"cons": "Bleeds energy in turns; poor pitch authority; exposed pilot",
+"tip": "Make fast passes, then climb away; flat-turn to bleed a chaser's energy.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/MB.5"
+},
+"Hornet Mk.III": {
+"style": "Boom & Zoom",
+"pros": "Four fast-firing Hispano cannons; one of the fastest props at all altitudes; strong climb",
+"cons": "Poor roll and turn; wooden airframe, fires are serious; weaker high up",
+"tip": "Keep speed and height, make passes and extend; never get into one-circle turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Hornet_Mk.III"
+},
+"Hornet Mk.I": {
+"style": "Boom & Zoom",
+"pros": "Four fast-firing Hispano cannons; one of the fastest props at all altitudes; strong climb",
+"cons": "Poor roll and turn; wooden airframe, fires are serious; weaker high up",
+"tip": "Keep speed and height, make passes and extend; never get into one-circle turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Hornet_Mk.III"
+},
+"Whirlwind Mk I": {
+"style": "Boom & Zoom",
+"pros": "Four nose 20 mm; strong in head-ons; can carry bombs",
+"cons": "Underpowered, poor climb; 60 rounds per gun; low wing break speed",
+"tip": "Get very close before firing; careful with combat flaps at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Whirlwind_Mk_I"
+},
+"Whirlwind P.9": {
+"style": "Boom & Zoom",
+"pros": "Four nose 20 mm; strong in head-ons; can carry bombs",
+"cons": "Underpowered, poor climb; 60 rounds per gun; low wing break speed",
+"tip": "Get very close before firing; careful with combat flaps at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Whirlwind_Mk_I"
+},
+"Firefly F Mk": {
+"style": "Attacker / Turn fighter",
+"pros": "Four 20 mm Hispanos; reasonably maneuverable with flaps; up to 2× 1,000 lb bombs",
+"cons": "Slow; poor climb; stock cannons overheat",
+"tip": "Use the air spawn to strike ground targets early; 1-2 second bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Firefly_F_Mk_I"
+},
+"Firefly FR Mk": {
+"style": "Attacker / Turn fighter",
+"pros": "Four 20 mm Hispanos; reasonably maneuverable with flaps; up to 2× 1,000 lb bombs",
+"cons": "Slow; poor climb; stock cannons overheat",
+"tip": "Use the air spawn to strike ground targets early; 1-2 second bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Firefly_F_Mk_I"
+},
+"Firebrand TF": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Strong armament for its BR; lots of ammo; small turn radius",
+"cons": "Very poor handling; big target; weak high up",
+"tip": "Side-climb, then shallow-dive onto targets; pull up early.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Firebrand_TF_Mk_IV"
+},
+"Boomerang Mk I": {
+"style": "Turn fighter",
+"pros": "Tight turn and good roll down low; 4,000 MG rounds; decent climb",
+"cons": "Weak above ~4 km; mediocre speed; only 120 cannon rounds",
+"tip": "Stay low and turn-fight; use the Brownings on ground targets too.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Boomerang_Mk_I_(Great_Britain)"
+},
+"Boomerang Mk II": {
+"style": "Turn fighter",
+"pros": "Tight turn and good roll down low; 4,000 MG rounds; decent climb",
+"cons": "Weak above ~4 km; mediocre speed; only 120 cannon rounds",
+"tip": "Stay low and turn-fight; use the Brownings on ground targets too.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Boomerang_Mk_I_(Great_Britain)"
+},
+"Ki-43": {
+"style": "Turn fighter",
+"pros": "Excellent turn and roll; good acceleration and climb; forgiving handling",
+"cons": "Very fragile; light guns, no armour; rudder locks above ~450 km/h",
+"tip": "Use combat flaps in turn fights and stay under ~450 km/h; boom & zoom only from a height advantage.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-43-II_(USA)"
+},
+"Ki-27": {
+"style": "Turn fighter",
+"pros": "Excellent turn and roll; good acceleration and climb; forgiving handling",
+"cons": "Very fragile; light guns, no armour; rudder locks above ~450 km/h",
+"tip": "Use combat flaps in turn fights and stay under ~450 km/h; boom & zoom only from a height advantage.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-43-II_(USA)"
+},
+"Ki-61": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Outstanding climb; decent dive; 400-500 rounds per gun",
+"cons": "Weak firepower vs armoured targets; locks up at high speed; no frontal armour",
+"tip": "Don't turn with Spitfires or Zeros; climb and boom & zoom.",
+"verdict": "Jack of all trades",
+"src": "https://old-wiki.warthunder.com/Ki-61-I_otsu"
+},
+"Ki-84": {
+"style": "Energy fighter",
+"pros": "Strong climb; good top speed and energy retention; quick acceleration",
+"cons": "Fragile; slow roll; rudder locks above 650 km/h",
+"tip": "Keep the altitude advantage and pick your fights; avoid head-ons with bombers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-84_ko"
+},
+"Ki-100": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Nose 20 mm good in head-ons; flexible style; good climb",
+"cons": "Low-velocity cannons weak at range; poor survivability",
+"tip": "Dive from ~1 km above, fire a short burst, extend in a shallow climb; don't turn too long.",
+"verdict": "Out-maneuvers most planes at its BR",
+"src": "https://old-wiki.warthunder.com/Ki-100"
+},
+"A6M2": {
+"style": "Turn fighter",
+"pros": "Extremely maneuverable; very short takeoff; decent cannons",
+"cons": "Little ammo; slow, compresses in dives; very low wing rip speed",
+"tip": "Dogfight at 370-400 km/h below 6 km; aim with the MGs, finish with cannons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A6M2"
+},
+"A6M3": {
+"style": "Turn fighter",
+"pros": "Extremely maneuverable; very short takeoff; decent cannons",
+"cons": "Little ammo; slow, compresses in dives; very low wing rip speed",
+"tip": "Dogfight at 370-400 km/h below 6 km; aim with the MGs, finish with cannons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A6M2"
+},
+"A6M2-N": {
+"style": "Turn fighter",
+"pros": "Extremely maneuverable; very short takeoff; decent cannons",
+"cons": "Little ammo; slow, compresses in dives; very low wing rip speed",
+"tip": "Dogfight at 370-400 km/h below 6 km; aim with the MGs, finish with cannons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A6M2"
+},
+"A6M5": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Top-tier agility; responsive in all axes; short takeoff",
+"cons": "Very vulnerable to boom & zoom; slow, bleeds speed; no self-sealing tanks",
+"tip": "Pick fights carefully; dogfight only when needed since turning burns the speed you need later.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A6M5"
+},
+"A6M6c": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Top-tier agility; responsive in all axes; short takeoff",
+"cons": "Very vulnerable to boom & zoom; slow, bleeds speed; no self-sealing tanks",
+"tip": "Pick fights carefully; dogfight only when needed since turning burns the speed you need later.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A6M5"
+},
+"A7M2": {
+"style": "Turn fighter",
+"pros": "Good turn; low drag; big ammo pool",
+"cons": "Large, flimsy wings; very slow roll",
+"tip": "Fight low where it shines; aim center mass in turns, elevators when tailing.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A7M2"
+},
+"A7M1": {
+"style": "Turn fighter",
+"pros": "Good turn; low drag; big ammo pool",
+"cons": "Large, flimsy wings; very slow roll",
+"tip": "Fight low where it shines; aim center mass in turns, elevators when tailing.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A7M2"
+},
+"A5M4": {
+"style": "Turn fighter",
+"pros": "Extremely maneuverable; excellent turn; very short takeoff",
+"cons": "Slow; weak guns; fragile, no self-sealing tanks",
+"tip": "Stay low and turn onto tails; use speed against biplanes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A5M4"
+},
+"Ki-10": {
+"style": "Turn fighter",
+"pros": "Good maneuverability; low stall speed; fast for a biplane",
+"cons": "Weak armour; very weak guns; fragile wings",
+"tip": "Fight very low; aim for wings; stick with your team.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-10-I"
+},
+"Ki-45": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Nose 37 mm (Ki-109: 75 mm) wrecks bombers; agile for a heavy fighter; can carry bombs",
+"cons": "Out-turned by single-engine fighters; fire-prone; limited ammo",
+"tip": "Hunt bombers; bind a key for the upward-firing 20 mm guns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-45_tei"
+},
+"Ki-109": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Nose 37 mm (Ki-109: 75 mm) wrecks bombers; agile for a heavy fighter; can carry bombs",
+"cons": "Out-turned by single-engine fighters; fire-prone; limited ammo",
+"tip": "Hunt bombers; bind a key for the upward-firing 20 mm guns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-45_tei"
+},
+"Ki-102": {
+"style": "Attacker",
+"pros": "57 mm with a fast fire rate; decent total firepower; self-sealing tanks",
+"cons": "57 mm scatters after two shots; slow for its BR",
+"tip": "Fire the 57 mm one shot at a time; hunt bombers or soft ground targets.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-102_otsu"
+},
+"Ki-108": {
+"style": "Attacker",
+"pros": "57 mm with a fast fire rate; decent total firepower; self-sealing tanks",
+"cons": "57 mm scatters after two shots; slow for its BR",
+"tip": "Fire the 57 mm one shot at a time; hunt bombers or soft ground targets.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-102_otsu"
+},
+"J1N1": {
+"style": "Attacker",
+"pros": "Four rear-facing 7.7 mm; agile for its size; twin engines",
+"cons": "Little ammo; one gunner for all guns; poor protection",
+"tip": "Fly low to lure enemies into your gunners; attack bombers from below and ahead.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J1N1"
+},
+"Ki-83": {
+"style": "Boom & Zoom",
+"pros": "Strong climb for a twin; heavy Ho-155 cannons; fast with good energy retention",
+"cons": "Big target, no engine armour; overheats; limited ammo",
+"tip": "Climb on WEP to 6.5 km+, then dive on enemies below; use all-tracer belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-83"
+},
+"J7W1": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Four nose 30 mm; good high-speed handling and dive; rear engine safe from front hits",
+"cons": "Very slow sustained turn; rear engine vulnerable when chased; flammable tanks",
+"tip": "Stay fast, climb above enemies, and never let anyone sit on your tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J7W1"
+},
+"Ki-44": {
+"style": "Boom & Zoom",
+"pros": "Very fast at any altitude; strong climb and acceleration; four accurate 12.7 mm (Hei)",
+"cons": "Overheats on WEP; very fragile; unstable when slow or banked",
+"tip": "Climb high early; BnZ fighters, make fast passes on bombers; use WEP only when needed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-44-II_hei"
+},
+"N1K2-J": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Good mid-speed maneuverability; great energy retention; 900 rounds",
+"cons": "Mediocre roll; stiffens badly at high speed; catches fire easily",
+"tip": "Fight at 300-500 km/h; don't trade speed with faster superprops.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/N1K2-J"
+},
+"N1K2-Ja": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Good mid-speed maneuverability; great energy retention; 900 rounds",
+"cons": "Mediocre roll; stiffens badly at high speed; catches fire easily",
+"tip": "Fight at 300-500 km/h; don't trade speed with faster superprops.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/N1K2-J"
+},
+"J2M2": {
+"style": "Energy fighter",
+"pros": "800 rounds; very high climb; excellent high-altitude performance",
+"cons": "Poor at high speed; fire-prone; turns poorly when fast",
+"tip": "Climb high and make surprise diving attacks; try Stealth belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J2M3"
+},
+"J2M3": {
+"style": "Energy fighter",
+"pros": "800 rounds; very high climb; excellent high-altitude performance",
+"cons": "Poor at high speed; fire-prone; turns poorly when fast",
+"tip": "Climb high and make surprise diving attacks; try Stealth belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J2M3"
+},
+"J2M4": {
+"style": "Energy fighter",
+"pros": "800 rounds; very high climb; excellent high-altitude performance",
+"cons": "Poor at high speed; fire-prone; turns poorly when fast",
+"tip": "Climb high and make surprise diving attacks; try Stealth belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J2M3"
+},
+"J2M5": {
+"style": "Energy fighter",
+"pros": "800 rounds; very high climb; excellent high-altitude performance",
+"cons": "Poor at high speed; fire-prone; turns poorly when fast",
+"tip": "Climb high and make surprise diving attacks; try Stealth belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J2M3"
+},
+"N1K1-Ja": {
+"style": "Turn fighter",
+"pros": "Good mid-speed maneuverability; strong energy retention; four 20 mm",
+"cons": "Low top speed; mediocre roll, stiff when fast; catches fire",
+"tip": "Climb to 3-4 km and force turn fights at 350-450 km/h; don't chase faster climbers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/N1K1-Ja"
+},
+"N1K1": {
+"style": "Boom & Zoom",
+"pros": "Good BnZ ability; self-sealing tanks, some armour; 20 mm with lots of ammo",
+"cons": "Weak airframe; floats hurt energy retention; wings fail in dives",
+"tip": "Set convergence to 150-250 m; dive, strike, climb back.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/N1K1"
+},
+"J6K1": {
+"style": "Energy fighter",
+"pros": "Six 20 mm cannons; decent turn; good combat flaps",
+"cons": "Fragile; very poor climb; slow vs most rivals",
+"tip": "Fight above 4 km where the engine works; hunt bombers and get help vs Bearcats.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J6K1"
+},
+"Ki-87": {
+"style": "Boom & Zoom",
+"pros": "High-altitude bomber interception; 30 mm and 20 mm cannons; dives fast",
+"cons": "Needs manual engine control; poor energy retention, sluggish turns; mediocre climb",
+"tip": "Side-climb to ~6 km, dive on bombers in short bursts; stay above 3 km.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-87"
+},
+"Ki-94": {
+"style": "Boom & Zoom",
+"pros": "High-altitude bomber interception; 30 mm and 20 mm cannons; dives fast",
+"cons": "Needs manual engine control; poor energy retention, sluggish turns; mediocre climb",
+"tip": "Side-climb to ~6 km, dive on bombers in short bursts; stay above 3 km.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-87"
+},
+"J5N1": {
+"style": "Boom & Zoom",
+"pros": "Nose 30 mm and 20 mm; fast for a twin; good vertical energy",
+"cons": "Fires usually fatal; weak rudder; mediocre roll",
+"tip": "Stay high, hunt bombers, and fight Soviet planes above 4 km.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J5N1"
+},
+"A7He1": {
+"style": "Boom & Zoom",
+"pros": "Strong firepower; high speed; stable",
+"cons": "Mediocre sustained turn; low cannon ammo; poor high-speed handling",
+"tip": "Aim for control surfaces; a damaged elevator brings planes down.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/A7He1"
+},
+"re:^C\\. ?202": {
+"style": "Boom & Zoom",
+"pros": "Among the fastest fighters of its era; strong climb; good roll below 600 km/h",
+"cons": "Wider turn than the C.200; weak twin 12.7 mm; poor ballistics",
+"tip": "Climb to 4-5 km and boom & zoom; fight Hellcats above 400 km/h.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/C._202"
+},
+"re:^C\\. ?205": {
+"style": "Boom & Zoom",
+"pros": "Good for BnZ; twin 20 mm; good above 4 km",
+"cons": "Average climb; sluggish when slow; stock cannons spread",
+"tip": "Climb steeply to 4 km, level off to regain speed, then engage.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/C._205_serie_3"
+},
+"G.50 serie": {
+"style": "Turn fighter",
+"pros": "Good cockpit view; decent climb; good dogfighter",
+"cons": "Modest armament; poor level acceleration; overheats",
+"tip": "Only fire inside ~300 m; dive away when a fight turns bad.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G.50_serie_2"
+},
+"G.50 AS": {
+"style": "Turn fighter",
+"pros": "Good cockpit view; decent climb; good dogfighter",
+"cons": "Modest armament; poor level acceleration; overheats",
+"tip": "Only fire inside ~300 m; dive away when a fight turns bad.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G.50_serie_2"
+},
+"CR.42": {
+"style": "Turn fighter",
+"pros": "Fast for a biplane; big ammo supply; well armed for a biplane",
+"cons": "Poor energy retention; light vs monoplanes; little armour",
+"tip": "Climb to medium altitude and spiral-climb to make monoplanes stall; use Air Targets belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/CR.42"
+},
+"C.R.42": {
+"style": "Turn fighter",
+"pros": "Fast for a biplane; big ammo supply; well armed for a biplane",
+"cons": "Poor energy retention; light vs monoplanes; little armour",
+"tip": "Climb to medium altitude and spiral-climb to make monoplanes stall; use Air Targets belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/CR.42"
+},
+"CR.32": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "12.7 mm guns set targets on fire; nose guns need little convergence; good dive",
+"cons": "Very poor roll; small ammo pool; no pilot armour",
+"tip": "Keep altitude and avoid long turning fights vs monoplanes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/CR.32"
+},
+"Re.2005 serie": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Strong armament with lots of ammo; spectacular maneuverability; solid climb",
+"cons": "Slower than many rivals; weak down low; wings fragile in hard maneuvers",
+"tip": "Fight mid-high; use reversals against boom-and-zoomers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2005_serie_0"
+},
+"Re.2005": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Strong armament with lots of ammo; spectacular maneuverability; solid climb",
+"cons": "Slower than many rivals; weak down low; wings fragile in hard maneuvers",
+"tip": "Fight mid-high; use reversals against boom-and-zoomers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2005_serie_0"
+},
+"G.56": {
+"style": "Energy fighter",
+"pros": "Strong acceleration and top speed; excellent maneuverability; large ammo reserve",
+"cons": "Mediocre roll; stiff at high speed; draggy radiator",
+"tip": "Fight at 5-6 km above 370 km/h; climb back up instead of fighting low.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G.56"
+},
+"G.55": {
+"style": "Energy fighter",
+"pros": "Strong acceleration and top speed; excellent maneuverability; large ammo reserve",
+"cons": "Mediocre roll; stiff at high speed; draggy radiator",
+"tip": "Fight at 5-6 km above 370 km/h; climb back up instead of fighting low.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G.56"
+},
+"G.55 serie": {
+"style": "Energy fighter",
+"pros": "Strong acceleration and top speed; excellent maneuverability; large ammo reserve",
+"cons": "Mediocre roll; stiff at high speed; draggy radiator",
+"tip": "Fight at 5-6 km above 370 km/h; climb back up instead of fighting low.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G.56"
+},
+"G.55S": {
+"style": "Energy fighter",
+"pros": "Strong acceleration and top speed; excellent maneuverability; large ammo reserve",
+"cons": "Mediocre roll; stiff at high speed; draggy radiator",
+"tip": "Fight at 5-6 km above 370 km/h; climb back up instead of fighting low.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G.56"
+},
+"Re.2001 serie": {
+"style": "Turn fighter",
+"pros": "Turns with Spitfires; excellent visibility; decent climb",
+"cons": "Overheats; weak firepower; no armoured windscreen",
+"tip": "Climb first, then drag light fighters into turns; break off early in head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2001_serie_1"
+},
+"Re.2001": {
+"style": "Turn fighter",
+"pros": "Turns with Spitfires; excellent visibility; decent climb",
+"cons": "Overheats; weak firepower; no armoured windscreen",
+"tip": "Climb first, then drag light fighters into turns; break off early in head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2001_serie_1"
+},
+"Re.2000 serie": {
+"style": "Turn fighter",
+"pros": "Turns with Spitfires; excellent visibility; decent climb",
+"cons": "Overheats; weak firepower; no armoured windscreen",
+"tip": "Climb first, then drag light fighters into turns; break off early in head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2001_serie_1"
+},
+"Re.2000": {
+"style": "Turn fighter",
+"pros": "Turns with Spitfires; excellent visibility; decent climb",
+"cons": "Overheats; weak firepower; no armoured windscreen",
+"tip": "Climb first, then drag light fighters into turns; break off early in head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2001_serie_1"
+},
+"Re.2002": {
+"style": "Attacker",
+"pros": "Good payload for its rank; lots of ammo; strong vs light ground targets",
+"cons": "Subpar agility; slow climb; overheats",
+"tip": "Hit-and-run ground strikes; ambush low enemy attackers with brief WEP.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2002_Early"
+},
+"IAR-81C": {
+"style": "Attacker / Energy fighter",
+"pros": "Strong multirole; powerful HE cannon rounds; bombs and rockets",
+"cons": "Nothing stands out as a fighter; controls lock at high speed; weak cannon AP",
+"tip": "Climb early to contest the air, then strike ground targets; don't fly level for long near AA.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IAR-81C"
+},
+"Ro.57": {
+"style": "Attacker / Energy fighter",
+"pros": "Powerful nose guns; flies on one engine; agile for a twin",
+"cons": "Little cannon ammo; no armour; overheats",
+"tip": "Drop bombs before engaging planes; build height first, intercept bombers.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ro.57_Quadriarma"
+},
+"SM.92": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Heavy firepower, big ammo; strong head-on and BnZ; good interceptor",
+"cons": "Poor convergence in turns; narrow rear turret arc; big target",
+"tip": "Climb on WEP to ~2 km before choosing a role; both bombs drop together.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/SM.92"
+},
+"SM.91": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Devastating nose cannons; strong head-on; surprisingly good turn",
+"cons": "No armour; big target; tail snaps under fire",
+"tip": "Climb to 3.5-5 km over friendly ground, dive unseen, open fire at 300-500 m.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/SM.91"
+},
+"Breda": {
+"style": "Boom & Zoom",
+"pros": "Huge fuel load; armament ignites tanks well; bombs barely hurt performance",
+"cons": "Poor roll, turn and climb; no armour; weak rear defence",
+"tip": "Boom-and-run from altitude; pull out of bomb dives well above 600 m.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Breda_88_(P.XI)"
+},
+"Ba.65": {
+"style": "Attacker",
+"pros": "Strong guns for its rank; air spawn; effective bombs",
+"cons": "Slow; out-turned by most monoplanes; catches fire",
+"tip": "Use the air spawn height; drop flaps on strafing runs to land more rounds.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ba.65_(K.14)_L"
+},
+"V.G.33C-1": {
+"style": "Turn fighter",
+"pros": "Powerful 20 mm; excellent maneuverability; strong climb and energy retention",
+"cons": "Tiny 20 mm ammo pool; fragile; overheats below 4 km",
+"tip": "Bind the cannon separately and save it for sure hits.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/V.G.33C-1"
+},
+"M.B.157": {
+"style": "Boom & Zoom",
+"pros": "One of the fastest at its tier (M.B.157); good energy retention; very strong wings",
+"cons": "Small ammo supply; controls lock in fast dives; thin pilot armour",
+"tip": "Side-climb, dive, zoom away; short controlled bursts, 60 rounds per cannon.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/M.B.157"
+},
+"M.B.152C1": {
+"style": "Boom & Zoom",
+"pros": "One of the fastest at its tier (M.B.157); good energy retention; very strong wings",
+"cons": "Small ammo supply; controls lock in fast dives; thin pilot armour",
+"tip": "Side-climb, dive, zoom away; short controlled bursts, 60 rounds per cannon.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/M.B.157"
+},
+"M.B.151C.1": {
+"style": "Boom & Zoom",
+"pros": "One of the fastest at its tier (M.B.157); good energy retention; very strong wings",
+"cons": "Small ammo supply; controls lock in fast dives; thin pilot armour",
+"tip": "Side-climb, dive, zoom away; short controlled bursts, 60 rounds per cannon.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/M.B.157"
+},
+"D.500": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; great visibility; strong guns for its rank",
+"cons": "Low speed limit; weak armour; fixed gear drag",
+"tip": "Keep targets within 150-350 m so all guns converge; short bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.500"
+},
+"D.501": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; great visibility; strong guns for its rank",
+"cons": "Low speed limit; weak armour; fixed gear drag",
+"tip": "Keep targets within 150-350 m so all guns converge; short bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.500"
+},
+"D.510": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; great visibility; strong guns for its rank",
+"cons": "Low speed limit; weak armour; fixed gear drag",
+"tip": "Keep targets within 150-350 m so all guns converge; short bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.500"
+},
+"H-75A": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Strong climb; excellent roll and turn; slow stall",
+"cons": "Weak guns vs bombers; little armour; MGs lose punch past ~150 m",
+"tip": "Bait chasers into a climb, spiral up until they stall, then finish them.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/H-75A-1"
+},
+"H-75M": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Strong climb; excellent roll and turn; slow stall",
+"cons": "Weak guns vs bombers; little armour; MGs lose punch past ~150 m",
+"tip": "Bait chasers into a climb, spiral up until they stall, then finish them.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/H-75A-1"
+},
+"Hawk III": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Strong climb; excellent roll and turn; slow stall",
+"cons": "Weak guns vs bombers; little armour; MGs lose punch past ~150 m",
+"tip": "Bait chasers into a climb, spiral up until they stall, then finish them.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/H-75A-1"
+},
+"Hawk": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Strong climb; excellent roll and turn; slow stall",
+"cons": "Weak guns vs bombers; little armour; MGs lose punch past ~150 m",
+"tip": "Bait chasers into a climb, spiral up until they stall, then finish them.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/H-75A-1"
+},
+"NC.900": {
+"style": "Boom & Zoom",
+"pros": "Excellent roll at all speeds; heavy armament and ammo; strong frontal armour",
+"cons": "Poor acceleration; poor turn and energy retention; weak high up",
+"tip": "Side-climb and make steady passes; use roll plus rudder barrel rolls to escape.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/NC.900"
+},
+"D.520": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Decent turn; MGs have plenty of ammo",
+"cons": "Slow climb and low top speed; MGs weak vs twins and bombers",
+"tip": "Keep height or speed to escape; the 20 mm only has 60 rounds.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/D.520"
+},
+"D.521": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Decent turn; MGs have plenty of ammo",
+"cons": "Slow climb and low top speed; MGs weak vs twins and bombers",
+"tip": "Keep height or speed to escape; the 20 mm only has 60 rounds.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/D.520"
+},
+"M.S.405C1": {
+"style": "Turn fighter",
+"pros": "Strong maneuverability for a monoplane; easy to fly",
+"cons": "Slow climb; no armour; mediocre survivability",
+"tip": "Keep speed up and fight in turns; slow climb makes hit-and-run impractical.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/M.S.406C1"
+},
+"M.S.406C1": {
+"style": "Turn fighter",
+"pros": "Strong maneuverability for a monoplane; easy to fly",
+"cons": "Slow climb; no armour; mediocre survivability",
+"tip": "Keep speed up and fight in turns; slow climb makes hit-and-run impractical.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/M.S.406C1"
+},
+"M.S.410": {
+"style": "Turn fighter",
+"pros": "Strong maneuverability for a monoplane; easy to fly",
+"cons": "Slow climb; no armour; mediocre survivability",
+"tip": "Keep speed up and fight in turns; slow climb makes hit-and-run impractical.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/M.S.406C1"
+},
+"Mörkö-Morane": {
+"style": "Turn fighter",
+"pros": "Strong maneuverability for a monoplane; easy to fly",
+"cons": "Slow climb; no armour; mediocre survivability",
+"tip": "Keep speed up and fight in turns; slow climb makes hit-and-run impractical.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/M.S.406C1"
+},
+"VB.10C-1": {
+"style": "Boom & Zoom",
+"pros": "Four 20 mm; high top speed; looks like a single-engine superprop to enemies",
+"cons": "Heavy, poor in dogfights",
+"tip": "Side-climb at the start to set up diving attacks.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/VB.10C-1"
+},
+"VB.10-02": {
+"style": "Boom & Zoom",
+"pros": "Four 20 mm; high top speed; looks like a single-engine superprop to enemies",
+"cons": "Heavy, poor in dogfights",
+"tip": "Side-climb at the start to set up diving attacks.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/VB.10C-1"
+},
+"C.R.714": {
+"style": "Energy fighter",
+"pros": "Good step up from biplanes; performs well at speed",
+"cons": "Wider turn than biplanes; bleeds speed fast in turns",
+"tip": "Use climbs and dives to reposition; save turns for finishing shots.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/C.R.714"
+},
+"J22": {
+"style": "Boom & Zoom",
+"pros": "Good top speed; light and nimble; excellent guns for its level",
+"cons": "Weak high up; MGs only; poor rear view",
+"tip": "Stay below ~4 km, keep speed up, and hunt low bombers; converge 250-400 m.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J22-A"
+},
+"J21A": {
+"style": "Boom & Zoom",
+"pros": "Strong nose firepower; controllable at the stall; holds high angles of attack",
+"cons": "Bleeds energy in tight turns; overheats; wings tear above ~640 km/h",
+"tip": "Climb to 4-5 km and dive on targets; if on fire, dive steeply to blow it out.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J21A-1"
+},
+"A21A": {
+"style": "Boom & Zoom",
+"pros": "Strong nose firepower; controllable at the stall; holds high angles of attack",
+"cons": "Bleeds energy in tight turns; overheats; wings tear above ~640 km/h",
+"tip": "Climb to 4-5 km and dive on targets; if on fire, dive steeply to blow it out.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J21A-1"
+},
+"J26": {
+"style": "Boom & Zoom",
+"pros": "Very fast at all altitudes; strong hit-and-run; good visibility",
+"cons": "Overheats on WEP; lighter guns than early versions; no heavy bombs",
+"tip": "Side-climb rather than through enemy layers, then pick targets from above.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J26"
+},
+"B-239": {
+"style": "Turn fighter",
+"pros": "Very maneuverable, even fast; effective guns; above-average climb",
+"cons": "Slow; no armour on vitals; loses energy in the vertical",
+"tip": "Fight flat or downward; use shallow-dive reversals and don't chase Bf 109s upward.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/B-239_(Sweden)"
+},
+"J8A": {
+"style": "Turn fighter",
+"pros": "Fast for a biplane; four 8 mm guns shred low-rank planes; very low stall speed",
+"cons": "Slow climb; poor roll; bleeds speed in turns",
+"tip": "Gain height, pick targets and dive in; work in pairs with one player baiting.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J8A"
+},
+"J20": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Great climb; strong energy fighting; full manual engine control",
+"cons": "Average speed; weak MGs with little ammo; overheats, fragile",
+"tip": "Turn at 400-500 km/h where it out-turns most rivals; avoid head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J20"
+},
+"J11": {
+"style": "Boom & Zoom",
+"pros": "Nose guns are accurate; high top speed; easy landings",
+"cons": "No flaps; longest turn time of any biplane; bleeds speed",
+"tip": "Climb a little, dive on unaware enemies, and run if a dogfight goes badly.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J11"
+},
+"J6B": {
+"style": "Turn fighter",
+"pros": "Excellent handling; good climb; fast-firing nose guns",
+"cons": "Sluggish down low; weak vs all-metal planes; unprotected engine",
+"tip": "Build speed before engaging; tracer belts set fabric biplanes on fire.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/J6B"
+},
+"P-66": {
+"style": "Turn fighter",
+"pros": "Good firepower; respectable turn; rugged",
+"cons": "Bad climb; not very fast; overheats",
+"tip": "Climb early with teammates; attack low-energy or distracted enemies, avoid long turns.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-66"
+},
+"CW-21": {
+"style": "Energy fighter",
+"pros": "Strong climb and good top speed; very nimble; holds up in uptiers",
+"cons": "Average guns, no cannons; less agile than biplanes and Japanese fighters",
+"tip": "Climb early and fight from altitude.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/cw_21"
+},
+"V-12D": {
+"style": "Attacker",
+"pros": "Two nose .50 cal (V-12D); improved engine over the V-11",
+"cons": "Weak ground payload; only effective vs careless opponents",
+"tip": "Go after fighters that ignore their six.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/v_12d"
+},
+"V-11": {
+"style": "Attacker",
+"pros": "Two nose .50 cal (V-12D); improved engine over the V-11",
+"cons": "Weak ground payload; only effective vs careless opponents",
+"tip": "Go after fighters that ignore their six.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/v_12d"
+},
+"VL": {
+"style": "",
+"pros": "High top speed; decent climb; strong guns with good belts",
+"cons": "Inconsistent MGs; nose wanders when rolling; sluggish controls",
+"tip": "",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/VL_Myrsky_II"
+},
+"F-47N": {
+"style": "Boom & Zoom",
+"pros": "8× .50 cal, big ammo; very high dive limit; good high-speed roll",
+"cons": "Limited WEP and overheating; weak low and slow; poor climb",
+"tip": "Side-climb early, then boom and zoom. Avoid turn fights.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/P-47N-15"
+},
+"re:^Spitfire.*Mk\\.?IX": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire Mk ?IIa": {
+"style": "Turn fighter",
+"pros": "Outstanding turn; excellent climb; good below 4.5 km",
+"cons": "Weak 7.7 mm guns (most variants); poor high-altitude performance; fragile",
+"tip": "Bait enemies into turn fights; boom & zoom only against Japanese planes and biplanes.",
+"verdict": "Above-average speed for its BR",
+"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:^Spitfire F Mk XVI": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:Spitfire LF Mk ?\\.?IX": {
+"style": "Energy fighter / Turn fighter",
+"pros": "Great maneuverability and roll; very fast climber upgraded; 120 rounds per cannon",
+"cons": "Modest firepower; weak above 5 km; fragile, catches fire",
+"tip": "Fight below 5 km against Bf 109s; long dogfights up high cost engine power.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Mosquito": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Agile and responsive; four nose cannons; stable gun platform",
+"cons": "Big engines easily damaged; wooden airframe is fragile; heavy fuel load",
+"tip": "Single diving attacks, keep speed up; open fire around 400-500 m with Air Targets belts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Mosquito_FB_Mk_VI"
+},
+"re:^Me 210 Ca": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Agile for a twin; good dive; 50 mm one-shots bombers",
+"cons": "50 mm is inaccurate vs fighters; slow reload; limited belt choice",
+"tip": "Use the big cannon on bombers and ground targets, the MG 151s on fighters.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Me_410_A-1/U4"
+},
+"re:^Me 210 V22": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Agile for a twin; good dive; 50 mm one-shots bombers",
+"cons": "50 mm is inaccurate vs fighters; slow reload; limited belt choice",
+"tip": "Use the big cannon on bombers and ground targets, the MG 151s on fighters.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Me_410_A-1/U4"
+},
+"re:^H-81A": {
+"style": "Boom & Zoom / Energy fighter",
+"pros": "Six .50 cal; strong at low-mid altitude; fast in level flight",
+"cons": "Poor climb; weak at high altitude; overheats",
+"tip": "Stay between 400-500 km/h; controls lock up near 600 km/h. Manage throttle to avoid overheating.",
+"verdict": "P-40E is one of the strongest low-rank US fighters",
+"src": "https://old-wiki.warthunder.com/P-40E-1 ; https://old-wiki.warthunder.com/P-40F-10"
+},
+"re:^AD-4NA": {
+"style": "Attacker",
+"pros": "Huge bomb and rocket loads; four 20 mm; powerful engine",
+"cons": "Bleeds energy in turns; heavy; vulnerable once slow",
+"tip": "Only make brief tight turns, then disengage; use it on ground targets.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/unit/douglas_ad_4"
+},
+"re:^Firefly F\\.Mk\\.IV": {
+"style": "Attacker / Turn fighter",
+"pros": "Four 20 mm Hispanos; reasonably maneuverable with flaps; up to 2× 1,000 lb bombs",
+"cons": "Slow; poor climb; stock cannons overheat",
+"tip": "Use the air spawn to strike ground targets early; 1-2 second bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Firefly_F_Mk_I"
+},
+"re:^F-6C": {
+"style": "Boom & Zoom",
+"pros": "Very high top speed at all altitudes; agile at high speed; good dive",
+"cons": "Fragile, catches fire; high stall speed; bleeds speed in turns",
+"tip": "Set radiators to 100% with manual engine control; stay fast and high.",
+"verdict": "Strong; outspeeds nearly everything at its BR",
+"src": "https://old-wiki.warthunder.com/P-51D-30"
+},
+"re:^Hurricane Mk IV": {
+"style": "Turn fighter",
+"pros": "Excellent turning; 8-12 guns with lots of ammo; steady, easy to aim",
+"cons": "Slower than peers, especially high up; .303s weak vs bombers",
+"tip": "Use short bursts; boom & zoom when you have height, turn when you don't.",
+"verdict": "Comfortable against most planes at its rank",
+"src": "https://old-wiki.warthunder.com/Hurricane_Mk_I/L"
+},
+"re:^D\\.510C": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; great visibility; strong guns for its rank",
+"cons": "Low speed limit; weak armour; fixed gear drag",
+"tip": "Keep targets within 150-350 m so all guns converge; short bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.500"
+},
+"re:^D\\.37[13]": {
+"style": "Turn fighter",
+"pros": "Very maneuverable; great visibility; strong guns for its rank",
+"cons": "Low speed limit; weak armour; fixed gear drag",
+"tip": "Keep targets within 150-350 m so all guns converge; short bursts.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.500"
+},
+"re:^C\\. ?200": {
+"style": "Turn fighter",
+"pros": "Good turn and stable at speed; strong climb; fairly durable",
+"cons": "Weak engine, poor acceleration; weak guns vs bombers; no bombs",
+"tip": "Fire only inside ~300 m; avoid heavy bombers.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/C._200_serie_3"
+},
+"re:^He 112": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Strong guns that threaten even bombers; turns well vs many planes; high top speed for its rank",
+"cons": "Can't escape by running in level flight",
+"tip": "Attack from above; when chased, dive away instead of trying to outrun them flat.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/He_112_B-1/U2"
+},
+"re:^Hs 129": {
+"style": "Attacker",
+"pros": "Cannons kill light and medium tanks; can shoot down planes head-on",
+"cons": "Slow and sluggish; can't reliably kill heavy tanks or pillboxes",
+"tip": "30/37 mm on tanks, 20 mm on armoured cars and AA.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/Hs_129_B-2_(Romania)_(Italy)"
+},
+"re:^Fokker D\\.XXI": {
+"style": "Turn fighter",
+"pros": "Good maneuverability and stall behaviour; good climb; no compression in dives",
+"cons": "Slow; weak guns; bleeds speed in turns",
+"tip": "Climb to ~3 km, dive on targets, then fight in one- or two-circle turns; don't 1v1 a Ki-44.",
+"verdict": "",
+"src": "https://wiki.warthunder.com/6193-fokker-d-xxi-simple-but-deadly"
+}
+}

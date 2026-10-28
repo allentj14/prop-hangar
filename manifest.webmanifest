@@ -1,0 +1,15 @@
+{
+  "name": "Prop Hangar",
+  "short_name": "Prop Hangar",
+  "description": "War Thunder propeller planes by nation and research tree, with play styles, stats, armament and best lineups.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#12171d",
+  "theme_color": "#1d2733",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

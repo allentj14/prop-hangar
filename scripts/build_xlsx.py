@@ -52,6 +52,7 @@ COLS = [
     ("Strengths (vs same-BR planes)", "strengths", 40), ("Weaknesses (vs same-BR planes)", "weaknesses", 40),
     ("Community: pros", "comm_pros", 40), ("Community: cons", "comm_cons", 40), ("Community verdict", "comm_verdict", 26),
     ("How to fly it", "tips", 60), ("Community source", "comm_src", 40),
+    ("Verification", "verify_status", 16), ("Verification notes", "verify_note", 50), ("Verification sources", "verify_src", 50),
 ]
 # show armament right after play style so it's visible without scrolling
 _front = [c for c in COLS if c[1] in ("guns", "gun_ammo", "def_guns", "bombs", "rockets")]
@@ -137,6 +138,9 @@ info = [
     ("• 'Play style (from stats)' compares the plane's speed, climb, turn, wing loading, dive limit and firepower against every prop within ±0.7 BR. When the two disagree, the community label is usually more reliable; the stats label shows how the plane compares on paper.", False),
     ("• Community pros, cons, verdict and 'How to fly it' tips are summarized from the wiki article linked in 'Community source'. Variants of one family (e.g. all P-47Ds) share one article's notes. Strengths/weaknesses columns are the stats comparison.", False),
     ("", False),
+    ("Verification", True),
+    ("• The 'Verification' column shows how each plane's label was checked: Confirmed (a second community source agrees), Mixed opinions (sources disagree; notes explain), Adjusted (label changed to match the community), Wiki + stats agree, Wiki only, or Game data only (no community writeup found, mostly niche bombers and event planes). Sources: War Thunder wiki, official forum threads, Steam community guides, and YouTube review titles.", False),
+    ("", False),
     ("Lineups", True),
     ("• Picked by overall performance against the planes you'll meet at that BR (speed, climb, turn, firepower, roll), nudged up or down when the community calls a plane strong or weak for its BR, with a penalty for planes far below the lineup BR. Arcade lineups include one strike plane for ground targets; Realistic lineups are the five strongest fighters, ranked — in Air RB you usually get one life, so slot 1 is your main pick.", False),
 ]
@@ -175,5 +179,26 @@ ws.append([]); ws.append(["★ = premium, event or squadron plane (highlighted).
 ws.cell(ws.max_row, 1).font = Font(name=F, size=10, italic=True)
 ws.freeze_panes = "D2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(hdr))}{len(lu) + 1}"
+ws = wb.create_sheet("Lineups by play style", 2)
+hdr = ["Nation", "Mode", "Lineup BR", "Play style"] + [f"Pick {i}" for i in range(1, 6)]
+ws.append(hdr)
+for i, h in enumerate(hdr, 1):
+    c = ws.cell(1, i); c.font = HDR_FONT; c.fill = HDR_FILL; c.alignment = Alignment(wrap_text=True, horizontal="center", vertical="center")
+    ws.column_dimensions[get_column_letter(i)].width = 12 if i <= 4 else 26
+SN = {"bnz": "Boom & Zoom", "nrg": "Energy fighter", "trn": "Turn fighter"}
+for x in lu:
+    for k, name in SN.items():
+        picks = x.get("styles", {}).get(k) or []
+        if not picks: continue
+        row = [x["nation"], x["mode"], x["br"], name] + [fmt(p) for p in picks] + [""] * (5 - len(picks))
+        ws.append(row)
+        rr = ws.max_row
+        for i in range(1, len(hdr) + 1):
+            c = ws.cell(rr, i); c.font = BODY; c.alignment = Alignment(wrap_text=True, vertical="top"); c.border = Border(bottom=thin)
+        ws.cell(rr, 3).number_format = "0.0"
+        f = style_fill(name)
+        if f: ws.cell(rr, 4).fill = f
+ws.freeze_panes = "E2"
+ws.auto_filter.ref = f"A1:{get_column_letter(len(hdr))}{ws.max_row}"
 wb.save(OUT)
 print("saved", OUT)

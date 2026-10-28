@@ -133,6 +133,7 @@ summary::-webkit-details-marker{display:none}
   <div class="controls" id="ctl-lineups" hidden>
     <div class="seg" role="group" aria-label="Game mode"><button id="l-rb" aria-pressed="true">RB</button><button id="l-ab" aria-pressed="false">AB</button></div>
     <div class="seg" role="group" aria-label="Which planes"><button id="l-all" aria-pressed="true">Best</button><button id="l-tech" aria-pressed="false">Tech tree only</button></div>
+    <div class="seg" role="group" aria-label="Play style"><button id="ls-all" aria-pressed="true">All styles</button><button id="ls-bnz" aria-pressed="false">BnZ</button><button id="ls-nrg" aria-pressed="false">Energy</button><button id="ls-trn" aria-pressed="false">Turn</button></div>
   </div>
 </header>
 <main class="wrap">
@@ -146,9 +147,9 @@ let LINEUPS = [];
 let META = {};
 const NATIONS = ["USA","Germany","USSR","Great Britain","Japan","China","Italy","France","Sweden","Israel"];
 const ROMAN = ["","I","II","III","IV","V","VI","VII","VIII","IX"];
-const st = {view:"planes", nation:"USA", q:"", style:"", rank:"", mode:"rb", lmode:"RB", tech:false};
+const st = {view:"planes", nation:"USA", q:"", style:"", rank:"", mode:"rb", lmode:"RB", tech:false, lstyle:"all"};
 try{const s=JSON.parse(localStorage.getItem("wt-hangar")||"{}");Object.assign(st,s);}catch(e){}
-const save=()=>{try{localStorage.setItem("wt-hangar",JSON.stringify({nation:st.nation,mode:st.mode,lmode:st.lmode,tech:st.tech,view:st.view}))}catch(e){}};
+const save=()=>{try{localStorage.setItem("wt-hangar",JSON.stringify({nation:st.nation,mode:st.mode,lmode:st.lmode,tech:st.tech,view:st.view,lstyle:st.lstyle}))}catch(e){}};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -217,6 +218,7 @@ function card(r){
     ${blk("Community: pros",r.cp,"good")}${blk("Community: cons",r.cc,"bad")}${blk("How to fly it",r.tip)}
     ${blk("By the numbers (vs same-BR planes)",[r.str&&("+ "+r.str),r.wk&&("− "+r.wk)].filter(Boolean).join("  ·  "))}
     ${r.ss&&r.ss!==r.s?`<div class="pos">Stats-only style: ${esc(r.ss)}</div>`:""}
+    ${r.vs?`<div class="blk"><h4>Verification · ${esc(r.vs)}</h4>${r.vn?`<p>${esc(r.vn)}</p>`:""}${r.vsrc?`<div class="pos">Checked against: ${r.vsrc.split(" ; ").map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").slice(0,44))}</a>`).join(" · ")}</div>`:""}</div>`:""}
     ${r.src?`<div class="pos">Source: ${r.src.split(" ; ").map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//,"").slice(0,48))}</a>`).join(" · ")}</div>`:""}
   </div></details>`;
 }
@@ -242,8 +244,8 @@ function renderPlanes(){
 function renderLineups(){
   if(st.nation==="All"){$("lineups").innerHTML='<p class="note">Lineups are per nation. Pick a nation above.</p>';return;}
   const rows=LINEUPS.filter(x=>x.nation===st.nation && x.mode===st.lmode);
-  $("lineups").innerHTML=`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ★ = premium, event or squadron.</p><div class="lu">`+
-    rows.map(x=>{const L=st.tech?x.tech:x.best;return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><ol>${L.map(p=>`<li>${esc(p.name)}${p.obtain!=="Tech tree"?" ★":""} <span>${p.br.toFixed(1)} · ${esc(p.style)}</span></li>`).join("")}</ol></div>`}).join("")+"</div>";
+  $("lineups").innerHTML=`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}★ = premium, event or squadron.</p><div class="lu">`+
+    rows.map(x=>{const L=st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><ol>${L.map(p=>`<li>${esc(p.name)}${p.obtain!=="Tech tree"?" ★":""} <span>${p.br.toFixed(1)} · ${esc(p.style)}</span></li>`).join("")}</ol></div>`}).join("")+"</div>";
 }
 function render(){
   $("tab-planes").setAttribute("aria-pressed",st.view==="planes");$("tab-lineups").setAttribute("aria-pressed",st.view==="lineups");
@@ -252,6 +254,7 @@ function render(){
   $("m-rb").setAttribute("aria-pressed",st.mode==="rb");$("m-ab").setAttribute("aria-pressed",st.mode==="ab");
   $("l-rb").setAttribute("aria-pressed",st.lmode==="RB");$("l-ab").setAttribute("aria-pressed",st.lmode==="AB");
   $("l-all").setAttribute("aria-pressed",!st.tech);$("l-tech").setAttribute("aria-pressed",st.tech);
+  ["all","bnz","nrg","trn"].forEach(k=>$("ls-"+k).setAttribute("aria-pressed",st.lstyle===k));
   if(st.view==="planes"){rankOptions();renderPlanes();}else renderLineups();
 }
 $("tab-planes").onclick=()=>{st.view="planes";save();render();window.scrollTo(0,0)};
@@ -261,6 +264,7 @@ $("style").onchange=e=>{st.style=e.target.value;renderPlanes();};
 $("rank").onchange=e=>{st.rank=e.target.value;renderPlanes();};
 $("m-rb").onclick=()=>{st.mode="rb";save();render()};$("m-ab").onclick=()=>{st.mode="ab";save();render()};
 $("l-rb").onclick=()=>{st.lmode="RB";save();render()};$("l-ab").onclick=()=>{st.lmode="AB";save();render()};
+["all","bnz","nrg","trn"].forEach(k=>{$("ls-"+k).onclick=()=>{st.lstyle=k;save();render()}});
 $("l-all").onclick=()=>{st.tech=false;save();render()};$("l-tech").onclick=()=>{st.tech=true;save();render()};
 if(st.nation!=="All" && !NATIONS.includes(st.nation)) st.nation="USA";
 

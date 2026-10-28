@@ -1,0 +1,1642 @@
+{
+"re:^F6F": {
+"status": "mixed",
+"style": "Boom & Zoom / Turn fighter",
+"note": "Wiki and a Steam roles guide say boom & zoom; another Steam guide and a YouTube review call it a capable dogfighter. Good at both.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://steamcommunity.com/sharedfiles/filedetails/?id=179855323 ; https://www.youtube.com/watch?v=V3pkyws1am4"
+},
+"re:^Hellcat": {
+"status": "mixed",
+"style": "Boom & Zoom / Turn fighter",
+"note": "Wiki and a Steam roles guide say boom & zoom; another Steam guide and a YouTube review call it a capable dogfighter. Good at both.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://steamcommunity.com/sharedfiles/filedetails/?id=179855323 ; https://www.youtube.com/watch?v=V3pkyws1am4"
+},
+"re:^F4F": {
+"status": "mixed",
+"style": "Turn fighter / Boom & Zoom",
+"note": "Steam guide says turn fight while keeping speed; wiki says boom & zoom. Forum players call the F4F-4 weak for its BR (slow, poor energy).",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323 ; https://forum.warthunder.com/t/how-on-earth-did-the-f4f-4-wildcat-ever-make-it-to-3-0-in-air-rb/106300"
+},
+"re:^Martlet": {
+"status": "mixed",
+"style": "Turn fighter / Boom & Zoom",
+"note": "Steam guide says turn fight while keeping speed; wiki says boom & zoom. Forum players call the F4F-4 weak for its BR (slow, poor energy).",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323 ; https://forum.warthunder.com/t/how-on-earth-did-the-f4f-4-wildcat-ever-make-it-to-3-0-in-air-rb/106300"
+},
+"re:^F2A-1": {
+"status": "adjusted",
+"style": "Turn fighter",
+"note": "F2A-1 is maneuverable and hard-hitting; community flies it as a turn fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323"
+},
+"re:^Thach's F2A-1": {
+"status": "adjusted",
+"style": "Turn fighter",
+"note": "F2A-1 is maneuverable and hard-hitting; community flies it as a turn fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323"
+},
+"re:^F2A-3": {
+"status": "mixed",
+"style": "Boom & Zoom / Energy fighter",
+"note": "The heavier F2A-3 bogs down; avoid head-ons and fight on energy.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323 ; https://old-wiki.warthunder.com/F2A-3"
+},
+"re:^B-239": {
+"status": "mixed",
+"style": "Boom & Zoom / Energy fighter",
+"note": "The heavier F2A-3 bogs down; avoid head-ons and fight on energy.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323 ; https://old-wiki.warthunder.com/F2A-3"
+},
+"P-36A": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighter with good roll and pitch, weak guns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323"
+},
+"P-36C": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighter with good roll and pitch, weak guns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323"
+},
+"P-36G": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighter with good roll and pitch, weak guns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=179855323"
+},
+"P-400": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Two Steam guides: energy fighter. Forum players call the P-39 overpowered at 2.7.",
+"verdict": "Very strong at 2.7",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858"
+},
+"P-39N": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Two Steam guides: energy fighter. Forum players call the P-39 overpowered at 2.7.",
+"verdict": "Very strong at 2.7",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858"
+},
+"P-39Q": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Two Steam guides: energy fighter. Forum players call the P-39 overpowered at 2.7.",
+"verdict": "Very strong at 2.7",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858"
+},
+"P-39K": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Two Steam guides: energy fighter. Forum players call the P-39 overpowered at 2.7.",
+"verdict": "Very strong at 2.7",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858"
+},
+"P-63A": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: energy fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"P-63C": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: energy fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Kingcobra": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: energy fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"P-38E": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"P-38G": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"P-38J": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"P-38L": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"P-38K": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"XP-38G": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"YP-38": {
+"status": "confirmed",
+"note": "Official BnZ guide and Steam guides: boom & zoom. Forum players say the P-38G is strong at 3.3 and P-38s climb well, which suits the Air RB meta.",
+"verdict": "Strong (P-38G at 3.3)",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom ; https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"F4U": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"F4U VMF-214": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Corsair F Mk": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"AU-1": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"F2G": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-47D": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom with high-speed passes.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-47M": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom with high-speed passes.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-47N": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom with high-speed passes.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Thunderbolt": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom with high-speed passes.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"F-47N": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam guides: boom & zoom with high-speed passes.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-51D": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam roles guide: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-51K": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam roles guide: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-51C": {
+"status": "confirmed",
+"style": "Boom & Zoom",
+"note": "Official BnZ guide and Steam roles guide: boom & zoom.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-51H": {
+"status": "confirmed",
+"note": "Forum: among the few US props that climb well, which the current Air RB meta rewards.",
+"verdict": "Strong climber",
+"src": "https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"Fw 190 A": {
+"status": "mixed",
+"note": "Official BnZ guide and wiki: boom & zoom. German Steam guide calls the A-5 a strong energy fighter. Both: fight in the vertical, not flat turns.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Fw 190 C": {
+"status": "mixed",
+"note": "Official BnZ guide and wiki: boom & zoom. German Steam guide calls the A-5 a strong energy fighter. Both: fight in the vertical, not flat turns.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Fw 190 D": {
+"status": "confirmed",
+"note": "Named as boom & zoom planes in the official War Thunder BnZ guide.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Ta 152 H": {
+"status": "confirmed",
+"note": "German Steam guide: strong high-altitude interceptor.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ta 152 C": {
+"status": "confirmed",
+"note": "German Steam guide: strong high-altitude interceptor.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Typhoon Mk Ia": {
+"status": "confirmed",
+"note": "Official BnZ guide: boom & zoom. Steam guide: very fast once rolling, poor turner.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Typhoon Mk Ib": {
+"status": "confirmed",
+"note": "Official BnZ guide: boom & zoom. Steam guide: very fast once rolling, poor turner.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Typhoon Mk Ib-L": {
+"status": "confirmed",
+"note": "Official BnZ guide: boom & zoom. Steam guide: very fast once rolling, poor turner.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Tempest Mk V": {
+"status": "confirmed",
+"note": "British Steam guide: interceptor / energy fighter; official BnZ guide lists Tempests.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Tempest Mk II": {
+"status": "confirmed",
+"note": "British Steam guide: interceptor / energy fighter; official BnZ guide lists Tempests.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Sea Fury FB": {
+"status": "confirmed",
+"note": "British Steam guide: strong energy fighter that dives well.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Do 335 A": {
+"status": "confirmed",
+"note": "German Steam guide: strong dive heavy fighter; take the A-1 over the A-0.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Do 335 B": {
+"status": "confirmed",
+"note": "Named as boom & zoom planes in the official War Thunder BnZ guide.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-61C": {
+"status": "confirmed",
+"note": "Named as boom & zoom planes in the official War Thunder BnZ guide.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-61A": {
+"status": "confirmed",
+"note": "Named as boom & zoom planes in the official War Thunder BnZ guide.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"P-43A": {
+"status": "confirmed",
+"note": "Named as boom & zoom planes in the official War Thunder BnZ guide.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"I-185": {
+"status": "mixed",
+"note": "Official BnZ guide lists it; Steam guide says it also turns well at low speed.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"I-180S": {
+"status": "mixed",
+"note": "Official BnZ guide lists it; Steam guide says it also turns well at low speed.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"J7W1": {
+"status": "confirmed",
+"note": "Named as boom & zoom planes in the official War Thunder BnZ guide.",
+"src": "https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Ki-84": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: energy fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"A6M2": {
+"status": "confirmed",
+"note": "Steam roles guide: Zero and Ki-43 are turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"A6M3": {
+"status": "confirmed",
+"note": "Steam roles guide: Zero and Ki-43 are turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"A6M2-N": {
+"status": "confirmed",
+"note": "Steam roles guide: Zero and Ki-43 are turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"A6M5": {
+"status": "confirmed",
+"note": "Steam roles guide: Zero and Ki-43 are turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"A6M6c": {
+"status": "confirmed",
+"note": "Steam roles guide: Zero and Ki-43 are turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Ki-43": {
+"status": "mixed",
+"note": "Wiki and most players: turn fighter. An older Steam guide suggests energy/boom & zoom because of its weak guns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467 ; https://old-wiki.warthunder.com/Ki-43-II_(USA)"
+},
+"Ki-27": {
+"status": "mixed",
+"note": "Wiki and most players: turn fighter. An older Steam guide suggests energy/boom & zoom because of its weak guns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467 ; https://old-wiki.warthunder.com/Ki-43-II_(USA)"
+},
+"Yak-1": {
+"status": "confirmed",
+"style": "Turn fighter / Energy fighter",
+"note": "Steam guides: well-rounded nose-gunned turn fighter; Yak-1 also works on energy.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-1B": {
+"status": "confirmed",
+"style": "Turn fighter / Energy fighter",
+"note": "Steam guides: well-rounded nose-gunned turn fighter; Yak-1 also works on energy.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-7B": {
+"status": "confirmed",
+"style": "Turn fighter / Energy fighter",
+"note": "Steam guides: well-rounded nose-gunned turn fighter; Yak-1 also works on energy.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9U": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9P": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9M": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9T": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9K": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9B": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-3P": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: Yak-9s and Yak-3P are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Yak-9UT": {
+"status": "confirmed",
+"style": "Boom & Zoom / Energy fighter",
+"note": "Steam roles guide: zoom/energy hybrid.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"La-5FN": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Steam roles guide: energy/turn hybrid; wiki leans energy/BnZ low down.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"La-5F": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Steam roles guide: energy/turn hybrid; wiki leans energy/BnZ low down.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"La-5": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Steam roles guide: energy/turn hybrid; wiki leans energy/BnZ low down.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"La-7": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Steam roles guide: energy/turn hybrid; wiki leans energy/BnZ low down.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"La-7B": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Steam roles guide: energy/turn hybrid; wiki leans energy/BnZ low down.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Bf 109 K": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guides: energy fighter, strong when fully upgraded, weak stock; late 109s lean toward boom & zoom.",
+"verdict": "Strong when spaded, weak stock",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"re:^Bf 109 G-10": {
+"status": "adjusted",
+"style": "Boom & Zoom / Energy fighter",
+"note": "Community: late 109s (G-10 onward) are flown more boom & zoom than early ones.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://old-wiki.warthunder.com/Bf_109_G-14"
+},
+"re:^Bf 109 G-14": {
+"status": "adjusted",
+"style": "Boom & Zoom / Energy fighter",
+"note": "Community: late 109s (G-10 onward) are flown more boom & zoom than early ones.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897 ; https://old-wiki.warthunder.com/Bf_109_G-14"
+},
+"Bf 109 E": {
+"status": "confirmed",
+"style": "Energy fighter",
+"note": "Steam roles guide: early 109s are energy fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=396081897"
+},
+"Bf 109 F": {
+"status": "mixed",
+"style": "Energy fighter",
+"note": "Wiki: energy fighter. Steam guide flies the F-4 as a high-altitude boom & zoom fighter. Both say avoid head-ons and long flat turns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"Ki-61": {
+"status": "confirmed",
+"note": "Older Steam guide agrees: dive attacks / versatile energy fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"Ki-45": {
+"status": "confirmed",
+"note": "Steam guide: bomber hunting and boom & zoom from ambush with the big gun.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"Ki-109": {
+"status": "confirmed",
+"note": "Steam guide: bomber hunting and boom & zoom from ambush with the big gun.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"Ki-102": {
+"status": "confirmed",
+"note": "Steam guide: bomber hunting and boom & zoom from ambush with the big gun.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"Ki-108": {
+"status": "confirmed",
+"note": "Steam guide: bomber hunting and boom & zoom from ambush with the big gun.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"A5M4": {
+"status": "mixed",
+"note": "Wiki: turn fighter. Older Steam guide: energy fight since it keeps speed in turns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"Ki-10": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighter with weak guns.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=184504467"
+},
+"Hurricane Mk I-L": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Hurricane Mk.I-L": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Hurricane Mk IIB": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Hurricane Mk IIB-Trop": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Sea Hurricane Mk": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Fury Mk I": {
+"status": "mixed",
+"note": "Wiki and older Steam guide: turn fighter. Newer British Steam guide calls the Fury a boom & zoomer.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704 ; https://old-wiki.warthunder.com/Fury_Mk_II"
+},
+"Fury Mk II": {
+"status": "mixed",
+"note": "Wiki and older Steam guide: turn fighter. Newer British Steam guide calls the Fury a boom & zoomer.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704 ; https://old-wiki.warthunder.com/Fury_Mk_II"
+},
+"Nimrod Mk I": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Nimrod Mk II": {
+"status": "confirmed",
+"note": "Steam guide agrees: turn fighters.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"re:^Spitfire Mk ?IIa": {
+"status": "confirmed",
+"note": "Steam guide: excellent turn rate; a top pick.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"re:^Spitfire Mk IIb": {
+"status": "confirmed",
+"note": "Steam guide: excellent turn rate; a top pick.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"re:^Spitfire Mk\\.IIa": {
+"status": "confirmed",
+"note": "Steam guide: excellent turn rate; a top pick.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"re:^Spitfire Mk ?\\.?I[ab]?\\b": {
+"status": "confirmed",
+"note": "Wiki and a newer Steam guide: excellent turn fighter with weak 7.7 mm guns (an older guide suggested BnZ).",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:Spitfire Mk Ia": {
+"status": "confirmed",
+"note": "Wiki and a newer Steam guide: excellent turn fighter with weak 7.7 mm guns (an older guide suggested BnZ).",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/Spitfire_Mk_Ia"
+},
+"re:^Spitfire (F|LF|HF|FR)? ?Mk ?IX": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire F Mk IX": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire LF Mk IX": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire Mk IXc": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire LF Mk IXc": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire Mk XVI": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire LF Mk XVI": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire.*Mk\\.?IX": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:Spitfire LF Mk ?\\.?IX": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"re:^Spitfire F Mk XVI": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide flies the Mk IX boom & zoom (strong climb, weak acceleration); wiki says energy with turning as a fallback. All agree it climbs very well.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=180284729 ; https://old-wiki.warthunder.com/Spitfire_F_Mk_IX"
+},
+"Beaufighter Mk VIc": {
+"status": "mixed",
+"note": "Newer British guide: boom & zoom heavy fighter. Older guide: turns well for a heavy fighter. Wiki: bomber hunter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704 ; https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Beaufighter Mk X": {
+"status": "mixed",
+"note": "Newer British guide: boom & zoom heavy fighter. Older guide: turns well for a heavy fighter. Wiki: bomber hunter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704 ; https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Beaufighter Mk 21": {
+"status": "mixed",
+"note": "Newer British guide: boom & zoom heavy fighter. Older guide: turns well for a heavy fighter. Wiki: bomber hunter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704 ; https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Beaufighter Mk I": {
+"status": "mixed",
+"note": "Newer British guide: boom & zoom heavy fighter. Older guide: turns well for a heavy fighter. Wiki: bomber hunter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704 ; https://steamcommunity.com/sharedfiles/filedetails/?id=180284729"
+},
+"Yak-3": {
+"status": "confirmed",
+"note": "Steam guide: best-performing Yak, flexible energy/turn, under-gunned.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"Yak-3U": {
+"status": "confirmed",
+"note": "Steam guide: best-performing Yak, flexible energy/turn, under-gunned.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"Yak-3T": {
+"status": "confirmed",
+"note": "Steam guide: best-performing Yak, flexible energy/turn, under-gunned.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"LaGG-3": {
+"status": "confirmed",
+"note": "Steam guide agrees: keep speed and pick your attacks.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-15": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-15 M-22": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-15 M-25": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-15bis": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-153 M-62": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-153": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-153P": {
+"status": "mixed",
+"note": "Wiki: turn fighters. Older Steam guide: win the position first and dive on targets.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-16 type": {
+"status": "mixed",
+"note": "Wiki: turn fighter. Older Steam guide: pounce on targets; nimble but fragile.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"I-16": {
+"status": "mixed",
+"note": "Wiki: turn fighter. Older Steam guide: pounce on targets; nimble but fragile.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"MiG-3": {
+"status": "mixed",
+"note": "Wiki: boom & zoom high up. Older Steam guide suggests turning if possible; it slows badly above 450-500 km/h.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=188099046"
+},
+"P-40E": {
+"status": "mixed",
+"note": "Wiki: boom & zoom / energy at medium altitude. Steam guide: a team dogfighter that many planes out-turn, so stay near allies.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/P-40E-1"
+},
+"P-40C": {
+"status": "mixed",
+"note": "Wiki: boom & zoom / energy at medium altitude. Steam guide: a team dogfighter that many planes out-turn, so stay near allies.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/P-40E-1"
+},
+"P-40F": {
+"status": "mixed",
+"note": "Wiki: boom & zoom / energy at medium altitude. Steam guide: a team dogfighter that many planes out-turn, so stay near allies.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/P-40E-1"
+},
+"Kittyhawk": {
+"status": "mixed",
+"note": "Wiki: boom & zoom / energy at medium altitude. Steam guide: a team dogfighter that many planes out-turn, so stay near allies.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/P-40E-1"
+},
+"Tomahawk": {
+"status": "mixed",
+"note": "Wiki: boom & zoom / energy at medium altitude. Steam guide: a team dogfighter that many planes out-turn, so stay near allies.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/P-40E-1"
+},
+"H-81A": {
+"status": "mixed",
+"note": "Wiki: boom & zoom / energy at medium altitude. Steam guide: a team dogfighter that many planes out-turn, so stay near allies.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/P-40E-1"
+},
+"re:^C\\. ?202": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "Steam guide: deadly energy fighter thanks to its climb; wiki: boom & zoom from 4-5 km. Turn is mediocre.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=938400977 ; https://old-wiki.warthunder.com/C._202"
+},
+"He 100 D": {
+"status": "confirmed",
+"note": "German Steam guide: energy fighter, strong at 1.7.",
+"verdict": "Strong at 1.7",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"re:^Bf 109 F-4": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Wiki: energy fighter. German Steam guide calls the F-4 the last 109 that can still turn-fight. Strong at its BR.",
+"verdict": "Strong for its BR",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"re:^Bf 109 F-2": {
+"status": "mixed",
+"style": "Energy fighter / Turn fighter",
+"note": "Wiki: energy fighter. German Steam guide calls the F-4 the last 109 that can still turn-fight. Strong at its BR.",
+"verdict": "Strong for its BR",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://wiki.warthunder.com/unit/bf-109f-4"
+},
+"Bf 109 G": {
+"status": "confirmed",
+"note": "German Steam guide agrees: energy fighter.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Bf 109 B": {
+"status": "mixed",
+"note": "German Steam guide: energy fighter, strong at its tier. Wiki: agile, can turn. Weak guns either way.",
+"verdict": "Strong at its tier",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://old-wiki.warthunder.com/Bf_109_B-1"
+},
+"Bf 109 C": {
+"status": "mixed",
+"note": "German Steam guide: energy fighter, strong at its tier. Wiki: agile, can turn. Weak guns either way.",
+"verdict": "Strong at its tier",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://old-wiki.warthunder.com/Bf_109_B-1"
+},
+"Bf 109 A": {
+"status": "mixed",
+"note": "German Steam guide: energy fighter, strong at its tier. Wiki: agile, can turn. Weak guns either way.",
+"verdict": "Strong at its tier",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://old-wiki.warthunder.com/Bf_109_B-1"
+},
+"re:^He 112": {
+"status": "mixed",
+"style": "Energy fighter / Boom & Zoom",
+"note": "German Steam guide: energy fighter with a short-range cannon, strong once learned. Wiki: dive from above, dive away when chased.",
+"verdict": "Strong once learned",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274 ; https://wiki.warthunder.com/He_112_B-1/U2"
+},
+"Fw 190 F": {
+"status": "confirmed",
+"note": "German Steam guide: strong energy fighter-bomber with a weak elevator.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Bf 110 C": {
+"status": "confirmed",
+"note": "German Steam guide: strong heavy fighter at 2.7, even turns decently; C-6's ventral cannon is strong and easy to learn.",
+"verdict": "Strong at 2.7",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ju 87 B": {
+"status": "confirmed",
+"note": "German Steam guide: strong dive bomber at 1.3.",
+"verdict": "Strong at 1.3",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ju 87 R": {
+"status": "confirmed",
+"note": "German Steam guide: strong dive bomber at 1.3.",
+"verdict": "Strong at 1.3",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ju 87 D": {
+"status": "confirmed",
+"note": "German Steam guide: get at least the D-5; strong dive bomber with gun pods.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ju 87 G": {
+"status": "confirmed",
+"note": "German Steam guide: attacker; good for draining tickets, otherwise unspectacular.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Hs 123 A": {
+"status": "confirmed",
+"note": "German Steam guide: strong light bomber that can still dogfight.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"re:^Hs 129": {
+"status": "confirmed",
+"note": "German Steam guide: strong tank buster, sluggish.",
+"verdict": "Strong vs ground targets",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"He 111 H": {
+"status": "confirmed",
+"note": "German Steam guide: strong medium bomber (H-16 carries a huge single bomb, rearms often).",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ju 88 A": {
+"status": "confirmed",
+"note": "Forum and Steam guide: low BR with a heavy payload; strong in groups; poor climb.",
+"verdict": "Strong in groups",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706 ; https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"He 177 A": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"BV 138 C": {
+"status": "confirmed",
+"note": "German Steam guide: strong; turns into a gunship after dropping its bombs.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Ar 196 A": {
+"status": "confirmed",
+"note": "German Steam guide: weak bomb load.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"Whirlwind Mk I": {
+"status": "confirmed",
+"note": "British Steam guide: strong but overlooked boom & zoom bomber hunter.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Whirlwind P.9": {
+"status": "confirmed",
+"note": "British Steam guide: strong but overlooked boom & zoom bomber hunter.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Hornet Mk.III": {
+"status": "confirmed",
+"note": "British Steam guide: strong high-speed energy fighter that out-climbs and out-guns most.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Hornet Mk.I": {
+"status": "confirmed",
+"note": "British Steam guide: strong high-speed energy fighter that out-climbs and out-guns most.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Mosquito FB Mk": {
+"status": "confirmed",
+"note": "British Steam guide: heavy fighter, boom & zoom.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Mosquito NF.Mk.II": {
+"status": "confirmed",
+"note": "British Steam guide: heavy fighter, boom & zoom.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Mosquito TR.Mk.33": {
+"status": "confirmed",
+"note": "British Steam guide: heavy fighter, boom & zoom.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Brigand": {
+"status": "confirmed",
+"note": "British Steam guide: heavy fighter, boom & zoom.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Blenheim": {
+"status": "confirmed",
+"note": "British Steam guide: light bombers, weak in a fight; avoid direct engagements.",
+"verdict": "Weak in combat",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Beaufort": {
+"status": "confirmed",
+"note": "British Steam guide: light bombers, weak in a fight; avoid direct engagements.",
+"verdict": "Weak in combat",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Hampden": {
+"status": "confirmed",
+"note": "British Steam guide: light bombers, weak in a fight; avoid direct engagements.",
+"verdict": "Weak in combat",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Havoc": {
+"status": "confirmed",
+"note": "British Steam guide: light bombers, weak in a fight; avoid direct engagements.",
+"verdict": "Weak in combat",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Boston": {
+"status": "confirmed",
+"note": "British Steam guide: light bombers, weak in a fight; avoid direct engagements.",
+"verdict": "Weak in combat",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Hudson": {
+"status": "confirmed",
+"note": "British Steam guide: light bombers, weak in a fight; avoid direct engagements.",
+"verdict": "Weak in combat",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Halifax": {
+"status": "confirmed",
+"note": "British Steam guide: base destroyers, but not durable.",
+"verdict": "Not durable",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Stirling": {
+"status": "confirmed",
+"note": "British Steam guide: base destroyers, but not durable.",
+"verdict": "Not durable",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Lancaster": {
+"status": "confirmed",
+"note": "British Steam guide: base destroyers, but not durable.",
+"verdict": "Not durable",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Lincoln": {
+"status": "confirmed",
+"note": "British Steam guide: base destroyers, but not durable.",
+"verdict": "Not durable",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Sunderland": {
+"status": "confirmed",
+"note": "British Steam guide: can fight back better than other bombers.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"Wellington": {
+"status": "confirmed",
+"note": "British Steam guide: medium bomber for base destruction.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"J22": {
+"status": "confirmed",
+"note": "Forum players call the J22-A excellent ('goated'); one thread says avoid the J22-B.",
+"verdict": "Strong (J22-A)",
+"src": "https://forum.warthunder.com/t/sweden-grind-best-plane-per-rank-air-rb-only/151253 ; https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"re:^J22-B": {
+"status": "mixed",
+"note": "Opinions split: one forum player recommends it, another says avoid it.",
+"src": "https://forum.warthunder.com/t/sweden-grind-best-plane-per-rank-air-rb-only/151253 ; https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"re:Mörkö-Morane": {
+"status": "confirmed",
+"note": "Forum players rate it very good for 2.0-3.0 Swedish lineups.",
+"verdict": "Strong for its BR",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075 ; https://forum.warthunder.com/t/sweden-grind-best-plane-per-rank-air-rb-only/151253"
+},
+"re:^Fokker D\\.XXI": {
+"status": "confirmed",
+"note": "Forum players rate it very good for 2.0-3.0 Swedish lineups.",
+"verdict": "Strong for its BR",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075 ; https://forum.warthunder.com/t/sweden-grind-best-plane-per-rank-air-rb-only/151253"
+},
+"J20": {
+"status": "confirmed",
+"note": "Forum players: weak, but fills a 2.0 lineup.",
+"verdict": "Weak but usable",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"B-239": {
+"status": "confirmed",
+"note": "Forum players include it in 2.3 and 3.0 Swedish lineups.",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"J26": {
+"status": "mixed",
+"note": "One forum player ranks it near the top; another calls it 'meh' vs the P-51C/D because of its weaker .50 cal belts.",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"J21A": {
+"status": "confirmed",
+"note": "Forum players: second-rate fighters, decent for ground attack; can be skipped.",
+"verdict": "Second-rate fighter",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"A21A": {
+"status": "confirmed",
+"note": "Forum players: second-rate fighters, decent for ground attack; can be skipped.",
+"verdict": "Second-rate fighter",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"J8A": {
+"status": "confirmed",
+"note": "A forum player ranks the J8A first among Swedish props.",
+"verdict": "Strong for its BR",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"F8F": {
+"status": "confirmed",
+"note": "Forum: among the few US props that climb well, which the current Air RB meta rewards.",
+"verdict": "Strong climber",
+"src": "https://forum.warthunder.com/t/the-truth-about-us-planes-in-air-rb/269378"
+},
+"re:^F4U-4": {
+"status": "mixed",
+"note": "Wiki and guides: boom & zoom. Forum players say the F4U-4 can turn-fight once it has height and speed.",
+"src": "https://forum.warthunder.com/t/returning-player-2015-how-am-i-supposed-to-fly-american-prop-planes-in-the-new-air-rb-meta/115858 ; https://old-wiki.warthunder.com/F4U-1A"
+},
+"G.55": {
+"status": "confirmed",
+"note": "YouTube reviews call the G.55 serie 1 'rock solid' and 'simply astounding'; wiki: energy fighter.",
+"verdict": "Strong",
+"src": "https://www.youtube.com/watch?v=vp2aef5gQ8g ; https://www.youtube.com/watch?v=UYMHbBCaFmk"
+},
+"G.55 serie": {
+"status": "confirmed",
+"note": "YouTube reviews call the G.55 serie 1 'rock solid' and 'simply astounding'; wiki: energy fighter.",
+"verdict": "Strong",
+"src": "https://www.youtube.com/watch?v=vp2aef5gQ8g ; https://www.youtube.com/watch?v=UYMHbBCaFmk"
+},
+"G.56": {
+"status": "confirmed",
+"note": "YouTube reviews call the G.55 serie 1 'rock solid' and 'simply astounding'; wiki: energy fighter.",
+"verdict": "Strong",
+"src": "https://www.youtube.com/watch?v=vp2aef5gQ8g ; https://www.youtube.com/watch?v=UYMHbBCaFmk"
+},
+"G.55S": {
+"status": "mixed",
+"note": "YouTube reviews are split: 'the Italian grinder' vs 'mid at best'.",
+"src": "https://www.youtube.com/watch?v=shSLmAjK72M ; https://www.youtube.com/watch?v=IkDXn5tSY8U"
+},
+"Re.2005 serie": {
+"status": "confirmed",
+"note": "YouTube reviewers call it 'an absolute beast', 'still the better Spitfire' and say it bullies superprops; wiki: energy/turn fighter.",
+"verdict": "Very strong",
+"src": "https://www.youtube.com/watch?v=rdFtaDGxF2I ; https://www.youtube.com/watch?v=0hNAaANOzrU ; https://www.youtube.com/watch?v=D7pSYC4cTl8"
+},
+"Re.2005": {
+"status": "confirmed",
+"note": "YouTube reviewers call it 'an absolute beast', 'still the better Spitfire' and say it bullies superprops; wiki: energy/turn fighter.",
+"verdict": "Very strong",
+"src": "https://www.youtube.com/watch?v=rdFtaDGxF2I ; https://www.youtube.com/watch?v=0hNAaANOzrU ; https://www.youtube.com/watch?v=D7pSYC4cTl8"
+},
+"re:^Sakeen": {
+"status": "confirmed",
+"note": "Forum performance guide author: below average in every category for its BR.",
+"verdict": "Weak for its BR",
+"src": "https://forum.warthunder.com/t/other-air-rb-performance-guide-2025/253194"
+},
+"re:^Mosquito B": {
+"status": "confirmed",
+"note": "Forum players: fast, agile, decent bomb load, very good at 3.7; can't shoot back at planes.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"B7A2": {
+"status": "confirmed",
+"style": "Attacker / Energy fighter",
+"note": "Forum: 'a fighter disguised as a bomber' at 3.7; kills a base with its bombs and can fight Yak-3s and Ki-44s.",
+"verdict": "Very strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"SB2C": {
+"status": "confirmed",
+"note": "Forum: one of the best low-tier dive bombers because it can also intercept planes.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706 ; https://wiki.warthunder.com/controls/3446-dive-attack-run-repeat-a-guide-to-boom-and-zoom"
+},
+"Ju 288 C": {
+"status": "confirmed",
+"note": "Forum: fast, very survivable, good turret coverage.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"Tu-2S": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"Tu-2": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"G8N1": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"A-26C": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"B-26B": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"B-25J": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"PBJ-1J": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"PBJ-1H": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"IL-4": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"Pe-8": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"Me": {
+"status": "confirmed",
+"note": "Named by forum players among the best bombers at their rank.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"B-17E": {
+"status": "confirmed",
+"note": "Steam guides: well-defended, survivable heavy bombers; gunners have almost no blind spot.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536 ; https://steamcommunity.com/sharedfiles/filedetails/?id=938400977"
+},
+"B-17G": {
+"status": "confirmed",
+"note": "Steam guides: well-defended, survivable heavy bombers; gunners have almost no blind spot.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536 ; https://steamcommunity.com/sharedfiles/filedetails/?id=938400977"
+},
+"B-29A": {
+"status": "confirmed",
+"note": "Steam guides: well-defended, survivable heavy bombers; gunners have almost no blind spot.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536 ; https://steamcommunity.com/sharedfiles/filedetails/?id=938400977"
+},
+"Tu-4": {
+"status": "confirmed",
+"note": "Steam guides: well-defended, survivable heavy bombers; gunners have almost no blind spot.",
+"verdict": "Strong",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536 ; https://steamcommunity.com/sharedfiles/filedetails/?id=938400977"
+},
+"B-24D": {
+"status": "confirmed",
+"note": "Steam bomber guide: heavy, takes a very long time to turn.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"PB4Y": {
+"status": "confirmed",
+"note": "Steam bomber guide: heavy, takes a very long time to turn.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"Do 217 K": {
+"status": "confirmed",
+"note": "Steam bomber guide: good for high-speed dive runs with four 1,000 kg bombs.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"Do 217 E": {
+"status": "confirmed",
+"note": "Steam bomber guide: good for high-speed dive runs with four 1,000 kg bombs.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"Do 217 M": {
+"status": "confirmed",
+"note": "Steam bomber guide: good for high-speed dive runs with four 1,000 kg bombs.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"SB": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"Yer-2": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"DB-3B": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"DB-3A": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"Ar-2": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"TB-3M": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"Yak-4": {
+"status": "confirmed",
+"note": "Steam bomber guide: most Soviet bombers aren't built for survivability, and their guns tend to overheat.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails?id=832216536"
+},
+"re:^B18": {
+"status": "confirmed",
+"note": "Swedish forum players: strong high-altitude performance, hard to kill, decent cannon defence at 3.7-4.0; used in Swedish 3.0-3.7 lineups.",
+"verdict": "Very strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706 ; https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"re:^T 18B": {
+"status": "confirmed",
+"note": "Swedish forum player: exceptionally good.",
+"verdict": "Very strong",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"G4M1": {
+"status": "confirmed",
+"note": "Wiki: good speed and maneuverability for a medium bomber, bombs or torpedoes; no armour, big wings.",
+"src": "https://old-wiki.warthunder.com/G4M1"
+},
+"G5N1": {
+"status": "confirmed",
+"note": "Wiki: good speed and maneuverability for a medium bomber, bombs or torpedoes; no armour, big wings.",
+"src": "https://old-wiki.warthunder.com/G4M1"
+},
+"TBF-1C": {
+"status": "confirmed",
+"note": "Wiki: torpedo bomber; robust and stable but heavy, slow and a big target.",
+"src": "https://old-wiki.warthunder.com/TBF-1C"
+},
+"Avenger": {
+"status": "confirmed",
+"note": "Wiki: torpedo bomber; robust and stable but heavy, slow and a big target.",
+"src": "https://old-wiki.warthunder.com/TBF-1C"
+},
+"TBD-1": {
+"status": "confirmed",
+"note": "Wiki: torpedo bomber; robust and stable but heavy, slow and a big target.",
+"src": "https://old-wiki.warthunder.com/TBF-1C"
+},
+"BTD-1": {
+"status": "confirmed",
+"note": "Wiki: torpedo bomber; robust and stable but heavy, slow and a big target.",
+"src": "https://old-wiki.warthunder.com/TBF-1C"
+},
+"B5N2": {
+"status": "confirmed",
+"note": "Wiki: anti-ship torpedo bomber, very maneuverable with a fast torpedo drop; fragile, no forward guns.",
+"src": "https://old-wiki.warthunder.com/B5N2"
+},
+"B6N1": {
+"status": "confirmed",
+"note": "Wiki: anti-ship torpedo bomber, very maneuverable with a fast torpedo drop; fragile, no forward guns.",
+"src": "https://old-wiki.warthunder.com/B5N2"
+},
+"B6N2": {
+"status": "confirmed",
+"note": "Wiki: anti-ship torpedo bomber, very maneuverable with a fast torpedo drop; fragile, no forward guns.",
+"src": "https://old-wiki.warthunder.com/B5N2"
+},
+"B6N2a": {
+"status": "confirmed",
+"note": "Wiki: anti-ship torpedo bomber, very maneuverable with a fast torpedo drop; fragile, no forward guns.",
+"src": "https://old-wiki.warthunder.com/B5N2"
+},
+"re:^S\\.M\\.79": {
+"status": "confirmed",
+"note": "Wiki: decent at its BR with hard-hitting 12.7 mm gunners and good speed, but small bomb load and a rear blind spot.",
+"verdict": "Moderate",
+"src": "https://old-wiki.warthunder.com/S.M.79_serie_1"
+},
+"re:^Z\\.1007": {
+"status": "confirmed",
+"note": "Wiki: hit-and-run bomber with a decent load and 360° dorsal turret; weak defence, no armour.",
+"src": "https://old-wiki.warthunder.com/Z.1007_bis_serie_5"
+},
+"re:^LeO 451": {
+"status": "confirmed",
+"note": "Wiki: versatile ground-attack bomber, agile once empty; weak forward guns.",
+"src": "https://old-wiki.warthunder.com/LeO_451_late"
+},
+"re:^Potez 63": {
+"status": "confirmed",
+"note": "Wiki: light ground attack only; poor bomb load and armament, fragile.",
+"verdict": "Weak for its BR",
+"src": "https://old-wiki.warthunder.com/Potez_633"
+},
+"H8K2": {
+"status": "confirmed",
+"note": "Wiki: flying-boat torpedo bomber with strong gunners for its rank; huge target for AA.",
+"src": "https://old-wiki.warthunder.com/H8K2"
+},
+"H8K3": {
+"status": "confirmed",
+"note": "Wiki: flying-boat torpedo bomber with strong gunners for its rank; huge target for AA.",
+"src": "https://old-wiki.warthunder.com/H8K2"
+},
+"H6K4": {
+"status": "confirmed",
+"note": "Wiki: flying-boat torpedo bomber with strong gunners for its rank; huge target for AA.",
+"src": "https://old-wiki.warthunder.com/H8K2"
+},
+"BV 238": {
+"status": "confirmed",
+"note": "Wiki and German Steam guide: massive 5-ton bomb load, very durable; huge and hard to fly loaded.",
+"verdict": "Strong",
+"src": "https://old-wiki.warthunder.com/BV_238 ; https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"re:^Ki-49": {
+"status": "confirmed",
+"note": "Wiki: very maneuverable for a bomber with many payload options; fire-prone and only ~1,000 kg of bombs.",
+"src": "https://old-wiki.warthunder.com/Ki-49-IIa"
+},
+"re:^Ki-21": {
+"status": "confirmed",
+"note": "Wiki: very maneuverable for a bomber with many payload options; fire-prone and only ~1,000 kg of bombs.",
+"src": "https://old-wiki.warthunder.com/Ki-49-IIa"
+},
+"re:^Ki-48": {
+"status": "confirmed",
+"note": "Wiki: very maneuverable for a bomber with many payload options; fire-prone and only ~1,000 kg of bombs.",
+"src": "https://old-wiki.warthunder.com/Ki-49-IIa"
+},
+"D4Y1": {
+"status": "confirmed",
+"style": "Attacker / Energy fighter",
+"note": "Wiki: multirole; bomber air spawn lets it climb above and intercept fighters, fast and agile, but too few bombs for bases.",
+"verdict": "Strong",
+"src": "https://old-wiki.warthunder.com/D4Y1"
+},
+"D4Y2": {
+"status": "confirmed",
+"style": "Attacker / Energy fighter",
+"note": "Wiki: multirole; bomber air spawn lets it climb above and intercept fighters, fast and agile, but too few bombs for bases.",
+"verdict": "Strong",
+"src": "https://old-wiki.warthunder.com/D4Y1"
+},
+"D4Y3 Ko": {
+"status": "confirmed",
+"style": "Attacker / Energy fighter",
+"note": "Wiki: multirole; bomber air spawn lets it climb above and intercept fighters, fast and agile, but too few bombs for bases.",
+"verdict": "Strong",
+"src": "https://old-wiki.warthunder.com/D4Y1"
+},
+"re:^Ki-67": {
+"status": "confirmed",
+"note": "Wiki: ground attack and a feared fast-dropping torpedo; armoured pilot; bombs capped at 800 kg.",
+"src": "https://old-wiki.warthunder.com/Ki-67-I_otsu"
+},
+"P1Y1 mod.": {
+"status": "confirmed",
+"note": "Wiki: very fast and surprisingly agile ground attacker; 20 mm turrets kill fighters; no forward guns, small payload.",
+"src": "https://old-wiki.warthunder.com/P1Y1_mod._11"
+},
+"SB2U-2": {
+"status": "confirmed",
+"note": "Wiki: maneuverable dive bomber that dives well; slow and a big target.",
+"src": "https://old-wiki.warthunder.com/SB2U-2"
+},
+"SB2U-3": {
+"status": "confirmed",
+"note": "Wiki: maneuverable dive bomber that dives well; slow and a big target.",
+"src": "https://old-wiki.warthunder.com/SB2U-2"
+},
+"SBD-3": {
+"status": "confirmed",
+"note": "Wiki: maneuverable dive bomber that dives well; slow and a big target.",
+"src": "https://old-wiki.warthunder.com/SB2U-2"
+},
+"Swordfish Mk I": {
+"status": "confirmed",
+"note": "Wiki: moderately effective early bomber/torpedo plane; surprisingly agile but terribly slow and weak vs fighters and AA.",
+"src": "https://old-wiki.warthunder.com/Swordfish_Mk_I"
+},
+"Swordfish Mk II": {
+"status": "confirmed",
+"note": "Wiki: moderately effective early bomber/torpedo plane; surprisingly agile but terribly slow and weak vs fighters and AA.",
+"src": "https://old-wiki.warthunder.com/Swordfish_Mk_I"
+},
+"Ju 188 A": {
+"status": "confirmed",
+"note": "Wiki: fast, durable bomber (faster than the Do 217s); weak stock payload, no frontal armour.",
+"src": "https://old-wiki.warthunder.com/Ju_188_A-2"
+},
+"Fw 189 A": {
+"status": "confirmed",
+"note": "Wiki: multi-purpose heavy fighter, agile at all speeds with air spawn; tiny payload, poor acceleration.",
+"src": "https://old-wiki.warthunder.com/Fw_189_A-1"
+},
+"Fw 189 C": {
+"status": "confirmed",
+"note": "Wiki: multi-purpose heavy fighter, agile at all speeds with air spawn; tiny payload, poor acceleration.",
+"src": "https://old-wiki.warthunder.com/Fw_189_A-1"
+},
+"re:^BV 238": {
+"status": "confirmed",
+"note": "Wiki and German Steam guide: massive 5-ton bomb load, very durable; huge and hard to fly loaded.",
+"verdict": "Strong",
+"src": "https://old-wiki.warthunder.com/BV_238 ; https://steamcommunity.com/sharedfiles/filedetails/?id=2927086274"
+},
+"re:^SB2U": {
+"status": "confirmed",
+"note": "Wiki: maneuverable dive bomber that dives well; slow and a big target.",
+"src": "https://old-wiki.warthunder.com/SB2U-2"
+},
+"re:^SBD": {
+"status": "confirmed",
+"note": "Wiki: maneuverable dive bomber that dives well; slow and a big target.",
+"src": "https://old-wiki.warthunder.com/SB2U-2"
+},
+"re:^T18B": {
+"status": "confirmed",
+"note": "Swedish forum player: exceptionally good.",
+"verdict": "Very strong",
+"src": "https://forum.warthunder.com/t/whats-the-best-aircraft-for-each-rank-swedish-air/200075"
+},
+"re:^S\\.81": {
+"status": "confirmed",
+"note": "Forum players favor them as low-tier bombers that can defend themselves.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^B\\.R\\.20": {
+"status": "confirmed",
+"note": "Forum players favor them as low-tier bombers that can defend themselves.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^B-26C": {
+"status": "confirmed",
+"note": "Forum: the French B-26C gets caught by Wyverns before reaching targets.",
+"verdict": "Weak",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^F\\.222": {
+"status": "confirmed",
+"note": "Forum: low BR with a big payload, but climbs poorly.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^BB-1": {
+"status": "confirmed",
+"note": "Named by forum players among the best Rank I bombers.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^DB-LK": {
+"status": "confirmed",
+"note": "Named by forum players among the best Rank I bombers.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^Hampden": {
+"status": "confirmed",
+"note": "Named by forum players among the best Rank I bombers.",
+"verdict": "Strong",
+"src": "https://forum.warthunder.com/t/best-bomber-on-each-rank-counting-all-nations/308706"
+},
+"re:^V-156": {
+"status": "confirmed",
+"note": "British Steam guide: dive bomber that can fight as a fighter after dropping its bombs.",
+"src": "https://steamcommunity.com/sharedfiles/filedetails/?id=2840282704"
+},
+"re:^Pe-2": {
+"status": "confirmed",
+"note": "Wiki: outstanding performance and maneuverability for a bomber, fast dive bomber with forward guns; fire-prone, small internal payload.",
+"verdict": "Strong",
+"src": "https://old-wiki.warthunder.com/Pe-2-205"
+},
+"re:^D3A1": {
+"status": "confirmed",
+"note": "Wiki: excellent maneuverability and precise dive bombing; fragile with weak guns.",
+"src": "https://old-wiki.warthunder.com/D3A1"
+},
+"re:PBY-5": {
+"status": "confirmed",
+"note": "Wiki: big bomb load or torpedoes and many turrets; slow, terrible roll, fragile wings.",
+"src": "https://old-wiki.warthunder.com/PBY-5A_Catalina_(USSR)"
+},
+"re:^Catalina": {
+"status": "confirmed",
+"note": "Wiki: big bomb load or torpedoes and many turrets; slow, terrible roll, fragile wings.",
+"src": "https://old-wiki.warthunder.com/PBY-5A_Catalina_(USSR)"
+},
+"re:^Do 17": {
+"status": "confirmed",
+"note": "Wiki: support bomber with a decent payload, agile for its rank; slow and a big target.",
+"verdict": "Weak for its BR",
+"src": "https://old-wiki.warthunder.com/Do_17_E-1"
+},
+"re:^P\\.108": {
+"status": "confirmed",
+"note": "Wiki: heavy bomber with a big payload and rear-facing engine turrets; no nose gun, poor climb and handling.",
+"src": "https://old-wiki.warthunder.com/P.108B_serie_2"
+},
+"re:^Po-2": {
+"status": "confirmed",
+"note": "Wiki: very maneuverable ground-RB dive bomber; horribly slow, fragile, no forward guns.",
+"verdict": "Weak for its BR",
+"src": "https://old-wiki.warthunder.com/Po-2"
+},
+"re:^M\\.B\\.17[45]": {
+"status": "confirmed",
+"note": "Wiki: exceptionally fast and agile for a bomber, good 500 kg dive bomber; weak stock load and gunners.",
+"src": "https://old-wiki.warthunder.com/M.B.174A-3"
+},
+"re:^B-34": {
+"status": "confirmed",
+"note": "Wiki: durable frontline bomber and bomber interceptor with effective nose guns; belly blind spot, poor climb.",
+"verdict": "Strong for its BR",
+"src": "https://old-wiki.warthunder.com/B-34"
+},
+"re:^Wirraway": {
+"status": "confirmed",
+"note": "Wiki: fighter-bomber with a large bomb load and good maneuverability, but very slow; outclassed by the Bf 109 E.",
+"verdict": "Weak for its BR",
+"src": "https://old-wiki.warthunder.com/Wirraway_(Great_Britain)"
+}
+}

@@ -62,9 +62,14 @@ for n in NATIONS:
             best = pick(cands, b, mode, False)
             tech = pick(cands, b, mode, True)
             if len(best) < 2: continue
+            styles = {}
+            for skey, term in (("bnz", "Boom & Zoom"), ("nrg", "Energy fighter"), ("trn", "Turn fighter")):
+                pool = [r for r in cands if term in r["style"] and is_fighterish(r)]
+                styles[skey] = pick(pool, b, mode, False)[:5] if pool else []
             fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"]}
             rows.append({"nation": n, "mode": mode, "br": b, "best": [fmt(r) for r in best], "tech": [fmt(r) for r in tech],
-                         "same": [r["id"] for r in best] == [r["id"] for r in tech]})
+                         "same": [r["id"] for r in best] == [r["id"] for r in tech],
+                         "styles": {k: [fmt(r) for r in v] for k, v in styles.items()}})
 json.dump(rows, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)
 print(len(rows), "lineups")
 for r in rows:

@@ -11,7 +11,7 @@ def rn(v,p=1):
     return None if v is None else (round(v,p) if p else int(round(v)))
 out=[]
 for r in d:
-    out.append({"n":r["nation"],"rk":r["rank"],"c":r["column"],"o":r["order"],"f":nb(r["folder"]),"nm":nb(r["name"]),"fn":nb(r["full_name"]),
+    out.append({"id":r["id"],"n":r["nation"],"rk":r["rank"],"c":r["column"],"o":r["order"],"f":nb(r["folder"]),"nm":nb(r["name"]),"fn":nb(r["full_name"]),
       "ob":r["obtain"],"role":r["role"],"s":r["style"],"ab":r["br_ab"],"rb":r["br_rb"],"sb":r["br_sb"],
       "spd":r["top_speed_kmh"],"spa":r["top_speed_alt_m"],"sls":r["sl_speed_kmh"],"clb":rn(r["climb_rate_ms"]),"clt":rn(r["climb_time_s"],0),"cla":rn(r["climb_alt_m"],0),
       "trn":rn(r["turn_time_s"]),"rol":rn(r["roll_rate"],0),"ceil":rn(r["ceiling_m"],0),"wl":rn(r["wing_loading"],0),"pw":rn(r["pwr"],2),
@@ -21,8 +21,8 @@ for r in d:
       "rp":r["research_rp"],"sl":r["cost_sl"] or None,"ge":r["cost_ge"],"rr":r["repair_rb"] or None,"rpm":r["rp_mult"],
       "str":r["strengths"],"tg":r.get("tags",[]),"vs":r.get("verify_status",""),"vn":r.get("verify_note",""),"vsrc":r.get("verify_src",""),"bl":r.get("bomb_load_kg"),"cp":r.get("comm_pros",""),"cc":r.get("comm_cons",""),"cv":r.get("comm_verdict",""),"ss":r.get("stat_style",""),"src":r.get("comm_src",""),"wk":r["weaknesses"],"tip":r["tips"]})
 for x in lu:
-    for L in (x["best"],x["tech"]):
-        for p in L: p["name"]=nb(p["name"]); p.pop("id",None)
+    for L in [x["best"],x["tech"],x.get("step",[])]+list(x.get("styles",{}).values()):
+        for p in L: p["name"]=nb(p["name"])
 j=lambda o:json.dumps(o,ensure_ascii=False,separators=(",",":"))
 os.makedirs(OUTDIR, exist_ok=True)
 open(os.path.join(OUTDIR,"planes.json"),"w").write(j(out))

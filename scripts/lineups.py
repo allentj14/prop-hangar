@@ -66,10 +66,22 @@ for n in NATIONS:
             for skey, term in (("bnz", "Boom & Zoom"), ("nrg", "Energy fighter"), ("trn", "Turn fighter")):
                 pool = [r for r in cands if term in r["style"] and is_fighterish(r)]
                 styles[skey] = pick(pool, b, mode, False)[:5] if pool else []
-            fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"]}
+            fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"], "rk": r["rank"]}
+            # Step up: planes 0.3-0.7 above this BR that are strong enough to be worth raising the lineup for
+            above = [r for r in planes if b + 1e-9 < r[key] <= b + 0.7 + 1e-9 and (is_fighterish(r) or is_strike(r))]
+            floor = min((r["perf_score"] for r in best), default=0)
+            best_ids = {r["id"] for r in best}
+            seen = set()
+            step = []
+            for r in sorted(above, key=lambda r: (-(r["perf_score"] - 0.06 * (r[key] - b) / 0.33))):
+                sg = (r.get("guns"), r["top_speed_kmh"], r["turn_time_s"])
+                if r["id"] in best_ids or sg in seen or r["perf_score"] <= floor: continue
+                seen.add(sg); step.append(r)
+                if len(step) >= 3: break
             rows.append({"nation": n, "mode": mode, "br": b, "best": [fmt(r) for r in best], "tech": [fmt(r) for r in tech],
                          "same": [r["id"] for r in best] == [r["id"] for r in tech],
-                         "styles": {k: [fmt(r) for r in v] for k, v in styles.items()}})
+                         "styles": {k: [fmt(r) for r in v] for k, v in styles.items()},
+                         "step": [dict(fmt(r), to=r[key]) for r in step]})
 json.dump(rows, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)
 print(len(rows), "lineups")
 for r in rows:

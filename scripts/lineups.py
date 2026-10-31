@@ -80,6 +80,21 @@ for n in NATIONS:
                 if sg in seen: continue
                 seen.add(sg); step.append(r)
                 if len(step) >= 4: break
+            # Undertiered: 5 planes rated AT OR BELOW this BR that play the most above their rating
+            # (one plane must sit at exactly this BR so the lineup really is this BR)
+            ucands = [r for r in planes if b - 1.0 - 1e-9 <= r[key] <= b + 1e-9 and is_fighterish(r)
+                      and r.get(pk) is not None]
+            usort = sorted(ucands, key=lambda r: (-(r.get(pk) or 0), -(r.get(ok) or 0)))
+            seen, under = set(), []
+            for r in usort:
+                sg = (r.get("guns"), r["top_speed_kmh"], r["turn_time_s"])
+                if sg in seen: continue
+                seen.add(sg); under.append(r)
+                if len(under) >= 5: break
+            if under and not any(abs(r[key] - b) < 1e-9 for r in under):
+                top = next((r for r in usort if abs(r[key] - b) < 1e-9), None)
+                if top: under = [top] + under[:4]
+            under.sort(key=lambda r: -(r.get(pk) or 0))
             # Watch out for: enemy planes from ANY nation you can meet (up to +1.0) that play well above their BR
             threats = [r for r in d if r.get(key) is not None and b - 0.3 - 1e-9 <= r[key] <= b + 1.0 + 1e-9 and is_fighterish(r)
                        and (r.get(ok) or 0) >= 0.6 and (r.get(pk) or 0) >= b + 0.7]
@@ -93,7 +108,8 @@ for n in NATIONS:
                          "same": [r["id"] for r in best] == [r["id"] for r in tech],
                          "styles": {k: [fmt(r) for r in v] for k, v in styles.items()},
                          "step": [dict(fmt2(r), to=r[key]) for r in step],
-                         "watch": [fmt2(r) for r in watch]})
+                         "watch": [fmt2(r) for r in watch],
+                         "under": [fmt2(r) for r in under]})
 json.dump(rows, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)
 print(len(rows), "lineups")
 for r in rows:

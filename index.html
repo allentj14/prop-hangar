@@ -117,6 +117,7 @@ details.pick[open]>summary{color:var(--accent)}
 .rkb{display:inline-block;min-width:2.1em;font-family:var(--f-data);font-size:.68rem;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 3px;margin-right:6px;text-align:center}
 .stepup{border-top:1px dashed var(--line);padding-top:6px}
 .stephd{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600;margin-bottom:3px}
+b.plays{color:var(--trn)}
 .watch .stephd{color:var(--bnz)}
 .br small.up{color:var(--trn);font-weight:600}
 .br small.dn{color:var(--bnz)}
@@ -147,7 +148,7 @@ details.pick[open]>summary{color:var(--accent)}
   </div>
   <div class="controls" id="ctl-lineups" hidden>
     <div class="seg" role="group" aria-label="Game mode"><button id="l-rb" aria-pressed="true">RB</button><button id="l-ab" aria-pressed="false">AB</button></div>
-    <div class="seg" role="group" aria-label="Which planes"><button id="l-all" aria-pressed="true">Best</button><button id="l-tech" aria-pressed="false">Tech tree only</button><button id="l-step" aria-pressed="false">Step up</button></div>
+    <div class="seg" role="group" aria-label="Which planes"><button id="l-all" aria-pressed="true">Best</button><button id="l-tech" aria-pressed="false">Tech tree only</button><button id="l-step" aria-pressed="false">Step up</button><button id="l-under" aria-pressed="false">Undertiered</button></div>
     <div class="seg" role="group" aria-label="Play style"><button id="ls-all" aria-pressed="true">All styles</button><button id="ls-bnz" aria-pressed="false">BnZ</button><button id="ls-nrg" aria-pressed="false">Energy</button><button id="ls-trn" aria-pressed="false">Turn</button></div>
   </div>
 </header>
@@ -163,9 +164,9 @@ let META = {};
 let BYID = {};
 const NATIONS = ["USA","Germany","USSR","Great Britain","Japan","China","Italy","France","Sweden","Israel"];
 const ROMAN = ["","I","II","III","IV","V","VI","VII","VIII","IX"];
-const st = {view:"planes", nation:"USA", q:"", style:"", rank:"", mode:"rb", lmode:"RB", tech:false, lstyle:"all", step:false};
+const st = {view:"planes", nation:"USA", q:"", style:"", rank:"", mode:"rb", lmode:"RB", tech:false, lstyle:"all", step:false, under:false};
 try{const s=JSON.parse(localStorage.getItem("wt-hangar")||"{}");Object.assign(st,s);}catch(e){}
-const save=()=>{try{localStorage.setItem("wt-hangar",JSON.stringify({nation:st.nation,mode:st.mode,lmode:st.lmode,tech:st.tech,view:st.view,lstyle:st.lstyle,step:st.step}))}catch(e){}};
+const save=()=>{try{localStorage.setItem("wt-hangar",JSON.stringify({nation:st.nation,mode:st.mode,lmode:st.lmode,tech:st.tech,view:st.view,lstyle:st.lstyle,step:st.step,under:st.under}))}catch(e){}};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -269,11 +270,13 @@ function watchBlock(x){
   if(!x.watch||!x.watch.length) return "";
   return `<div class="stepup watch"><div class="stephd">Watch out for (any nation)</div><ol>${x.watch.map(p=>pickItem(p,` · ${esc(p.n)} · plays like ~${(p.pl||p.br).toFixed(1)}`)).join("")}</ol></div>`;
 }
+function lineupRows(rows){
+  return rows.map(x=>{const L=st.under?(x.under||[]):st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol"><ol>${L.map(p=>pickItem(p,st.under&&p.pl?` · <b class="plays">plays like ~${p.pl.toFixed(1)}</b>`:"")).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></div>`}).join("");
+}
 function renderLineups(){
   if(st.nation==="All"){$("lineups").innerHTML='<p class="note">Lineups are per nation. Pick a nation above.</p>';return;}
   const rows=LINEUPS.filter(x=>x.nation===st.nation && x.mode===st.lmode);
-  $("lineups").innerHTML=`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?"<b>Step up</b> shows planes up to 1.0 BR higher that play above their BR and beat your weakest pick; bringing one raises your whole lineup to its BR. ":""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+
-    rows.map(x=>{const L=st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol"><ol>${L.map(p=>pickItem(p)).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></div>`}).join("")+"</div>";
+  $("lineups").innerHTML=st.under?`<p class="note"><b>Undertiered</b>: for each BR, the 5 planes rated at or below it that perform the most above their rating, so your lineup stays at that BR but flies like a higher one. One plane is always at exactly the lineup BR. "Plays like" is an estimate from stats plus community opinion. Roman numeral = research rank. Tap a plane for details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>":`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?"<b>Step up</b> shows planes up to 1.0 BR higher that play above their BR and beat your weakest pick; bringing one raises your whole lineup to its BR. ":""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>";
 }
 function render(){
   $("tab-planes").setAttribute("aria-pressed",st.view==="planes");$("tab-lineups").setAttribute("aria-pressed",st.view==="lineups");
@@ -281,7 +284,7 @@ function render(){
   $("ctl-planes").hidden=st.view!=="planes";$("ctl-lineups").hidden=st.view!=="lineups";
   $("m-rb").setAttribute("aria-pressed",st.mode==="rb");$("m-ab").setAttribute("aria-pressed",st.mode==="ab");
   $("l-rb").setAttribute("aria-pressed",st.lmode==="RB");$("l-ab").setAttribute("aria-pressed",st.lmode==="AB");
-  $("l-all").setAttribute("aria-pressed",!st.tech&&!st.step);$("l-tech").setAttribute("aria-pressed",st.tech&&!st.step);$("l-step").setAttribute("aria-pressed",st.step);
+  $("l-all").setAttribute("aria-pressed",!st.tech&&!st.step&&!st.under);$("l-tech").setAttribute("aria-pressed",st.tech);$("l-step").setAttribute("aria-pressed",st.step);$("l-under").setAttribute("aria-pressed",st.under);
   ["all","bnz","nrg","trn"].forEach(k=>$("ls-"+k).setAttribute("aria-pressed",st.lstyle===k));
   if(st.view==="planes"){rankOptions();renderPlanes();}else renderLineups();
 }
@@ -293,7 +296,8 @@ $("rank").onchange=e=>{st.rank=e.target.value;renderPlanes();};
 $("m-rb").onclick=()=>{st.mode="rb";save();render()};$("m-ab").onclick=()=>{st.mode="ab";save();render()};
 $("l-rb").onclick=()=>{st.lmode="RB";save();render()};$("l-ab").onclick=()=>{st.lmode="AB";save();render()};
 ["all","bnz","nrg","trn"].forEach(k=>{$("ls-"+k).onclick=()=>{st.lstyle=k;save();render()}});
-$("l-all").onclick=()=>{st.tech=false;st.step=false;save();render()};$("l-tech").onclick=()=>{st.tech=true;st.step=false;save();render()};$("l-step").onclick=()=>{st.step=true;st.tech=false;save();render()};
+const lv=(t,s,u)=>{st.tech=t;st.step=s;st.under=u;if(u||s)st.lstyle="all";save();render()};
+$("l-all").onclick=()=>lv(false,false,false);$("l-tech").onclick=()=>lv(true,false,false);$("l-step").onclick=()=>lv(false,true,false);$("l-under").onclick=()=>lv(false,false,true);
 // open a plane's full card inside the lineup when tapped (built on first open)
 document.addEventListener("toggle",e=>{const d=e.target;if(!d.classList||!d.classList.contains("pick")||!d.open)return;const b=d.querySelector(".pickbody");if(b.innerHTML)return;const r=BYID[d.dataset.id];b.innerHTML=r?card(r).replace('<details class="card">','<details class="card" open>'):'<p class="note">Details not found.</p>';},true);
 if(st.nation!=="All" && !NATIONS.includes(st.nation)) st.nation="USA";

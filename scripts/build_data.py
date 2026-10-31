@@ -19,9 +19,9 @@ for r in d:
       "dg":nb(r.get("def_guns")),"bo":nb(r.get("bombs")),"ro":nb(r.get("rockets")),"to":nb(r.get("torpedoes")),"gp":nb(r.get("gun_pods")),
       "eng":em(r["engine_model"]),"ne":r["engines"],"cr":r["crew"],"tom":rn(r["takeoff_mass_kg"],0),"fu":rn(r["fuel_kg"],0),"ft":r["flight_time_min"],
       "rp":r["research_rp"],"sl":r["cost_sl"] or None,"ge":r["cost_ge"],"rr":r["repair_rb"] or None,"rpm":r["rp_mult"],
-      "str":r["strengths"],"tg":r.get("tags",[]),"vs":r.get("verify_status",""),"vn":r.get("verify_note",""),"vsrc":r.get("verify_src",""),"bl":r.get("bomb_load_kg"),"cp":r.get("comm_pros",""),"cc":r.get("comm_cons",""),"cv":r.get("comm_verdict",""),"ss":r.get("stat_style",""),"src":r.get("comm_src",""),"wk":r["weaknesses"],"tip":r["tips"]})
+      "str":r["strengths"],"tg":r.get("tags",[]),"plr":r.get("plays_like_rb"),"pla":r.get("plays_like_ab"),"ovr":r.get("over_rb"),"ova":r.get("over_ab"),"vs":r.get("verify_status",""),"vn":r.get("verify_note",""),"vsrc":r.get("verify_src",""),"bl":r.get("bomb_load_kg"),"cp":r.get("comm_pros",""),"cc":r.get("comm_cons",""),"cv":r.get("comm_verdict",""),"ss":r.get("stat_style",""),"src":r.get("comm_src",""),"wk":r["weaknesses"],"tip":r["tips"]})
 for x in lu:
-    for L in [x["best"],x["tech"],x.get("step",[])]+list(x.get("styles",{}).values()):
+    for L in [x["best"],x["tech"],x.get("step",[]),x.get("watch",[])]+list(x.get("styles",{}).values()):
         for p in L: p["name"]=nb(p["name"])
 j=lambda o:json.dumps(o,ensure_ascii=False,separators=(",",":"))
 os.makedirs(OUTDIR, exist_ok=True)

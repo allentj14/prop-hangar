@@ -117,6 +117,9 @@ details.pick[open]>summary{color:var(--accent)}
 .rkb{display:inline-block;min-width:2.1em;font-family:var(--f-data);font-size:.68rem;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 3px;margin-right:6px;text-align:center}
 .stepup{border-top:1px dashed var(--line);padding-top:6px}
 .stephd{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600;margin-bottom:3px}
+.watch .stephd{color:var(--bnz)}
+.br small.up{color:var(--trn);font-weight:600}
+.br small.dn{color:var(--bnz)}
 .stepup ol{margin:0;padding-left:18px;display:grid;gap:3px;font-size:.9rem}
 .lurow li span{font-family:var(--f-data);font-size:.75rem;color:var(--muted)}
 .note{font-size:.82rem;color:var(--muted);max-width:65ch}
@@ -204,7 +207,7 @@ function card(r){
   const blk=(h,t,c="")=>t?`<div class="blk"><h4>${h}</h4><p class="${c}">${esc(t)}</p></div>`:"";
   return `<details class="card"><summary>
     <div><div class="nm">${esc(r.nm)}</div><div class="pos">${st.nation==="All"?esc(r.n)+" · ":""}Col ${r.c} · #${r.o}${r.f?" · "+esc(r.f):""} · ${esc(r.role)}</div></div>
-    <div class="br">${br!=null?br.toFixed(1):"–"}<small>${st.mode.toUpperCase()} BR</small></div>
+    <div class="br">${br!=null?br.toFixed(1):"–"}<small>${st.mode.toUpperCase()} BR</small>${(()=>{const pl=st.mode==="rb"?r.plr:r.pla,ov=st.mode==="rb"?r.ovr:r.ova;return pl!=null&&Math.abs(ov)>=0.3?`<small class="${ov>0?"up":"dn"}">plays ~${pl.toFixed(1)}</small>`:""})()}</div>
     <div class="tags">${stylePills(r.s)}${r.ob!=="Tech tree"?`<span class="pill prem">★ ${esc(r.ob)}</span>`:""}</div>
     ${armLine(r)}
     <div class="quick"><div><b>Speed</b>${fmt(r.spd)}</div><div><b>Climb</b>${fmt(r.clb)}</div><div><b>Turn</b>${fmt(r.trn,"s")}</div><div><b>Roll</b>${fmt(r.rol,"°")}</div></div>
@@ -260,13 +263,17 @@ function pickItem(p, extra){
 }
 function stepBlock(x){
   if(!x.step||!x.step.length) return "";
-  return `<div class="stepup"><div class="stephd">Worth stepping up for</div><ol>${x.step.map(p=>pickItem(p,` · raises lineup to <b>${p.to.toFixed(1)}</b>`)).join("")}</ol></div>`;
+  return `<div class="stepup"><div class="stephd">Worth stepping up for</div><ol>${x.step.map(p=>pickItem(p,` · plays like ~${(p.pl||p.br).toFixed(1)} · lineup becomes <b>${p.to.toFixed(1)}</b>`)).join("")}</ol></div>`;
+}
+function watchBlock(x){
+  if(!x.watch||!x.watch.length) return "";
+  return `<div class="stepup watch"><div class="stephd">Watch out for (any nation)</div><ol>${x.watch.map(p=>pickItem(p,` · ${esc(p.n)} · plays like ~${(p.pl||p.br).toFixed(1)}`)).join("")}</ol></div>`;
 }
 function renderLineups(){
   if(st.nation==="All"){$("lineups").innerHTML='<p class="note">Lineups are per nation. Pick a nation above.</p>';return;}
   const rows=LINEUPS.filter(x=>x.nation===st.nation && x.mode===st.lmode);
-  $("lineups").innerHTML=`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?"<b>Step up</b> shows planes 0.3–0.7 BR higher that are stronger than the weakest pick; bringing one raises your whole lineup to its BR. ":""}${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+
-    rows.map(x=>{const L=st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol"><ol>${L.map(p=>pickItem(p)).join("")}</ol>${st.step?stepBlock(x):""}</div></div>`}).join("")+"</div>";
+  $("lineups").innerHTML=`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?"<b>Step up</b> shows planes up to 1.0 BR higher that play above their BR and beat your weakest pick; bringing one raises your whole lineup to its BR. ":""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+
+    rows.map(x=>{const L=st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol"><ol>${L.map(p=>pickItem(p)).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></div>`}).join("")+"</div>";
 }
 function render(){
   $("tab-planes").setAttribute("aria-pressed",st.view==="planes");$("tab-lineups").setAttribute("aria-pressed",st.view==="lineups");

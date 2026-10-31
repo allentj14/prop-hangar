@@ -67,21 +67,33 @@ for n in NATIONS:
                 pool = [r for r in cands if term in r["style"] and is_fighterish(r)]
                 styles[skey] = pick(pool, b, mode, False)[:5] if pool else []
             fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"], "rk": r["rank"]}
-            # Step up: planes 0.3-0.7 above this BR that are strong enough to be worth raising the lineup for
-            above = [r for r in planes if b + 1e-9 < r[key] <= b + 0.7 + 1e-9 and (is_fighterish(r) or is_strike(r))]
-            floor = min((r["perf_score"] for r in best), default=0)
+            ok = "over_" + mode.lower(); pk = "plays_like_" + mode.lower()
+            fmt2 = lambda r: dict(fmt(r), pl=r.get(pk), ov=r.get(ok), n=r["nation"])
+            # Step up: planes up to +1.0 BR that play above their BR and beat the weakest pick
+            floor_pl = min((r.get(pk) or r[key]) for r in best) if best else 0
             best_ids = {r["id"] for r in best}
-            seen = set()
-            step = []
-            for r in sorted(above, key=lambda r: (-(r["perf_score"] - 0.06 * (r[key] - b) / 0.33))):
+            above = [r for r in planes if b + 1e-9 < r[key] <= b + 1.0 + 1e-9 and is_fighterish(r)
+                     and (r.get(ok) or 0) >= 0.3 and (r.get(pk) or 0) > floor_pl and r["id"] not in best_ids]
+            seen, step = set(), []
+            for r in sorted(above, key=lambda r: (-(r.get(pk) or 0) + 0.3 * (r[key] - b), -(r.get(ok) or 0))):
                 sg = (r.get("guns"), r["top_speed_kmh"], r["turn_time_s"])
-                if r["id"] in best_ids or sg in seen or r["perf_score"] <= floor: continue
+                if sg in seen: continue
                 seen.add(sg); step.append(r)
-                if len(step) >= 3: break
+                if len(step) >= 4: break
+            # Watch out for: enemy planes from ANY nation you can meet (up to +1.0) that play well above their BR
+            threats = [r for r in d if r.get(key) is not None and b - 0.3 - 1e-9 <= r[key] <= b + 1.0 + 1e-9 and is_fighterish(r)
+                       and (r.get(ok) or 0) >= 0.6 and (r.get(pk) or 0) >= b + 0.7]
+            seen, watch = set(), []
+            for r in sorted(threats, key=lambda r: -((r.get(pk) or 0) - b)):
+                sg = (r.get("guns"), r["top_speed_kmh"], r["turn_time_s"])
+                if sg in seen: continue
+                seen.add(sg); watch.append(r)
+                if len(watch) >= 8: break
             rows.append({"nation": n, "mode": mode, "br": b, "best": [fmt(r) for r in best], "tech": [fmt(r) for r in tech],
                          "same": [r["id"] for r in best] == [r["id"] for r in tech],
                          "styles": {k: [fmt(r) for r in v] for k, v in styles.items()},
-                         "step": [dict(fmt(r), to=r[key]) for r in step]})
+                         "step": [dict(fmt2(r), to=r[key]) for r in step],
+                         "watch": [fmt2(r) for r in watch]})
 json.dump(rows, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)
 print(len(rows), "lineups")
 for r in rows:

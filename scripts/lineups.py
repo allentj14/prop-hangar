@@ -56,6 +56,25 @@ def pick(cands, b, mode, techonly):
     chosen.sort(key=lambda r: -sc(r))
     return chosen[:5]
 
+STEPS = [round(i + f, 1) for i in range(0, 16) for f in (0.0, 0.3, 0.7)]
+def ab_match_br(brs):
+    """Air Arcade matchmaking BR from the official formula: A/2 + B/4 + C/4 over the 3 highest BRs.
+    A lower plane counts as at most A-0.6; if it is 2.0+ below A it counts as A. Missing planes count as A-0.6.
+    Result is rounded UP to the next BR step and is never more than one step below A."""
+    top = sorted(brs, reverse=True)[:3]
+    A = top[0]
+    def eff(x):
+        if x is None: return A - 0.6
+        gap = A - x
+        if gap >= 2.0 - 1e-9: return A
+        if gap > 0.6 + 1e-9: return A - 0.6
+        return x
+    B = eff(top[1] if len(top) > 1 else None); C = eff(top[2] if len(top) > 2 else None)
+    v = A / 2 + B / 4 + C / 4
+    br = next(st for st in STEPS if st >= v - 1e-6)
+    lower = max(st for st in STEPS if st < A - 1e-6) if A > 1.0 else A
+    return max(br, lower)
+
 rows = []
 UNAVAILABLE = ("No longer obtainable", "Special account", "PlayStation only", "Xbox only", "Removed")
 def can_get(r):
@@ -63,6 +82,7 @@ def can_get(r):
 for n in NATIONS:
     for mode, key in (("RB", "br_rb"), ("AB", "br_ab")):
         planes = [r for r in d if r["nation"] == n and r[key] is not None and can_get(r)]
+        d_n_all = planes
         brs = sorted({r[key] for r in planes if is_fighterish(r) or is_strike(r)})
         for b in brs:
             cands = [r for r in planes if b - 1.0 <= r[key] <= b + 1e-9]
@@ -103,6 +123,31 @@ for n in NATIONS:
                 top = next((r for r in usort if abs(r[key] - b) < 1e-9), None)
                 if top: under = [top] + under[:4]
             under.sort(key=lambda r: -(r.get(pk) or 0))
+            # Carry lineup (Arcade only): one plane one step ABOVE this BR + lower planes so the
+            # official average formula brings the match back down to this BR
+            carry = []; carry_br = None
+            if mode == "AB":
+                up = [st for st in STEPS if st > b + 1e-6]
+                A_br = up[0] if up else None
+                tops = sorted([r for r in d_n_all if abs(r[key] - (A_br or -9)) < 1e-6 and is_fighterish(r)],
+                              key=lambda r: -((r.get(pk) or r[key]) + 0.02 * (r.get(ok) or 0)))
+                lows = sorted([r for r in planes if is_fighterish(r) and A_br and 0.7 - 1e-6 <= A_br - r[key] <= 1.7 + 1e-6],
+                              key=lambda r: -((r.get(pk) or r[key]) + 0.3 * r["perf_score"]))
+                if tops and len(lows) >= 2:
+                    A = tops[0]; seen = {A["name"]}; chosen_c = [A]
+                    for r in lows:
+                        if r["name"] in seen: continue
+                        chosen_c.append(r); seen.add(r["name"])
+                        if len(chosen_c) == 3: break
+                    floor_c = min(r[key] for r in chosen_c[1:])
+                    fill = sorted([r for r in planes if is_fighterish(r) and r[key] <= floor_c + 1e-6 and r["name"] not in seen],
+                                  key=lambda r: -((r.get(pk) or r[key]) + 0.3 * r["perf_score"]))
+                    for r in fill:
+                        if len(chosen_c) >= 5: break
+                        chosen_c.append(r); seen.add(r["name"])
+                    mb = ab_match_br([r[key] for r in chosen_c])
+                    if abs(mb - b) < 1e-6:
+                        carry = chosen_c; carry_br = mb
             # Watch out for: enemy planes from ANY nation you can meet (up to +1.0) that play well above their BR
             threats = [r for r in d if r.get(key) is not None and b - 0.3 - 1e-9 <= r[key] <= b + 1.0 + 1e-9 and is_fighterish(r)
                        and (r.get(ok) or 0) >= 0.6 and (r.get(pk) or 0) >= b + 0.7]
@@ -117,10 +162,21 @@ for n in NATIONS:
                          "styles": {k: [fmt(r) for r in v] for k, v in styles.items()},
                          "step": [dict(fmt2(r), to=r[key]) for r in step],
                          "watch": [fmt2(r) for r in watch],
-                         "under": [fmt2(r) for r in under]})
+                         "under": [fmt2(r) for r in under],
+                         "carry": [dict(fmt2(r), counts=(i < 3)) for i, r in enumerate(carry)], "carry_br": carry_br})
 json.dump(rows, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)
 print(len(rows), "lineups")
 for r in rows:
     if r["nation"] == "Germany" and r["mode"] == "RB" and r["br"] in (2.0, 4.0):
         print(r["br"], [(x["name"], x["br"], x["style"], x["obtain"][:4]) for x in r["best"]])
         print("   tech:", [(x["name"], x["br"]) for x in r["tech"]])
+
+# self-check of the formula against the wiki's rule and the user's example
+assert ab_match_br([3.0, 2.3, 2.3]) == 2.7
+assert ab_match_br([3.0, 1.0, 1.0]) == 3.0      # planes 2.0+ below count as the top plane
+assert ab_match_br([3.0, 1.7, 1.0]) == 3.0
+assert ab_match_br([2.7, 2.0, 1.7]) == 2.7      # X.7 tops can't drop: 2.4 rounds back up to 2.7
+assert ab_match_br([3.3, 2.7, 2.7]) == 3.0
+assert ab_match_br([5.0, 3.0, 3.0]) == 5.0
+assert ab_match_br([5.0, 4.0, 4.0]) == 4.7
+print("formula checks ok")

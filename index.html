@@ -120,6 +120,7 @@ details.pick[open]>summary{color:var(--accent)}
 .stephd{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600;margin-bottom:3px}
 b.plays{color:var(--trn)}
 .short{font-size:.75rem;color:var(--muted);font-style:italic}
+.carry .stephd{color:var(--trn)}
 .watch .stephd{color:var(--bnz)}
 .br small.up{color:var(--trn);font-weight:600}
 .br small.dn{color:var(--bnz)}
@@ -267,6 +268,14 @@ function pickItem(p, extra){
   return `<li><details class="pick" data-id="${esc(p.id||"")}"><summary><span class="rkb">${ROMAN[p.rk]||""}</span>${esc(p.name)}${p.obtain!=="Tech tree"?" ★":""} <span>${p.br.toFixed(1)} · ${esc(p.style)}${p.strike?" · ground-attack slot":""}${extra||""}</span></summary><div class="pickbody"></div></details></li>`;
 }
 function stepBlock(x){
+  if(st.lmode==="AB"){
+    if(x.carry&&x.carry.length){
+      const top=x.carry[0];
+      return `<div class="stepup carry"><div class="stephd">Carry lineup: battles at ${x.carry_br.toFixed(1)}</div><p class="note">Brings one ${top.br.toFixed(1)} plane into a ${x.br.toFixed(1)} battle. The average of your 3 highest planes (marked "counted") sets the match BR. Keep this exact set in your crew slots; don't swap in anything higher.</p><ol>${x.carry.map((p,i)=>pickItem(p,`${i===0?" · <b>your carry plane</b>":""}${p.counts?" · counted":" · spare"}${p.pl?` · plays like ~${p.pl.toFixed(1)}`:""}`)).join("")}</ol></div>`;
+    }
+    const d=Math.round((x.br%1)*10);
+    return `<div class="stepup carry"><div class="stephd">No carry lineup at ${x.br.toFixed(1)}</div><p class="note">${d===3?`Arcade can't pull a higher plane down to an X.3 battle (the formula rounds back up). Use the ${(x.br-0.3).toFixed(1)} or ${(x.br+0.4).toFixed(1)} carry instead.`:"Not enough suitable lower planes in this nation to pull a higher plane down to this BR."}</p></div>`;
+  }
   if(!x.step||!x.step.length) return "";
   return `<div class="stepup"><div class="stephd">Worth stepping up for</div><ol>${x.step.map(p=>pickItem(p,` · plays like ~${(p.pl||p.br).toFixed(1)} · lineup becomes <b>${p.to.toFixed(1)}</b>`)).join("")}</ol></div>`;
 }
@@ -280,7 +289,7 @@ function lineupRows(rows){
 function renderLineups(){
   if(st.nation==="All"){$("lineups").innerHTML='<p class="note">Lineups are per nation. Pick a nation above.</p>';return;}
   const rows=LINEUPS.filter(x=>x.nation===st.nation && x.mode===st.lmode);
-  $("lineups").innerHTML=st.under?`<p class="note"><b>Undertiered</b>: for each BR, the 5 planes rated at or below it that perform the most above their rating, so your lineup stays at that BR but flies like a higher one. One plane is always at exactly the lineup BR. "Plays like" is an estimate from stats plus community opinion. Roman numeral = research rank. Tap a plane for details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>":`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?"<b>Step up</b> shows planes up to 1.0 BR higher that play above their BR and beat your weakest pick; bringing one raises your whole lineup to its BR. ":""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>";
+  $("lineups").innerHTML=st.under?`<p class="note"><b>Undertiered</b>: for each BR, the 5 planes rated at or below it that perform the most above their rating, so your lineup stays at that BR but flies like a higher one. One plane is always at exactly the lineup BR. "Plays like" is an estimate from stats plus community opinion. Roman numeral = research rank. Tap a plane for details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>":`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?(st.lmode==="AB"?"<b>Step up (Arcade)</b>: Arcade sets your battle BR from the average of your 3 highest planes (top plane ×½, next two ×¼; a plane 0.7+ lower counts as top −0.6, and one 2.0+ lower counts as the top plane). That lets you carry ONE plane one step higher. It only works for X.0 and X.7 battles. ":"<b>Step up (Realistic)</b>: Realistic uses only the plane you take off in, so lower planes can't pull a higher one down. These are planes worth moving up for; picking one puts you in its BR. "):""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>";
 }
 function render(){
   $("tab-planes").setAttribute("aria-pressed",st.view==="planes");$("tab-lineups").setAttribute("aria-pressed",st.view==="lineups");

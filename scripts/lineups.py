@@ -40,11 +40,15 @@ def pick(cands, b, mode, techonly):
     if mode == "AB":
         for r in strikes:
             if add(r): break
-    for r in fighters + strikes:  # top up
+    for r in fighters:  # top up with fighters only; bombers never fill empty fighter slots
         if len(chosen) >= 5: break
         add(r)
+    for r in fighters:  # still short: allow same-stat variants (extra respawns), but never duplicates by name
+        if len(chosen) >= 5: break
+        if r["name"] not in names:
+            chosen.append(r); names.add(r["name"]); r["_twin"] = True
     if chosen and not any(r[key] == b for r in chosen):
-        top = [r for r in fighters + strikes if r[key] == b and r["name"] not in names]
+        top = [r for r in fighters if r[key] == b and r["name"] not in names]
         if top:
             chosen[min(len(chosen), 5) - 1 if len(chosen) >= 5 else len(chosen):] = []
             if len(chosen) >= 5: chosen.pop()
@@ -64,12 +68,13 @@ for n in NATIONS:
             cands = [r for r in planes if b - 1.0 <= r[key] <= b + 1e-9]
             best = pick(cands, b, mode, False)
             tech = pick(cands, b, mode, True)
-            if len(best) < 2: continue
+            if not any(is_fighterish(r) for r in best): continue
             styles = {}
             for skey, term in (("bnz", "Boom & Zoom"), ("nrg", "Energy fighter"), ("trn", "Turn fighter")):
                 pool = [r for r in cands if term in r["style"] and is_fighterish(r)]
                 styles[skey] = pick(pool, b, mode, False)[:5] if pool else []
-            fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"], "rk": r["rank"]}
+            fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"], "rk": r["rank"],
+                             "strike": not is_fighterish(r)}
             ok = "over_" + mode.lower(); pk = "plays_like_" + mode.lower()
             fmt2 = lambda r: dict(fmt(r), pl=r.get(pk), ov=r.get(ok), n=r["nation"])
             # Step up: planes up to +1.0 BR that play above their BR and beat the weakest pick

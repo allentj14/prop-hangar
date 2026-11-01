@@ -119,6 +119,7 @@ details.pick[open]>summary{color:var(--accent)}
 .stepup{border-top:1px dashed var(--line);padding-top:6px}
 .stephd{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600;margin-bottom:3px}
 b.plays{color:var(--trn)}
+.short{font-size:.75rem;color:var(--muted);font-style:italic}
 .watch .stephd{color:var(--bnz)}
 .br small.up{color:var(--trn);font-weight:600}
 .br small.dn{color:var(--bnz)}
@@ -263,7 +264,7 @@ function renderPlanes(){
 }
 function pickItem(p, extra){
   const r=BYID[p.id];
-  return `<li><details class="pick" data-id="${esc(p.id||"")}"><summary><span class="rkb">${ROMAN[p.rk]||""}</span>${esc(p.name)}${p.obtain!=="Tech tree"?" ★":""} <span>${p.br.toFixed(1)} · ${esc(p.style)}${extra||""}</span></summary><div class="pickbody"></div></details></li>`;
+  return `<li><details class="pick" data-id="${esc(p.id||"")}"><summary><span class="rkb">${ROMAN[p.rk]||""}</span>${esc(p.name)}${p.obtain!=="Tech tree"?" ★":""} <span>${p.br.toFixed(1)} · ${esc(p.style)}${p.strike?" · ground-attack slot":""}${extra||""}</span></summary><div class="pickbody"></div></details></li>`;
 }
 function stepBlock(x){
   if(!x.step||!x.step.length) return "";
@@ -274,7 +275,7 @@ function watchBlock(x){
   return `<div class="stepup watch"><div class="stephd">Watch out for (any nation)</div><ol>${x.watch.map(p=>pickItem(p,` · ${esc(p.n)} · plays like ~${(p.pl||p.br).toFixed(1)}`)).join("")}</ol></div>`;
 }
 function lineupRows(rows){
-  return rows.map(x=>{const L=st.under?(x.under||[]):st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol"><ol>${L.map(p=>pickItem(p,st.under&&p.pl?` · <b class="plays">plays like ~${p.pl.toFixed(1)}</b>`:"")).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></div>`}).join("");
+  return rows.map(x=>{const L=st.under?(x.under||[]):st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol">${(()=>{const f=L.filter(p=>!p.strike).length;return f<5&&!st.under&&st.lstyle==="all"?`<div class="short">Only ${f} fighter${f===1?"":"s"} available at this BR${st.tech?" in the tech tree":""}.</div>`:""})()}<ol>${L.map(p=>pickItem(p,st.under&&p.pl?` · <b class="plays">plays like ~${p.pl.toFixed(1)}</b>`:"")).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></div>`}).join("");
 }
 function renderLineups(){
   if(st.nation==="All"){$("lineups").innerHTML='<p class="note">Lineups are per nation. Pick a nation above.</p>';return;}

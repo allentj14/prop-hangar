@@ -11,7 +11,7 @@ def rn(v,p=1):
     return None if v is None else (round(v,p) if p else int(round(v)))
 out=[]
 for r in d:
-    out.append({"id":r["id"],"n":r["nation"],"rk":r["rank"],"c":r["column"],"o":r["order"],"f":nb(r["folder"]),"nm":nb(r["name"]),"fn":nb(r["full_name"]),
+    out.append({"org":r.get("origin",""),"vis":r.get("visibility","Normal"),"id":r["id"],"n":r["nation"],"rk":r["rank"],"c":r["column"],"o":r["order"],"f":nb(r["folder"]),"nm":nb(r["name"]),"fn":nb(r["full_name"]),
       "ob":r["obtain"],"role":r["role"],"s":r["style"],"ab":r["br_ab"],"rb":r["br_rb"],"sb":r["br_sb"],
       "spd":r["top_speed_kmh"],"spa":r["top_speed_alt_m"],"sls":r["sl_speed_kmh"],"clb":rn(r["climb_rate_ms"]),"clt":rn(r["climb_time_s"],0),"cla":rn(r["climb_alt_m"],0),
       "trn":rn(r["turn_time_s"]),"rol":rn(r["roll_rate"],0),"ceil":rn(r["ceiling_m"],0),"wl":rn(r["wing_loading"],0),"pw":rn(r["pwr"],2),

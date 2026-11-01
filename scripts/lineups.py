@@ -53,9 +53,12 @@ def pick(cands, b, mode, techonly):
     return chosen[:5]
 
 rows = []
+UNAVAILABLE = ("No longer obtainable", "Special account", "PlayStation only", "Xbox only", "Removed")
+def can_get(r):
+    return not str(r.get("visibility", "")).startswith(UNAVAILABLE)
 for n in NATIONS:
     for mode, key in (("RB", "br_rb"), ("AB", "br_ab")):
-        planes = [r for r in d if r["nation"] == n and r[key] is not None]
+        planes = [r for r in d if r["nation"] == n and r[key] is not None and can_get(r)]
         brs = sorted({r[key] for r in planes if is_fighterish(r) or is_strike(r)})
         for b in brs:
             cands = [r for r in planes if b - 1.0 <= r[key] <= b + 1e-9]

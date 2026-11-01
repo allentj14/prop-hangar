@@ -11,13 +11,23 @@ tags = J("char.vromfs.bin_u/config/unittags.blkx")
 FMDIR = os.path.join(ROOT, "aces.vromfs.bin_u/gamedata/flightmodels")
 WDIR = os.path.join(ROOT, "aces.vromfs.bin_u/gamedata/weapons")
 
+class Lang(dict):
+    """Exact-key lookup first (unit IDs are case-sensitive), lowercase fallback second."""
+    def __init__(self):
+        super().__init__(); self.low = {}
+    def get(self, k, default=None):
+        if dict.__contains__(self, k): return dict.__getitem__(self, k)
+        return self.low.get(k.lower(), default)
+    def __setitem__(self, k, v):
+        dict.__setitem__(self, k, v); self.low.setdefault(k.lower(), v)
+
 def load_lang(p):
-    d = {}
+    d = Lang()
     with open(os.path.join(ROOT, p), encoding="utf-8") as f:
         r = csv.reader(f, delimiter=";", quotechar='"')
         for row in r:
             if len(row) > 1:
-                d[row[0].lower()] = row[1]
+                d[row[0]] = row[1]
     return d
 L = load_lang("lang.vromfs.bin_u/lang/units.csv")
 LW = load_lang("lang.vromfs.bin_u/lang/units_weaponry.csv")
@@ -221,6 +231,8 @@ for cty, col, order, folder, unit, sv in rows:
     fm = fm_for(fmfile, unit)
     if fm is None:
         skipped["nofm"] += 1; continue
+    if sv.get("showOnlyWhenResearch"):
+        skipped["removed from tree (moved to another nation)"] += 1; continue
     engines = []
     i = 0
     while f"Engine{i}" in fm or f"EngineType{i}" in fm:
@@ -246,6 +258,14 @@ for cty, col, order, folder, unit, sv in rows:
     elif sv.get("event") or sv.get("marketplaceItemdefId"): acq = "Event / Marketplace"
     elif w.get("costGold") or sv.get("gift"): acq = "Premium"
     if sv.get("showOnlyWhenBought") and acq != "Tech tree": acq += " (no longer sold)"
+    vis = "Normal"
+    if sv.get("showOnlyWhenResearch"): vis = "Removed from this tree (only shown if you researched it before)"
+    elif sv.get("showOnlyWhenBought"): vis = "No longer obtainable (only shown if you own it)"
+    elif sv.get("showOnlyWhenAvailableForPurchase"): vis = "Only shown while on sale"
+    elif sv.get("hideFeature") == "!Marketplace": vis = "Marketplace only"
+    elif sv.get("showByPlatform"): vis = {"ps4;ps5": "PlayStation only", "xboxOne;xboxScarlett": "Xbox only"}.get(sv["showByPlatform"], "Console only")
+    elif sv.get("reqFeature") == "ClanVehicles": vis = "Squadron vehicle"
+    elif sv.get("hideFeature"): vis = "Special account only"
     if acq == "Tech tree" and (w.get("costGold") or 0) > 0: acq = "Premium"
     name = L.get(unit + "_shop") or L.get(unit + "_0") or unit
     clean = lambda s: re.sub(r"[ -⯿-]", "", s).strip()
@@ -253,8 +273,8 @@ for cty, col, order, folder, unit, sv in rows:
     L[unit + "_0"] = clean(L.get(unit + "_0", name))
     rec = {
         "id": unit, "nation": NATION[cty], "rank": sv["rank"], "column": col, "order": order,
-        "folder": L.get(folder + "_shop", folder.replace("_group", "").upper()) if folder else "",
-        "name": name, "full_name": L.get(unit + "_0", name), "obtain": acq,
+        "folder": clean(L.get("shop/group/" + folder.lower(), "")) if folder else "",
+        "name": name, "full_name": L.get(unit + "_0", name), "obtain": acq, "visibility": vis,
         "unit_class": (w.get("unitClass") or "").replace("exp_", ""), "type_tags": tg,
         "br_ab": br(w.get("economicRankArcade")), "br_rb": br(w.get("economicRankHistorical")),
         "br_sb": br(w.get("economicRankSimulation")),
@@ -284,7 +304,36 @@ for cty, col, order, folder, unit, sv in rows:
         if isinstance(v, list) and len(v) > 1 and isinstance(v[1], (int, float)): fl.append(int(v[1]))
     rec["flap_limits_kmh"] = "/".join(map(str, fl))
     if weapons: rec.update(weapons)
+    rec["_fm"] = os.path.basename(fmfile or "").lower().replace(".blk", "") or unit
     out.append(rec)
+
+# ---- origin: the game prefixes foreign planes' names with a tree-marker glyph (e.g. "▀La-5FN" in Germany).
+# For those, find the home nation of the same aircraft family among non-foreign planes.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from designation import base as dbase
+FOREIGN_GLYPHS = set("▃▀▂▄▅␗◔◘◗◢◥\uf059")
+OPC = {"country_hungary": "Hungary", "country_finland": "Finland", "country_romania": "Romania",
+       "country_thailand": "Thailand", "country_italy_kingdom": "Italy", "country_switzerland": "Switzerland",
+       "country_yugoslavia": "Yugoslavia", "country_netherlands": "Netherlands", "country_australia": "Australia"}
+for r in out:
+    raw = L.get(r["id"] + "_shop") or L.get(r["id"] + "_0") or ""
+    r["_foreign"] = bool(raw) and raw[0] in FOREIGN_GLYPHS
+home = collections.defaultdict(collections.Counter)
+for r in out:
+    if not r["_foreign"]:
+        home[dbase(r["name"])][r["nation"]] += 1
+for r in out:
+    origin = ""
+    opc = OPC.get((tags.get(r["id"], {}) or {}).get("operatorCountry", ""), "")
+    if r["_foreign"]:
+        cand = {n: c for n, c in home.get(dbase(r["name"]), {}).items() if n != r["nation"]}
+        origin = max(cand, key=cand.get) if cand else (opc or "Foreign")
+    elif opc and opc not in (r["nation"], "Italy"):
+        origin = opc      # sub-nation planes in a main tree, e.g. Finnish planes in Sweden
+    r["origin"] = origin
+for r in out:
+    r.pop("_fm", None); r.pop("_foreign", None)
+print("origin labels:", dict(collections.Counter((r["nation"], r["origin"]) for r in out if r["origin"])))
 
 json.dump(out, open(OUT, "w"), indent=1, ensure_ascii=False)
 print(len(out), "prop planes;", dict(skipped))

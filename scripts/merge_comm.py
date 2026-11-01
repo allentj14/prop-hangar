@@ -1,5 +1,29 @@
 """Merge community findings (community.json) into planes2.json -> planes3.json."""
-import json, re, sys, collections
+import json, re, sys, collections, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from designation import base as dbase
+
+WIKI_HOSTS = ("wiki.warthunder.com",)
+def src_bases(src):
+    """Base designations of the plane pages a note came from (ignores guides/forums)."""
+    out = set()
+    for u in (src or "").split(" ; "):
+        u = u.strip()
+        if not any(h in u for h in WIKI_HOSTS) or "/controls/" in u or re.search(r"/\d{3,}-", u):
+            continue
+        slug = re.sub(r"^https?://[^/]+/", "", u).split("?")[0]
+        if slug.startswith("index.php"):
+            m = re.search(r"title=([^&]+)", u); slug = m.group(1) if m else ""
+        if slug:
+            out.add(dbase(slug))
+    return out
+
+def fits(r, e):
+    """True when the note's source page is the same aircraft family (or the note has no plane page)."""
+    sb = src_bases(e.get("src", ""))
+    return (not sb) or (dbase(r["name"]) in sb)
+
+DROPPED = collections.Counter()
 
 d = json.load(open(sys.argv[1]))
 comm = json.load(open(sys.argv[2]))
@@ -38,6 +62,8 @@ def verdict_adj(v):
 hit = collections.Counter()
 for r in d:
     e = find(r)
+    if e and not fits(r, e):
+        DROPPED["community"] += 1; e = None
     r['stat_style'] = r['style']
     r['comm_style'] = r['comm_pros'] = r['comm_cons'] = r['comm_tip'] = r['comm_verdict'] = r['comm_src'] = ''
     r['perf_adj'] = 0.0
@@ -74,6 +100,8 @@ def vfind(r):
 vc = collections.Counter()
 for r in d:
     e = vfind(r)
+    if e and not fits(r, e):
+        DROPPED["verify"] += 1; e = None
     if e:
         r['verify_status'] = {'confirmed': 'Confirmed', 'adjusted': 'Adjusted', 'mixed': 'Mixed opinions'}.get(e.get('status'), e.get('status', ''))
         r['verify_note'] = e.get('note', '')
@@ -93,7 +121,7 @@ for r in d:
     else:
         r['verify_status'] = 'Game data only' ; r['verify_note'] = '' ; r['verify_src'] = ''
     vc[r['verify_status']] += 1
-print('verification:', dict(vc))
+print('verification:', dict(vc)); print('notes dropped (different aircraft):', dict(DROPPED))
 
 json.dump(d, open(sys.argv[4], 'w'), indent=1, ensure_ascii=False)
 nb = [r for r in d if r['unit_class'] != 'bomber']

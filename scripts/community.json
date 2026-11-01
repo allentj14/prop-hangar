@@ -1287,14 +1287,6 @@
 "verdict": "",
 "src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
 },
-"re:^Sea Hurricane": {
-"style": "Turn fighter",
-"pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
-"cons": "Only 60 rounds per cannon (Vb); wing guns need convergence; overheats on WEP",
-"tip": "Set ~300 m convergence; bait head-ons, then turn onto the enemy's tail.",
-"verdict": "",
-"src": "https://old-wiki.warthunder.com/Spitfire_Mk_Vb"
-},
 "re:^Seafire LF Mk.III": {
 "style": "Turn fighter",
 "pros": "Strong turn; sturdy in hard turns; cannons kill fighters fast",
@@ -2583,14 +2575,6 @@
 "verdict": "",
 "src": "https://old-wiki.warthunder.com/D.500"
 },
-"re:^D\\.37[13]": {
-"style": "Turn fighter",
-"pros": "Very maneuverable; great visibility; strong guns for its rank",
-"cons": "Low speed limit; weak armour; fixed gear drag",
-"tip": "Keep targets within 150-350 m so all guns converge; short bursts.",
-"verdict": "",
-"src": "https://old-wiki.warthunder.com/D.500"
-},
 "re:^C\\. ?200": {
 "style": "Turn fighter",
 "pros": "Good turn and stable at speed; strong climb; fairly durable",
@@ -2622,5 +2606,205 @@
 "tip": "Climb to ~3 km, dive on targets, then fight in one- or two-circle turns; don't 1v1 a Ki-44.",
 "verdict": "",
 "src": "https://wiki.warthunder.com/6193-fokker-d-xxi-simple-but-deadly"
+},
+"re:^B6N": {
+"style": "Torpedo bomber",
+"pros": "Strong 1,550 hp engine; fast for a torpedo bomber; very agile with a ventral gunner",
+"cons": "No forward guns, airbrakes or self-sealing tanks; weak 7.7 mm gunners; rear blind spot",
+"tip": "Make fast, close torpedo runs and leave at speed.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/B6N2_Model_12"
+},
+"re:^Ki-48": {
+"style": "Light bomber",
+"pros": "Excellent top speed; good handling; can carry the Ki-148 guided missile",
+"cons": "Weak defensive guns; small bomb load; no bombsight",
+"tip": "With the Ki-148, cut throttle to 50% so the missile can pull ahead.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-48-II_otsu"
+},
+"re:^Ki-21": {
+"style": "Medium bomber",
+"pros": "Very maneuverable; big bomb load for a Rank I Japanese bomber; decent cruise speed",
+"cons": "Worse the higher it flies; no armour; dies quickly to several attackers",
+"tip": "Bait high fighters into turning with you so teammates can finish them.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-21-I_hei"
+},
+"re:^H6K": {
+"style": "Bomber",
+"pros": "Floatplane that can capture naval points; two fast-drop torpedoes; big bomb load and a tail 20 mm",
+"cons": "Huge, slow target; no landing gear; fragile with weak 7.7 mm guns",
+"tip": "Lure chasers behind you into the tail 20 mm cannon.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/H6K4"
+},
+"re:^G5N": {
+"style": "Heavy bomber",
+"pros": "3,200 kg bomb load; durable; good climb and energy retention for its size",
+"cons": "Very poor handling; weak, awkward gunners; big fire-prone target",
+"tip": "800 kg bombs for bases and airfields, 60/250 kg for pillboxes and tanks.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/G5N1"
+},
+"re:^Do 217 J": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Four 20 mm plus four MGs in the nose; two rear gunners; faster than most bombers it hunts",
+"cons": "Very poor climb; unstable at low speed; big exposed cockpit",
+"tip": "Hunt bombers head-on; vs fighters, break 45° about 900 m out and turn onto their tail.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Do_217_J-1"
+},
+"re:^Do 217 N": {
+"style": "Attacker / Boom & Zoom",
+"pros": "Powerful nose cannons and MGs; sturdy vs MG fire; radar",
+"cons": "Very poor maneuverability; controls lock above ~500 km/h; weak climb and energy retention",
+"tip": "Dive on targets from above; avoid turning fights.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Do_217_N-1"
+},
+"re:^Yak-7": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Climbs well even without WEP; nose 20 mm plus 12.7 mm work well together; rockets",
+"cons": "No WEP, overheats fast; weak above 4 km; wings rip above 650 km/h",
+"tip": "Stay near high allies and drag chasers to them; avoid steep dives.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Yak-7B"
+},
+"re:^P-43": {
+"style": "Boom & Zoom",
+"pros": "Four .50 cal; high dive limit (725 km/h); strong high up thanks to its turbocharger",
+"cons": "Very little ammo; overheats; fragile, no armour",
+"tip": "Climb first, dive on targets; don't turn with 109s or Zeros or chase misses.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/P-43A-1"
+},
+"re:^Ki-27": {
+"style": "Turn fighter",
+"pros": "Biplane-like agility; stable in turns; excellent climb",
+"cons": "Light guns; overheats on hot maps; no armour",
+"tip": "Out-turn monoplanes; you can outrun biplanes, P-36s, Buffalos and I-16s to escape.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-27_otsu_(China)"
+},
+"re:^SBD": {
+"style": "Dive bomber",
+"pros": "Bomber spawn; turns with most fighters at its rank; two nose guns for hunting bombers",
+"cons": "Poor energy retention; slow acceleration and climb; little nose-gun ammo",
+"tip": "Stay above 200 km/h and below 2 km.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/SBD-3"
+},
+"re:^TBD": {
+"style": "Torpedo bomber",
+"pros": "Stable and easy to fly; very agile for a bomber; strong acceleration",
+"cons": "Very poor energy retention; weak guns; fragile flaps and gear",
+"tip": "Throttle back to ~50% on bomb runs for better accuracy.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/TBD-1"
+},
+"re:^BTD": {
+"style": "Attacker",
+"pros": "Fast for a carrier bomber; two 20 mm plus bombs or torpedoes; two internal torpedoes",
+"cons": "Sluggish low down; heavy loads hurt handling; no rear gunner",
+"tip": "Get over the target and dive straight down, using airbrakes to steer.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/BTD-1"
+},
+"re:^BF2C": {
+"style": "Turn fighter",
+"pros": "Carrier capable; retractable gear; easy to fly",
+"cons": "Weak guns; slow; out-turned by nearly every other biplane",
+"tip": "Drop bombs as soon as a real air threat appears.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/BF2C-1"
+},
+"re:^Hawk III": {
+"style": "Turn fighter",
+"pros": "Big bomb load for its rank; agile and quick when empty; low stall speed",
+"cons": "Light guns; very slow gear; extremely fragile",
+"tip": "Lower your gear early before landing; it takes ~30 seconds.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Hawk_III"
+},
+"re:^Re\\.2000": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Great climb; great energy fighter; very good acceleration",
+"cons": "Only two 12.7 mm; overheats; no armour, catches fire",
+"tip": "Short bursts in head-ons then barrel-roll away; don't turn with biplanes.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Re.2000_serie_1"
+},
+"re:^M\\.B\\.15[12]": {
+"style": "Energy fighter",
+"pros": "Decent acceleration; very powerful guns; works in most fight styles",
+"cons": "Mediocre speed; little cannon ammo; weak 7.5 mm MGs",
+"tip": "Climb to ~4 km first, then dive on low targets; avoid rolling scissors.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/M.B.152C1"
+},
+"re:^Ki-94": {
+"style": "Boom & Zoom",
+"pros": "Strong 30 mm cannons; efficient ammo use; good roll",
+"cons": "Terrible stock; slow throttle response; mediocre climb",
+"tip": "Bomber interceptor: keep throttle at 20-50% during diving attacks.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-94-II"
+},
+"re:^Ki-109": {
+"style": "Attacker / Boom & Zoom",
+"pros": "75 mm gun kills bombers and tanks; agile for its size; self-sealing tanks",
+"cons": "Only the 75 mm forward; very slow fire, few shells; weak rear gun",
+"tip": "Hunt bombers with teammates; fire in a shallow dive to tame recoil.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Ki-109"
+},
+"re:^D\\.371": {
+"style": "Boom & Zoom / Turn fighter",
+"pros": "Very maneuverable; two 20 mm Hispanos (H.S.9); good against bombers",
+"cons": "Most rivals are faster; out-turned by biplanes; weak structure",
+"tip": "Climb first, dive for one burst, climb back; only fire when sure to hit.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.371_H.S.9"
+},
+"re:^D\\.373": {
+"style": "Turn fighter / Energy fighter",
+"pros": "Very maneuverable; hard to stall; fast for an early high-wing monoplane",
+"cons": "Weak structure; open cockpit; fixed gear",
+"tip": "Keep speed up; climb first, then dive on your target.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/D.373"
+},
+"re:^IL-10": {
+"style": "Attacker",
+"pros": "Very tough; well-armoured pilot, gunner and engine; fast and agile for its weight",
+"cons": "Slower than most fighters; mediocre climb, poor energy retention; unreliable rear gun",
+"tip": "Strafe soft targets with the MGs and save 23 mm for heavier ones.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/IL-10"
+},
+"re:^I-180": {
+"style": "Energy fighter / Boom & Zoom",
+"pros": "Excellent climb; great maneuverability and roll; compact nose guns",
+"cons": "Overheats; poor rudder; under-armoured",
+"tip": "Climb to 4-5 km, BnZ low targets; avoid head-ons with armoured planes like Corsairs.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/I-180S"
+},
+"re:^V-11": {
+"style": "Attacker",
+"pros": "500 lb or 2×250 lb bombs; four 7.62 mm; good view, slow to overheat",
+"cons": "Very slow; weak acceleration, climb and roll; big unarmoured target",
+"tip": "Use deflection shots and avoid head-ons.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/V-11"
+},
+"re:^Potez 63[01]": {
+"style": "Energy fighter",
+"pros": "Excellent maneuverability, even vs single-engine fighters; strong guns; stable, dives well",
+"cons": "Big, unarmoured; sluggish climb, modest top speed; bleeds energy in turns",
+"tip": "Stay level at full throttle and let the rear gunner cover you; avoid climbs and loops.",
+"verdict": "",
+"src": "https://old-wiki.warthunder.com/Potez_631"
 }
 }

@@ -85,6 +85,7 @@ summary::-webkit-details-marker{display:none}
 .pill{font-size:.72rem;font-weight:600;padding:2px 7px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
 .s-bnz{color:var(--bnz)}.s-nrg{color:var(--nrg)}.s-trn{color:var(--trn)}.s-bmb{color:var(--bmb)}.s-atk{color:var(--atk)}
 .pill.prem{color:var(--prem)}
+.pill.vis{color:var(--muted);border-style:dashed}
 .quick{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;font-family:var(--f-data);font-size:.78rem;font-variant-numeric:tabular-nums}
 .quick div{background:var(--chip);border-radius:3px;padding:4px 6px;min-width:0}
 .arm{grid-column:1/-1;font-size:.82rem;line-height:1.35;display:grid;gap:3px;min-width:0}
@@ -144,6 +145,7 @@ b.plays{color:var(--trn)}
       <option value="trn">Turn fighter</option><option value="atk">Attacker</option><option value="bmb">Bombers</option>
     </select>
     <select id="rank" aria-label="Rank"><option value="">All ranks</option></select>
+    <select id="avail" aria-label="Availability"><option value="">All planes</option><option value="get">Obtainable only</option></select>
     <div class="seg" role="group" aria-label="Game mode"><button id="m-rb" aria-pressed="true">RB</button><button id="m-ab" aria-pressed="false">AB</button></div>
   </div>
   <div class="controls" id="ctl-lineups" hidden>
@@ -166,7 +168,7 @@ const NATIONS = ["USA","Germany","USSR","Great Britain","Japan","China","Italy",
 const ROMAN = ["","I","II","III","IV","V","VI","VII","VIII","IX"];
 const st = {view:"planes", nation:"USA", q:"", style:"", rank:"", mode:"rb", lmode:"RB", tech:false, lstyle:"all", step:false, under:false};
 try{const s=JSON.parse(localStorage.getItem("wt-hangar")||"{}");Object.assign(st,s);}catch(e){}
-const save=()=>{try{localStorage.setItem("wt-hangar",JSON.stringify({nation:st.nation,mode:st.mode,lmode:st.lmode,tech:st.tech,view:st.view,lstyle:st.lstyle,step:st.step,under:st.under}))}catch(e){}};
+const save=()=>{try{localStorage.setItem("wt-hangar",JSON.stringify({nation:st.nation,mode:st.mode,lmode:st.lmode,tech:st.tech,view:st.view,lstyle:st.lstyle,step:st.step,under:st.under,avail:st.avail}))}catch(e){}};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -180,7 +182,7 @@ const fmt=(v,u="")=>v==null||v===""?"–":(typeof v==="number"?v.toLocaleString(
 
 function nationBar(){
   $("nations").innerHTML = ["All",...NATIONS].map(n=>`<button aria-pressed="${n===st.nation}" data-n="${esc(n)}">${esc(n)}</button>`).join("");
-  $("nations").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.nation=b.dataset.n;save();nationBar();render();});
+  $("nations").querySelectorAll("button").forEach(b=>b.onclick=()=>{st.nation=b.dataset.n;save();nationBar();try{$("avail").value=st.avail||""}catch(e){}render();});
 }
 function rankOptions(){
   const ranks=[...new Set(DATA.filter(r=>st.nation==="All"||r.n===st.nation).map(r=>r.rk))].sort((a,b)=>a-b);
@@ -209,7 +211,7 @@ function card(r){
   return `<details class="card"><summary>
     <div><div class="nm">${esc(r.nm)}</div><div class="pos">${st.nation==="All"?esc(r.n)+" · ":""}Col ${r.c} · #${r.o}${r.f?" · "+esc(r.f):""} · ${esc(r.role)}</div></div>
     <div class="br">${br!=null?br.toFixed(1):"–"}<small>${st.mode.toUpperCase()} BR</small>${(()=>{const pl=st.mode==="rb"?r.plr:r.pla,ov=st.mode==="rb"?r.ovr:r.ova;return pl!=null&&Math.abs(ov)>=0.3?`<small class="${ov>0?"up":"dn"}">plays ~${pl.toFixed(1)}</small>`:""})()}</div>
-    <div class="tags">${stylePills(r.s)}${r.ob!=="Tech tree"?`<span class="pill prem">★ ${esc(r.ob)}</span>`:""}</div>
+    <div class="tags">${stylePills(r.s)}${r.ob!=="Tech tree"?`<span class="pill prem">★ ${esc(r.ob)}</span>`:""}${r.org?`<span class="pill vis">From ${esc(r.org)}</span>`:""}${r.vis&&r.vis!=="Normal"?`<span class="pill vis">${esc(r.vis.replace(/ \(.*\)/,""))}</span>`:""}</div>
     ${armLine(r)}
     <div class="quick"><div><b>Speed</b>${fmt(r.spd)}</div><div><b>Climb</b>${fmt(r.clb)}</div><div><b>Turn</b>${fmt(r.trn,"s")}</div><div><b>Roll</b>${fmt(r.rol,"°")}</div></div>
   </summary><div class="body">
@@ -244,6 +246,7 @@ function renderPlanes(){
   const all=st.nation==="All";
   let rows=DATA.filter(r=>all||r.n===st.nation);
   if(st.rank) rows=rows.filter(r=>r.rk===+st.rank);
+  if(st.avail==="get") rows=rows.filter(r=>!/^(No longer obtainable|Special account|Removed)/.test(r.vis||""));
   if(st.style) rows=rows.filter(r=>r.s.split(" / ").some(p=>styleKey(p)===st.style) || styleKey(r.s)===st.style);
   if(q) rows=rows.filter(r=>(r.nm+" "+r.fn+" "+r.g+" "+r.dg+" "+r.eng+" "+r.role+" "+r.s+" "+r.cp+" "+r.cc+" "+r.n+" "+(r.tg||[]).join(" ")).toLowerCase().includes(q));
   if(!rows.length){$("planes").innerHTML='<div class="empty">No planes match these filters. Clear the search or pick another style.</div>';return;}
@@ -293,6 +296,7 @@ $("tab-lineups").onclick=()=>{st.view="lineups";save();render();window.scrollTo(
 $("q").oninput=e=>{st.q=e.target.value;renderPlanes();};
 $("style").onchange=e=>{st.style=e.target.value;renderPlanes();};
 $("rank").onchange=e=>{st.rank=e.target.value;renderPlanes();};
+$("avail").onchange=e=>{st.avail=e.target.value;save();renderPlanes();};
 $("m-rb").onclick=()=>{st.mode="rb";save();render()};$("m-ab").onclick=()=>{st.mode="ab";save();render()};
 $("l-rb").onclick=()=>{st.lmode="RB";save();render()};$("l-ab").onclick=()=>{st.lmode="AB";save();render()};
 ["all","bnz","nrg","trn"].forEach(k=>{$("ls-"+k).onclick=()=>{st.lstyle=k;save();render()}});
@@ -331,7 +335,7 @@ async function boot(){
   let seen=null; try{seen=localStorage.getItem("wt-seen-version")}catch(e){}
   if(seen && META.game_version && seen!==META.game_version) toast(`Updated to game v${META.game_version}`);
   try{localStorage.setItem("wt-seen-version",META.game_version||"")}catch(e){}
-  nationBar();render();
+  nationBar();try{$("avail").value=st.avail||""}catch(e){}render();
 }
 if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(()=>{});}
 boot();

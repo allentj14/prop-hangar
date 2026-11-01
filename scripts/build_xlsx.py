@@ -31,7 +31,7 @@ d.sort(key=lambda r: (NATIONS.index(r["nation"]), r["rank"], r["column"], r["ord
 COLS = [
     ("Nation", "nation", 12), ("Rank", lambda r: ROMAN[r["rank"]], 6), ("Tree column", "column", 7),
     ("Tree position", "order", 7), ("Folder", "folder", 14), ("Plane", "name", 22), ("Full name", "full_name", 26),
-    ("How to get", "obtain", 16), ("Role", "role", 16), ("Play style (community)", "style", 26), ("Play style (from stats)", "stat_style", 22), ("Tags (bombers & attackers)", lambda r: "; ".join(r.get("tags") or []), 40), ("Max bomb load (kg)", "bomb_load_kg", 8),
+    ("How to get", "obtain", 16), ("Availability", "visibility", 22), ("Origin (if foreign)", "origin", 12), ("Role", "role", 16), ("Play style (community)", "style", 26), ("Play style (from stats)", "stat_style", 22), ("Tags (bombers & attackers)", lambda r: "; ".join(r.get("tags") or []), 40), ("Max bomb load (kg)", "bomb_load_kg", 8),
     ("BR AB", "br_ab", 6), ("BR RB", "br_rb", 6), ("BR SB", "br_sb", 6),
     ("Top speed (km/h)", "top_speed_kmh", 9), ("At altitude (m)", "top_speed_alt_m", 9),
     ("Sea-level speed (km/h)", "sl_speed_kmh", 9), ("Climb rate (m/s)", "climb_rate_ms", 8),

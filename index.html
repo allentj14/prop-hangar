@@ -107,7 +107,18 @@ summary::-webkit-details-marker{display:none}
 .lubr{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1;color:var(--accent)}
 .lubr small{display:block;font-family:var(--f-body);font-size:.62rem;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
 .lurow ol{margin:0;padding-left:18px;display:grid;gap:3px;font-size:.9rem;min-width:0}
-.lucol{min-width:0;display:grid;gap:8px}
+.lucol{min-width:0;display:grid;gap:8px;grid-column:1/-1}
+details.lurow{display:block}
+details.lurow>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center}
+details.lurow>summary::-webkit-details-marker{display:none}
+details.lurow>summary::after{content:"▸";color:var(--muted);font-size:1rem}
+details.lurow[open]>summary::after{content:"▾"}
+details.lurow[open]>summary{margin-bottom:8px}
+.luprev{min-width:0;font-size:.82rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+details.lurow[open] .luprev{display:none}
+.brjump{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--deckh,0px));z-index:3;display:flex;gap:5px;overflow-x:auto;padding:6px 0;margin:0 0 6px;background:var(--bg);scrollbar-width:thin}
+.brjump a,.brjump button{flex:0 0 auto;font:600 .8rem var(--f-data);text-decoration:none;color:var(--ink);background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 9px;cursor:pointer}
+.brjump button{font-family:var(--f-body);color:var(--muted)}
 .lurow li{min-width:0}
 details.pick>summary{display:block;cursor:pointer;padding:2px 0;list-style:none}
 details.pick>summary::-webkit-details-marker{display:none}
@@ -283,13 +294,27 @@ function watchBlock(x){
   if(!x.watch||!x.watch.length) return "";
   return `<div class="stepup watch"><div class="stephd">Watch out for (any nation)</div><ol>${x.watch.map(p=>pickItem(p,` · ${esc(p.n)} · plays like ~${(p.pl||p.br).toFixed(1)}`)).join("")}</ol></div>`;
 }
+const OPEN=new Set();
+document.addEventListener("toggle",e=>{const d=e.target;if(!d.classList||!d.classList.contains("lurow"))return;d.open?OPEN.add(d.dataset.k):OPEN.delete(d.dataset.k);},true);
+function brJump(rows){
+  const brs=rows.map(x=>x.br);
+  if(brs.length<4) return "";
+  return `<div class="brjump" role="navigation" aria-label="Jump to BR">${brs.map(b=>`<a href="#br-${String(b).replace(".","_")}" data-br="${b}">${b.toFixed(1)}</a>`).join("")}<button type="button" id="lu-expand">Expand all</button><button type="button" id="lu-collapse">Collapse all</button></div>`;
+}
 function lineupRows(rows){
-  return rows.map(x=>{const L=st.under?(x.under||[]):st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";return `<div class="lurow"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="lucol">${(()=>{const f=L.filter(p=>!p.strike).length;return f<5&&!st.under&&st.lstyle==="all"?`<div class="short">Only ${f} fighter${f===1?"":"s"} available at this BR${st.tech?" in the tech tree":""}.</div>`:""})()}<ol>${L.map(p=>pickItem(p,st.under&&p.pl?` · <b class="plays">plays like ~${p.pl.toFixed(1)}</b>`:"")).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></div>`}).join("");
+  return rows.map(x=>{const L=st.under?(x.under||[]):st.lstyle!=="all"?((x.styles&&x.styles[st.lstyle])||[]):(st.tech?x.tech:x.best);if(!L.length)return "";const key=st.nation+"|"+st.lmode+"|"+x.br;const prev=L.map(p=>p.name).join(" · ");return `<details class="lurow" id="br-${String(x.br).replace(".","_")}" data-k="${esc(key)}"${OPEN.has(key)?" open":""}><summary class="lusum"><div class="lubr">${x.br.toFixed(1)}<small>${st.lmode} BR</small></div><div class="luprev">${esc(prev)}</div></summary><div class="lucol">${(()=>{const f=L.filter(p=>!p.strike).length;return f<5&&!st.under&&st.lstyle==="all"?`<div class="short">Only ${f} fighter${f===1?"":"s"} available at this BR${st.tech?" in the tech tree":""}.</div>`:""})()}<ol>${L.map(p=>pickItem(p,st.under&&p.pl?` · <b class="plays">plays like ~${p.pl.toFixed(1)}</b>`:"")).join("")}</ol>${st.step?stepBlock(x):""}${watchBlock(x)}</div></details>`}).join("");
+}
+function wireLineups(){
+  const ex=$("lu-expand"),co=$("lu-collapse");
+  if(ex) ex.onclick=()=>document.querySelectorAll("details.lurow").forEach(d=>d.open=true);
+  if(co) co.onclick=()=>document.querySelectorAll("details.lurow").forEach(d=>d.open=false);
+  document.querySelectorAll(".brjump a").forEach(a=>a.onclick=e=>{e.preventDefault();const d=document.getElementById(a.getAttribute("href").slice(1));if(!d)return;d.open=true;const h=(document.querySelector("header.deck")||{}).offsetHeight||0;const j=(document.querySelector(".brjump")||{}).offsetHeight||0;window.scrollTo({top:d.getBoundingClientRect().top+window.scrollY-h-j-8,behavior:"smooth"});});
+  const h=(document.querySelector("header.deck")||{}).offsetHeight||0;document.documentElement.style.setProperty("--deckh",h+"px");
 }
 function renderLineups(){
   if(st.nation==="All"){$("lineups").innerHTML='<p class="note">Lineups are per nation. Pick a nation above.</p>';return;}
   const rows=LINEUPS.filter(x=>x.nation===st.nation && x.mode===st.lmode);
-  $("lineups").innerHTML=st.under?`<p class="note"><b>Undertiered</b>: for each BR, the 5 planes rated at or below it that perform the most above their rating, so your lineup stays at that BR but flies like a higher one. One plane is always at exactly the lineup BR. "Plays like" is an estimate from stats plus community opinion. Roman numeral = research rank. Tap a plane for details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>":`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?(st.lmode==="AB"?"<b>Step up (Arcade)</b>: Arcade sets your battle BR from the average of your 3 highest planes (top plane ×½, next two ×¼; a plane 0.7+ lower counts as top −0.6, and one 2.0+ lower counts as the top plane). That lets you carry ONE plane one step higher. It only works for X.0 and X.7 battles. ":"<b>Step up (Realistic)</b>: Realistic uses only the plane you take off in, so lower planes can't pull a higher one down. These are planes worth moving up for; picking one puts you in its BR. "):""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p><div class="lu">`+lineupRows(rows)+"</div>";
+  $("lineups").innerHTML=st.under?`<p class="note"><b>Undertiered</b>: for each BR, the 5 planes rated at or below it that perform the most above their rating, so your lineup stays at that BR but flies like a higher one. One plane is always at exactly the lineup BR. "Plays like" is an estimate from stats plus community opinion. Roman numeral = research rank. Tap a plane for details. ★ = premium, event or squadron.</p>`+brJump(rows)+`<div class="lu">`+lineupRows(rows)+"</div>":`<p class="note">Five strongest picks for each lineup BR (the highest plane sets the lineup's BR). ${st.lmode==="RB"?"In Air RB you usually get one life, so pick 1 is your main plane.":"Arcade lineups include one strike plane for ground targets."} ${st.step?(st.lmode==="AB"?"<b>Step up (Arcade)</b>: Arcade sets your battle BR from the average of your 3 highest planes (top plane ×½, next two ×¼; a plane 0.7+ lower counts as top −0.6, and one 2.0+ lower counts as the top plane). That lets you carry ONE plane one step higher. It only works for X.0 and X.7 battles. ":"<b>Step up (Realistic)</b>: Realistic uses only the plane you take off in, so lower planes can't pull a higher one down. These are planes worth moving up for; picking one puts you in its BR. "):""}<b>Watch out for</b> lists enemy planes (any nation) you can meet at that BR that play well above their rating. ${st.lstyle!=="all"?`Showing only ${({bnz:"Boom & Zoom",nrg:"energy",trn:"turn"})[st.lstyle]} fighters (premiums included). `:""}Roman numeral = the plane's research rank. Tap any plane for full details. ★ = premium, event or squadron.</p>`+brJump(rows)+`<div class="lu">`+lineupRows(rows)+"</div>";
 }
 function render(){
   $("tab-planes").setAttribute("aria-pressed",st.view==="planes");$("tab-lineups").setAttribute("aria-pressed",st.view==="lineups");
@@ -299,7 +324,7 @@ function render(){
   $("l-rb").setAttribute("aria-pressed",st.lmode==="RB");$("l-ab").setAttribute("aria-pressed",st.lmode==="AB");
   $("l-all").setAttribute("aria-pressed",!st.tech&&!st.step&&!st.under);$("l-tech").setAttribute("aria-pressed",st.tech);$("l-step").setAttribute("aria-pressed",st.step);$("l-under").setAttribute("aria-pressed",st.under);
   ["all","bnz","nrg","trn"].forEach(k=>$("ls-"+k).setAttribute("aria-pressed",st.lstyle===k));
-  if(st.view==="planes"){rankOptions();renderPlanes();}else renderLineups();
+  if(st.view==="planes"){rankOptions();renderPlanes();}else{renderLineups();try{wireLineups()}catch(e){}}
 }
 $("tab-planes").onclick=()=>{st.view="planes";save();render();window.scrollTo(0,0)};
 $("tab-lineups").onclick=()=>{st.view="lineups";save();render();window.scrollTo(0,0)};

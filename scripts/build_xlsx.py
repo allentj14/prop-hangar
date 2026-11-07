@@ -120,7 +120,7 @@ info = [
     ("", False),
     ("How the sheets are laid out", True),
     ("• One tab per nation, plus 'All planes'. Rows follow the research tree: rank (I, II, III…), then tree column left to right, then position top to bottom in that column. Folder = the group the plane sits in inside the tree.", False),
-    ("• 'Best lineups' gives a recommended 5-plane lineup for every battle rating each nation can field, for Realistic (RB) and Arcade (AB). A tech-tree-only version is next to it in case you don't own the premiums.", False),
+    ("• 'Best lineups' gives a recommended 8-plane lineup, ranked best to worst, for every battle rating each nation can field, for Realistic (RB) and Arcade (AB). A tech-tree-only version is next to it in case you don't own the premiums.", False),
     ("• Every sheet has filters on the header row — use them to show only one rank, style or BR.", False),
     ("", False),
     ("What the stats mean", True),
@@ -142,7 +142,7 @@ info = [
     ("• The 'Verification' column shows how each plane's label was checked: Confirmed (a second community source agrees), Mixed opinions (sources disagree; notes explain), Adjusted (label changed to match the community), Wiki + stats agree, Wiki only, or Game data only (no community writeup found, mostly niche bombers and event planes). Sources: War Thunder wiki, official forum threads, Steam community guides, and YouTube review titles.", False),
     ("", False),
     ("Lineups", True),
-    ("• Picked by overall performance against the planes you'll meet at that BR (speed, climb, turn, firepower, roll), nudged up or down when the community calls a plane strong or weak for its BR, with a penalty for planes far below the lineup BR. Arcade lineups include one strike plane for ground targets; Realistic lineups are the five strongest fighters, ranked — in Air RB you usually get one life, so slot 1 is your main pick.", False),
+    ("• Picked by overall performance against the planes you'll meet at that BR (speed, climb, turn, firepower, roll), nudged up or down when the community calls a plane strong or weak for its BR, with a penalty for planes far below the lineup BR. Arcade lineups include one strike plane for ground targets; Realistic lineups are the eight strongest fighters, ranked best to worst — in Air RB you usually get one life, so slot 1 is your main pick.", False),
 ]
 for t, b in info:
     ws.append([t]); c = ws.cell(ws.max_row, 1)
@@ -157,7 +157,7 @@ for n in NATIONS:
     plane_sheet(wb.create_sheet(n), [r for r in d if r["nation"] == n])
 
 ws = wb.create_sheet("Best lineups", 1)
-hdr = ["Nation", "Mode", "Lineup BR"] + [f"Pick {i}" for i in range(1, 6)] + [f"Tech tree only {i}" for i in range(1, 6)]
+hdr = ["Nation", "Mode", "Lineup BR"] + [f"Pick {i}" for i in range(1, 9)] + [f"Tech tree only {i}" for i in range(1, 9)]
 ws.append(hdr)
 for i, h in enumerate(hdr, 1):
     c = ws.cell(1, i); c.font = HDR_FONT; c.fill = HDR_FILL; c.alignment = Alignment(wrap_text=True, horizontal="center", vertical="center")
@@ -166,8 +166,8 @@ lu.sort(key=lambda x: (NATIONS.index(x["nation"]), 0 if x["mode"] == "RB" else 1
 PREM = PatternFill("solid", fgColor="FBEFC9")
 for x in lu:
     fmt = lambda p: f"{nb(p['name'])} ({p['br']:.1f}, {p['style']})" + ("" if p["obtain"] == "Tech tree" else " ★")
-    row = [x["nation"], x["mode"], x["br"]] + [fmt(p) for p in x["best"]] + [""] * (5 - len(x["best"])) \
-          + ([fmt(p) for p in x["tech"]] + [""] * (5 - len(x["tech"])) if not x["same"] else ["Same as picks"] + [""] * 4)
+    row = [x["nation"], x["mode"], x["br"]] + [fmt(p) for p in x["best"]] + [""] * (8 - len(x["best"])) \
+          + ([fmt(p) for p in x["tech"]] + [""] * (8 - len(x["tech"])) if not x["same"] else ["Same as picks"] + [""] * 7)
     ws.append(row)
     rr = ws.max_row
     for i in range(1, len(hdr) + 1):
@@ -180,7 +180,7 @@ ws.cell(ws.max_row, 1).font = Font(name=F, size=10, italic=True)
 ws.freeze_panes = "D2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(hdr))}{len(lu) + 1}"
 ws = wb.create_sheet("Lineups by play style", 2)
-hdr = ["Nation", "Mode", "Lineup BR", "Play style"] + [f"Pick {i}" for i in range(1, 6)]
+hdr = ["Nation", "Mode", "Lineup BR", "Play style"] + [f"Pick {i}" for i in range(1, 9)]
 ws.append(hdr)
 for i, h in enumerate(hdr, 1):
     c = ws.cell(1, i); c.font = HDR_FONT; c.fill = HDR_FILL; c.alignment = Alignment(wrap_text=True, horizontal="center", vertical="center")
@@ -190,7 +190,7 @@ for x in lu:
     for k, name in SN.items():
         picks = x.get("styles", {}).get(k) or []
         if not picks: continue
-        row = [x["nation"], x["mode"], x["br"], name] + [fmt(p) for p in picks] + [""] * (5 - len(picks))
+        row = [x["nation"], x["mode"], x["br"], name] + [fmt(p) for p in picks] + [""] * (8 - len(picks))
         ws.append(row)
         rr = ws.max_row
         for i in range(1, len(hdr) + 1):

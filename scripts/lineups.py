@@ -1,4 +1,5 @@
-"""Build recommended 5-plane lineups per nation, BR and mode."""
+"""Build recommended 8-plane lineups per nation, BR and mode, ranked best to worst."""
+N = 8  # planes per lineup
 import json, sys
 
 d = json.load(open(sys.argv[1]))
@@ -33,7 +34,7 @@ def pick(cands, b, mode, techonly):
     def add(r):
         if r["name"] in names or sig(r) in sigs: return False
         chosen.append(r); names.add(r["name"]); sigs.add(sig(r)); return True
-    nf = 4 if mode == "AB" else 5
+    nf = N - 1 if mode == "AB" else N
     for r in fighters:
         if len(chosen) >= nf: break
         add(r)
@@ -41,20 +42,28 @@ def pick(cands, b, mode, techonly):
         for r in strikes:
             if add(r): break
     for r in fighters:  # top up with fighters only; bombers never fill empty fighter slots
-        if len(chosen) >= 5: break
+        if len(chosen) >= N: break
         add(r)
     for r in fighters:  # still short: allow same-stat variants (extra respawns), but never duplicates by name
-        if len(chosen) >= 5: break
+        if len(chosen) >= N: break
         if r["name"] not in names:
             chosen.append(r); names.add(r["name"]); r["_twin"] = True
     if chosen and not any(r[key] == b for r in chosen):
         top = [r for r in fighters if r[key] == b and r["name"] not in names]
         if top:
-            chosen[min(len(chosen), 5) - 1 if len(chosen) >= 5 else len(chosen):] = []
-            if len(chosen) >= 5: chosen.pop()
-            chosen.insert(0, top[0])
-    chosen.sort(key=lambda r: -sc(r))
-    return chosen[:5]
+            # make room for one plane at exactly this BR by dropping the weakest fighter
+            if len(chosen) >= N:
+                weakest = min((r for r in chosen if is_fighterish(r)), key=strength(mode))
+                chosen.remove(weakest)
+            chosen.append(top[0])
+    # rank best -> worst by overall strength; Arcade's ground-attack pick always goes last
+    chosen.sort(key=lambda r: (not is_fighterish(r), -strength(mode)(r)))
+    return chosen[:N]
+
+def strength(mode):
+    """Overall strength used for ranking: the BR a plane plays like (stats + community), then raw performance."""
+    pk = "plays_like_" + mode.lower(); key = "br_ab" if mode == "AB" else "br_rb"
+    return lambda r: (r.get(pk) if r.get(pk) is not None else r[key]) + 0.6 * r["perf_score"]
 
 STEPS = [round(i + f, 1) for i in range(0, 16) for f in (0.0, 0.3, 0.7)]
 def ab_match_br(brs):
@@ -92,7 +101,7 @@ for n in NATIONS:
             styles = {}
             for skey, term in (("bnz", "Boom & Zoom"), ("nrg", "Energy fighter"), ("trn", "Turn fighter")):
                 pool = [r for r in cands if term in r["style"] and is_fighterish(r)]
-                styles[skey] = pick(pool, b, mode, False)[:5] if pool else []
+                styles[skey] = pick(pool, b, mode, False)[:N] if pool else []
             fmt = lambda r: {"name": r["name"], "br": r[key], "style": short(r["style"]), "obtain": r["obtain"], "id": r["id"], "rk": r["rank"],
                              "strike": not is_fighterish(r)}
             ok = "over_" + mode.lower(); pk = "plays_like_" + mode.lower()
@@ -108,7 +117,7 @@ for n in NATIONS:
                 if sg in seen: continue
                 seen.add(sg); step.append(r)
                 if len(step) >= 4: break
-            # Undertiered: 5 planes rated AT OR BELOW this BR that play the most above their rating
+            # Undertiered: N planes rated AT OR BELOW this BR that play the most above their rating
             # (one plane must sit at exactly this BR so the lineup really is this BR)
             ucands = [r for r in planes if b - 1.0 - 1e-9 <= r[key] <= b + 1e-9 and is_fighterish(r)
                       and r.get(pk) is not None]
@@ -118,11 +127,11 @@ for n in NATIONS:
                 sg = (r.get("guns"), r["top_speed_kmh"], r["turn_time_s"])
                 if sg in seen: continue
                 seen.add(sg); under.append(r)
-                if len(under) >= 5: break
+                if len(under) >= N: break
             if under and not any(abs(r[key] - b) < 1e-9 for r in under):
                 top = next((r for r in usort if abs(r[key] - b) < 1e-9), None)
-                if top: under = [top] + under[:4]
-            under.sort(key=lambda r: -(r.get(pk) or 0))
+                if top: under = [top] + under[:N - 1]
+            under.sort(key=lambda r: -strength(mode)(r))
             # Carry lineup (Arcade only): one plane one step ABOVE this BR + lower planes so the
             # official average formula brings the match back down to this BR
             carry = []; carry_br = None
@@ -143,7 +152,7 @@ for n in NATIONS:
                     fill = sorted([r for r in planes if is_fighterish(r) and r[key] <= floor_c + 1e-6 and r["name"] not in seen],
                                   key=lambda r: -((r.get(pk) or r[key]) + 0.3 * r["perf_score"]))
                     for r in fill:
-                        if len(chosen_c) >= 5: break
+                        if len(chosen_c) >= N: break
                         chosen_c.append(r); seen.add(r["name"])
                     mb = ab_match_br([r[key] for r in chosen_c])
                     if abs(mb - b) < 1e-6:

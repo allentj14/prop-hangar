@@ -140,20 +140,26 @@ for n in NATIONS:
                 A_br = up[0] if up else None
                 tops = sorted([r for r in d_n_all if abs(r[key] - (A_br or -9)) < 1e-6 and is_fighterish(r)],
                               key=lambda r: -((r.get(pk) or r[key]) + 0.02 * (r.get(ok) or 0)))
+                # support planes: 0.7-1.7 below the carry plane (so they pull the average down) and
+                # overpowered for their own BR (play like +0.3 or more), strongest at the battle BR first
+                sup_key = lambda r: (-(1 if (r.get(ok) or 0) >= 0.3 - 1e-6 else 0), -((r.get(pk) or r[key]) + 0.3 * r["perf_score"]))
                 lows = sorted([r for r in planes if is_fighterish(r) and A_br and 0.7 - 1e-6 <= A_br - r[key] <= 1.7 + 1e-6],
-                              key=lambda r: -((r.get(pk) or r[key]) + 0.3 * r["perf_score"]))
+                              key=sup_key)
                 if tops and len(lows) >= 2:
-                    A = tops[0]; seen = {A["name"]}; chosen_c = [A]
+                    nn = lambda r: r["name"].replace("\xa0", " ").strip().lower()
+                    A = tops[0]; seen = {nn(A)}; chosen_c = [A]
                     for r in lows:
-                        if r["name"] in seen: continue
-                        chosen_c.append(r); seen.add(r["name"])
+                        if nn(r) in seen: continue
+                        chosen_c.append(r); seen.add(nn(r))
                         if len(chosen_c) == 3: break
                     floor_c = min(r[key] for r in chosen_c[1:])
-                    fill = sorted([r for r in planes if is_fighterish(r) and r[key] <= floor_c + 1e-6 and r["name"] not in seen],
-                                  key=lambda r: -((r.get(pk) or r[key]) + 0.3 * r["perf_score"]))
+                    fill = sorted([r for r in planes if is_fighterish(r) and r[key] <= floor_c + 1e-6 and nn(r) not in seen
+                                   and (r.get(pk) or r[key]) >= b - 1.0 - 1e-6],   # spares must still be able to fight in this battle
+                                  key=sup_key)
                     for r in fill:
                         if len(chosen_c) >= N: break
-                        chosen_c.append(r); seen.add(r["name"])
+                        if nn(r) in seen: continue
+                        chosen_c.append(r); seen.add(nn(r))
                     mb = ab_match_br([r[key] for r in chosen_c])
                     if abs(mb - b) < 1e-6:
                         carry = chosen_c; carry_br = mb
@@ -186,6 +192,7 @@ assert ab_match_br([3.0, 1.0, 1.0]) == 3.0      # planes 2.0+ below count as the
 assert ab_match_br([3.0, 1.7, 1.0]) == 3.0
 assert ab_match_br([2.7, 2.0, 1.7]) == 2.7      # X.7 tops can't drop: 2.4 rounds back up to 2.7
 assert ab_match_br([3.3, 2.7, 2.7]) == 3.0
+assert ab_match_br([3.7, 2.0, 2.0]) == 3.7      # a +0.7 carry is impossible: max drop is one step
 assert ab_match_br([5.0, 3.0, 3.0]) == 5.0
 assert ab_match_br([5.0, 4.0, 4.0]) == 4.7
 print("formula checks ok")
